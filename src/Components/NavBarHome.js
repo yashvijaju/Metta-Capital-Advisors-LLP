@@ -5,14 +5,30 @@ import Toolbar from '@material-ui/core/Toolbar'
 import logo from './Media/logo.gif'
 import Grid from '@material-ui/core/Grid'
 import { NavLink } from 'react-router-dom';
+import useWindowScrollPosition from '@rehooks/window-scroll-position'
 
 const styleItem = {display: 'flex', 'flexDirection': 'column', 'justifyContent': 'center'}
 const styleLink = {fontSize: '1.3vw', textDecoration: 'none', color: '#000000', textAlign: 'center'}
 const activeLink = {color: "#F8B04B", fontWeight: 'bold'}
 
-export default function NavBar() {
+export default function NavBarHome() {
+    const [change, setChange] = useState(false);
+    const changePosition = 5;
+
+    let position = useWindowScrollPosition();
+    // position == { x: 0, y: 0 }
+
+    if (position.y > changePosition && !change) {
+        setChange(true);
+    }
+
+    if (position.y <= changePosition && change) {
+        setChange(false);
+    }
+
     let style = {
-        backgroundColor: "#F9DDB7",
+        backgroundColor: change ? "#F9DDB7" : "transparent",
+        transition: "400ms ease",
         'max-height': '10vh',
         position: "fixed",
         right: 0,

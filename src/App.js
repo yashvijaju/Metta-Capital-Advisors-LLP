@@ -10,13 +10,14 @@ import Expertise from './Components/Expertise';
 import Media from './Components/Media';
 import Team from './Components/Team';
 import NavBar from './Components/NavBar';
+import Footer from './Components/Footer';
 
 class App extends Component {
   render() {
     return (      
        <BrowserRouter>
         <div>
-            <NavBar></NavBar>
+          
             <Switch>
              <Route path="/" component={Home} exact/>
              <Route path="/clients" component={Clients}/>
@@ -27,6 +28,7 @@ class App extends Component {
              <Route path="/team" component={Team}/>
             <Route component={Error}/>
            </Switch>
+           
         </div> 
       </BrowserRouter>
     );
