@@ -16,7 +16,7 @@ export default function WhyUs() {
             </div>
             <div class="row" style={{position: 'relative', 'margin-top': '-15vh', 'padding-left': '12vw'}}>
                 <Typography variant="h4" style={{color: 'white'}}>
-                    Why Us
+                    About Us
                 </Typography>
             </div>
             <Grid container spacing={0} justify="center" style={{'padding-top': '15vh', 'padding-bottom': '5vh'}}>

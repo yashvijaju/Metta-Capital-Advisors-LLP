@@ -7,7 +7,7 @@ import Skyline from './Media/Worli.jpg'
 const styleItem = {display: 'flex', 'flexDirection': 'column', 'justifyContent': 'center'}
 const styleHeadline = {color:'#f8b04b'}
 
-export default function Clients() {
+export default function Transactions() {
     return(
         <div style={{overflow: 'hidden'}}>
             <NavBar></NavBar>
@@ -16,7 +16,7 @@ export default function Clients() {
             </div>
             <div class="row" style={{position: 'relative', 'margin-top': '-15vh', 'padding-left': '12vw'}}>
                 <Typography variant="h4" style={{color: 'white'}}>
-                    Clients
+                    Transactions
                 </Typography>
             </div>
             <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '15vh', 'padding-bottom': '5vh'}}>
