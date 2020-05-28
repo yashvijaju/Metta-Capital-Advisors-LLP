@@ -7,8 +7,8 @@ import Transactions from './Components/Clients';
 import WhyUs from './Components/WhyUs';
 import Contact from './Components/Contact';
 import Expertise from './Components/Expertise';
-import NavBar from './Components/NavBar';
-import Footer from './Components/Footer';
+import Team from './Components/Team';
+
 
 class App extends Component {
   render() {
@@ -22,6 +22,7 @@ class App extends Component {
              <Route path="/contact" component={Contact}/>
              <Route path="/about-us" component={WhyUs}/>
              <Route path="/expertise" component={Expertise}/>
+             <Route path="/team" component={Team}/>
             <Route component={Error}/>
            </Switch>
            

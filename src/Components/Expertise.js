@@ -3,8 +3,9 @@ import Grid from '@material-ui/core/Grid'
 import NavBar from './NavBar';
 import Typography from '@material-ui/core/Typography'
 import Skyline from './Media/Worli.jpg'
+import Footer from './Footer';
 
-const styleItem = {display: 'flex', 'flexDirection': 'column', 'justifyContent': 'center'}
+const styleItem = {display: 'flex', 'flexDirection': 'column', 'justifyContent': 'center', 'padding-left': '5vw'}
 const styleHeadline = {color:'#f8b04b'}
 
 export default function Expertise() {
@@ -20,38 +21,33 @@ export default function Expertise() {
                 </Typography>
             </div>
             <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '15vh', 'padding-bottom': '5vh'}}>
-                <Grid item xs={0} sm={1}></Grid>
-                <Grid item xs={10} sm={2} direction="column" >
+                <Grid item xs={10} sm={3} direction="column" style={styleItem}>
                         <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
-                        Pioneers
+                        Mergers & Acquisitions
                         </Typography>
                         <Typography variant="body2" gutterBottom>
                         We do the impossible //Description goes here
                         </Typography>
                 </Grid>
-                <Grid item xs={1} sm={0}></Grid>
-                <Grid item xs={10}  sm={2} direction="column" >
+                <Grid item xs={10}  sm={3} direction="column" style={styleItem}>
                         <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
-                        Execution Excellence
+                        Raise Capital
                         </Typography>
                         <Typography variant="body2" gutterBottom>
                         Description goes here bcause this is a placeholder
                         </Typography>
                 </Grid>
-                <Grid item xs={1} sm={0}></Grid>
-                <Grid item xs={10} sm={2} direction="column">
+                <Grid item xs={10} sm={3} direction="column" style={styleItem}>
                         <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
-                        Execution Excellence
+                        Strategic Advisory
                         </Typography>
                         <Typography variant="body2" gutterBottom>
                         Description goes here bcause this is a placeholder
                         </Typography>
                 </Grid>
-                <Grid item xs={1} sm={1}></Grid>
             </Grid>
             <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '5vh', 'padding-bottom': '5vh'}}>
-                <Grid item xs={0} sm={1}></Grid>
-                <Grid item xs={10} sm={2} direction="column" >
+                <Grid item xs={10} sm={3} direction="column" style={styleItem}>
                         <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
                         Pioneers
                         </Typography>
@@ -59,8 +55,7 @@ export default function Expertise() {
                         We do the impossible //Description goes here
                         </Typography>
                 </Grid>
-                <Grid item xs={1} sm={0}></Grid>
-                <Grid item xs={10}  sm={2} direction="column" >
+                <Grid item xs={10}  sm={3} direction="column" style={styleItem}>
                         <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
                         Execution Excellence
                         </Typography>
@@ -68,8 +63,7 @@ export default function Expertise() {
                         Description goes here bcause this is a placeholder
                         </Typography>
                 </Grid>
-                <Grid item xs={1} sm={0}></Grid>
-                <Grid item xs={10} sm={2} direction="column">
+                <Grid item xs={10} sm={3} direction="column" style={styleItem}>
                         <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
                         Execution Excellence
                         </Typography>
@@ -77,8 +71,8 @@ export default function Expertise() {
                         Description goes here bcause this is a placeholder
                         </Typography>
                 </Grid>
-                <Grid item xs={1} sm={1}></Grid>
             </Grid>
+            <Footer/>
         </div>
     );
 }

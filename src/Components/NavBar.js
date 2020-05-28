@@ -37,7 +37,6 @@ export default function NavBar() {
                             <Grid item xs={1}></Grid>
                             <Grid item xs={1}></Grid>
                             <Grid item xs={1}></Grid>
-                            <Grid item xs={1}></Grid>
                             <Grid item xs={1} style={styleItem}>
                                 <NavLink to="/about-us" style={styleLink} activeStyle={activeLink}>
                                     <p>About Us</p>
@@ -46,6 +45,11 @@ export default function NavBar() {
                             <Grid item xs={1} style={styleItem}>
                                 <NavLink to="/expertise" style={styleLink} activeStyle={activeLink}>
                                     <p>Expertise</p>
+                                </NavLink>
+                            </Grid>
+                            <Grid item xs={1} style={styleItem}>
+                                <NavLink to="/team" style={styleLink} activeStyle={activeLink}>
+                                    <p>Team</p>
                                 </NavLink>
                             </Grid>
                             <Grid item xs={1} style={styleItem}>
