@@ -14,8 +14,8 @@ const styleMap = {width: '100vw', height: '70vh', 'line-height': '0', float: 'le
 
 export default function Contact() {
     return(
-        <div style={{height: '100%', width: '100%', overflow: 'hidden'}}>
-            <div style={{overflow: 'auto'}}>
+        <div>
+            <div style={{'min-height': '95vh', 'padding-bottom': '5vh'}}>
                 <NavBar></NavBar>
                 <div class="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
                     <img src={Skyline} alt="Worli Sea Link" style={{'object-fit': 'fill', 'max-height': '50vh', 'width': '100vw', opacity: '0.7'}}/>
@@ -63,8 +63,8 @@ export default function Contact() {
                         <Grid item xs={1} sm={1}></Grid>
                     </Grid>
                 </Grid>
-                <Footer/>
             </div>
+            <Footer/>
         </div>
     );
 }
