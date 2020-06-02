@@ -15,7 +15,7 @@ import Hidden from '@material-ui/core/Hidden';
 
 
 
-const styleItem = {display: 'flex', 'flexDirection': 'column', 'justifyContent': 'center', 'padding-left': '5vw'}
+const styleItem = {'padding-left': '5vw', 'padding-top': '5vh'}
 const styleHeadline = {color:'#f8b04b'}
 
 export default function Expertise() {
@@ -60,34 +60,130 @@ export default function Expertise() {
                         Leadership Team
                     </Typography>
                 </div>
-                <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '15vh', 'padding-bottom': '5vh'}}>
-                    <Grid item xs={9} sm={5} md={3} direction="column"  onMouseOver={handleOpenPJ} style={styleItem}>
-                        <img src={pankajj} alt="Pankaj Jaju" style={{height: '45vh', width: 'auto'}}/>
-                        <Typography variant="h6" style={styleHeadline}>
-                            Pankaj Jaju
-                        </Typography>
-                        <Typography variant="subtitle1">
-                            Founder & CEO
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={9} sm={5} md={3} direction="column"  onMouseOver={handleOpenSS} style={styleItem}>
-                        <img src={saurabhs} alt="Saurabh Singhi" style={{height: '45vh', width: 'auto'}}/>
-                        <Typography variant="h6" style={styleHeadline}>
-                            Saurabh Singhi
-                        </Typography>
-                        <Typography variant="subtitle1">
-                            Senior Advisor
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={9} sm={5} md={3} direction="column"  onMouseOver={handleOpenSS} style={styleItem}>
-                        <img src={sonalb} alt="Sonal Biyani" style={{height: '45vh', width: 'auto'}}/>
-                        <Typography variant="h6" style={styleHeadline}>
-                            Sonal Biyani
-                        </Typography>
-                        <Typography variant="subtitle1">
-                            
-                        </Typography>
-                    </Grid>
+                <Grid container spacing={0} direction="row" style={{'padding-top': '10vh', 'padding-bottom': '5vh'}}>
+                    <Grid item xs={1} sm={1} md={1}/>
+                    <Hidden only="xs">
+                        <Grid item xs={9} sm={5} md={3} direction="column"  onClick={handleOpenPJ} style={styleItem}>
+                            <img src={pankajj} alt="Pankaj Jaju" style={{width: '100%', height: 'auto'}}/>
+                            <Grid container spacing={0} direction="row">
+                                <Grid item width="90%" spacing={0} direction="column">
+                                    <Typography variant="h6" style={styleHeadline}>
+                                        Pankaj Jaju
+                                    </Typography>
+                                    <Typography variant="subtitle1">
+                                        Founder & CEO
+                                    </Typography>
+                                </Grid>
+                                <Grid item width="10%" style={{'padding-top': '5px'}}>
+                                    <LinkedIn fontSize="small"/>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Hidden>
+                    <Hidden smUp>
+                        <Grid item xs={9} sm={5} md={3} direction="column"  style={styleItem}>
+                            <img src={pankajj} alt="Pankaj Jaju" style={{width: '100%', height: 'auto'}}/>
+                            <Grid container spacing={0} direction="row">
+                                <Grid item width="90%" spacing={0} direction="column">
+                                    <Typography variant="h6" style={styleHeadline}>
+                                        Pankaj Jaju
+                                    </Typography>
+                                    <Typography variant="subtitle1">
+                                        Founder & CEO
+                                    </Typography>
+                                </Grid>
+                                <Grid item width="10%" style={{'padding-top': '5px'}}>
+                                    <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
+                                        <LinkedIn fontSize="small"/>
+                                    </a>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Hidden>
+                    <Hidden smUp>
+                        <Grid item xs={2}/>
+                        <Grid item xs={1}/>
+                    </Hidden>
+                    <Hidden only="xs">
+                        <Grid item xs={9} sm={5} md={3} direction="column"  onClick={handleOpenSS} style={styleItem}>
+                            <img src={saurabhs} alt="Saurabh Singhi" style={{width: '100%', height: 'auto'}}/>
+                            <Grid container spacing={0} direction="row">
+                                <Grid item width="90%" spacing={0} direction="column">
+                                    <Typography variant="h6" style={styleHeadline}>
+                                    Saurabh Singhi
+                                    </Typography>
+                                    <Typography variant="subtitle1">
+                                    Senior Advisor
+                                    </Typography>
+                                </Grid>
+                                <Grid item width="10%" style={{'padding-top': '5px', 'padding-left': '5px'}}>
+                                    <LinkedIn fontSize="small"/>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Hidden>
+                    <Hidden smUp>
+                        <Grid item xs={9} sm={5} md={3} direction="column"  onClick={handleOpenSS} style={styleItem}>
+                            <img src={saurabhs} alt="Saurabh Singhi" style={{width: '100%', height: 'auto'}}/>
+                            <Grid container spacing={0} direction="row">
+                                <Grid item width="90%" spacing={0} direction="column">
+                                    <Typography variant="h6" style={styleHeadline}>
+                                    Saurabh Singhi
+                                    </Typography>
+                                    <Typography variant="subtitle1">
+                                    Senior Advisor
+                                    </Typography>
+                                </Grid>
+                                <Grid item width="10%" style={{'padding-top': '5px', 'padding-left': '5px'}}>
+                                    <a href="https://www.linkedin.com/in/saurabh-singhi-ba42b111/" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
+                                        <LinkedIn fontSize="small"/>
+                                    </a>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Hidden>
+                    <Hidden mdUp>
+                        <Grid item xs={2} sm={1}/>
+                        <Grid item xs={1}/>
+                    </Hidden>
+                    <Hidden only="xs">
+                        <Grid item xs={9} sm={5} md={3} direction="column"  onClick={handleOpenSB} style={styleItem}>
+                            <img src={sonalb} alt="Sonal Biyani" style={{width: '100%', height: 'auto'}}/>
+                            <Grid container spacing={0} direction="row">
+                                <Grid item width="90%" spacing={0} direction="column">
+                                    <Typography variant="h6" style={styleHeadline}>
+                                    Sonal Biyani
+                                    </Typography>
+                                    <Typography variant="subtitle1">
+                                    
+                                    </Typography>
+                                </Grid>
+                                <Grid item width="10%" style={{'padding-top': '5px', 'padding-left': '5px'}}>
+                                    <LinkedIn fontSize="small"/>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Hidden>
+                    <Hidden smUp>
+                        <Grid item xs={9} sm={5} md={3} direction="column"  onClick={handleOpenSB} style={styleItem}>
+                            <img src={sonalb} alt="Sonal Biyani" style={{width: '100%', height: 'auto'}}/>
+                            <Grid container spacing={0} direction="row">
+                                <Grid item width="90%" spacing={0} direction="column">
+                                    <Typography variant="h6" style={styleHeadline}>
+                                    Sonal Biyani
+                                    </Typography>
+                                    <Typography variant="subtitle1">
+                                    
+                                    </Typography>
+                                </Grid>
+                                <Grid item width="10%" style={{'padding-top': '5px', 'padding-left': '5px'}}>
+                                    <a href="https://www.linkedin.com/in/sonalbiyani/" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
+                                        <LinkedIn fontSize="small"/>
+                                    </a>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Hidden>
                 </Grid>
                 
 
@@ -107,7 +203,7 @@ export default function Expertise() {
                     <div style={{backgroundColor: 'white', border: '3px solid #f8b04b', boxShadow: 'shadows[5]', width: '60vw', 'max-height': '75vh', 'overflow-y': 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', outline: 'none'}}>
                         <Grid container style={{'padding': '10px'}}>
                             <Grid item xs={5}>
-                                <img id="image-modal"src={pankajj} alt="Pankaj Jaju" style={{'height': '30vw'}}></img>
+                                <img id="image-modal"src={pankajj} alt="Pankaj Jaju" style={{width: '90%', height: 'auto'}}></img>
                             </Grid>
                             <Hidden mdUp>
                                 <Grid item xs={6}>
@@ -183,7 +279,7 @@ export default function Expertise() {
                     <div style={{backgroundColor: 'white', border: '3px solid #f8b04b', boxShadow: 'shadows[5]', width: '60vw', 'max-height': '75vh', 'overflow-y': 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', outline: 'none'}}>
                         <Grid container style={{'padding': '10px'}}>
                             <Grid item xs={5}>
-                                <img id="image-modal"src={saurabhs} alt="Saurabh Singhi" style={{'height': '30vw'}}></img>
+                                <img id="image-modal"src={saurabhs} alt="Saurabh Singhi" style={{width: '90%', height: 'auto'}}></img>
                             </Grid>
                             <Hidden mdUp>
                                 <Grid item xs={6}>
@@ -205,7 +301,7 @@ export default function Expertise() {
                                         </Typography>
                                     </Grid>
                                     <Grid item style={{'padding-top': '5px'}}>
-                                        <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
+                                        <a href="https://www.linkedin.com/in/saurabh-singhi-ba42b111/" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
                                             <LinkedIn fontSize="small"/>
                                         </a>
                                     </Grid>
@@ -230,7 +326,7 @@ export default function Expertise() {
                                         </Typography>
                                     </Grid>
                                     <Grid item style={{'padding-top': '5px'}}>
-                                        <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
+                                        <a href="https://www.linkedin.com/in/saurabh-singhi-ba42b111/" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
                                             <LinkedIn fontSize="small"/>
                                         </a>
                                     </Grid>
@@ -259,7 +355,7 @@ export default function Expertise() {
                     <div style={{backgroundColor: 'white', border: '3px solid #f8b04b', boxShadow: 'shadows[5]', width: '60vw', 'max-height': '75vh', 'overflow-y': 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', outline: 'none'}}>
                         <Grid container style={{'padding': '10px'}}>
                             <Grid item xs={5}>
-                                <img id="image-modal"src={sonalb} alt="Sonal Biyani" style={{'height': '30vw'}}></img>
+                                <img id="image-modal"src={sonalb} alt="Sonal Biyani" style={{width: '90%', height: 'auto'}}></img>
                             </Grid>
                             <Hidden mdUp>
                                 <Grid item xs={6}>
@@ -281,7 +377,7 @@ export default function Expertise() {
                                         </Typography>
                                     </Grid>
                                     <Grid item style={{'padding-top': '5px'}}>
-                                        <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
+                                        <a href="https://www.linkedin.com/in/sonalbiyani/" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
                                             <LinkedIn fontSize="small"/>
                                         </a>
                                     </Grid>
@@ -306,7 +402,7 @@ export default function Expertise() {
                                         </Typography>
                                     </Grid>
                                     <Grid item style={{'padding-top': '5px'}}>
-                                        <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
+                                        <a href="https://www.linkedin.com/in/sonalbiyani/" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
                                             <LinkedIn fontSize="small"/>
                                         </a>
                                     </Grid>
