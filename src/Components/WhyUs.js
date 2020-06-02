@@ -28,7 +28,7 @@ export default function WhyUs() {
                         We Are
                         </Typography>
                         <Typography variant="body2" gutterBottom>
-                        An Investment Bank doing bla bla bla bla bla 
+                        A leading investment bank in consumer & retail
                         </Typography>
                     </Grid>
                 </Grid>
