@@ -16,6 +16,7 @@ import Hidden from '@material-ui/core/Hidden';
 
 
 const styleItem = {'padding-left': '5vw', 'padding-top': '5vh'}
+const styleItemwCursor = {'padding-left': '5vw', 'padding-top': '5vh', 'cursor': 'pointer'}
 const styleHeadline = {color:'#f8b04b'}
 
 export default function Expertise() {
@@ -63,7 +64,7 @@ export default function Expertise() {
                 <Grid container spacing={0} direction="row" style={{'padding-top': '10vh', 'padding-bottom': '5vh'}}>
                     <Grid item xs={1} sm={1} md={1}/>
                     <Hidden only="xs">
-                        <Grid item xs={9} sm={5} md={3} direction="column"  onClick={handleOpenPJ} style={styleItem}>
+                        <Grid item xs={9} sm={5} md={3} direction="column"  onClick={handleOpenPJ} style={styleItemwCursor}>
                             <img src={pankajj} alt="Pankaj Jaju" style={{width: '100%', height: 'auto'}}/>
                             <Grid container spacing={0} direction="row">
                                 <Grid item width="90%" spacing={0} direction="column">
@@ -83,17 +84,15 @@ export default function Expertise() {
                     <Hidden smUp>
                         <Grid item xs={9} sm={5} md={3} direction="column"  style={styleItem}>
                             <img src={pankajj} alt="Pankaj Jaju" style={{width: '100%', height: 'auto'}}/>
-                            <Grid container spacing={0} direction="row">
-                                <Grid item width="90%" spacing={0} direction="column">
-                                    <Typography variant="h6" style={styleHeadline}>
-                                        Pankaj Jaju
-                                    </Typography>
+                            <Grid item width="100%" spacing={0} direction="column">
+                                <Typography variant="h6" style={styleHeadline}>
+                                    Pankaj Jaju
+                                </Typography>
+                                <Grid item direction="row" style={{'padding-top': '5px', display: 'flex', flexDirection: 'row'}}>
                                     <Typography variant="subtitle1">
                                         Founder & CEO
                                     </Typography>
-                                </Grid>
-                                <Grid item width="10%" style={{'padding-top': '5px'}}>
-                                    <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
+                                    <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank" title="LinkedIn" style={{color: '#000000', 'padding-left': '5px', 'padding-top': '5px'}}>
                                         <LinkedIn fontSize="small"/>
                                     </a>
                                 </Grid>
@@ -105,7 +104,7 @@ export default function Expertise() {
                         <Grid item xs={1}/>
                     </Hidden>
                     <Hidden only="xs">
-                        <Grid item xs={9} sm={5} md={3} direction="column"  onClick={handleOpenSS} style={styleItem}>
+                        <Grid item xs={9} sm={5} md={3} direction="column"  onClick={handleOpenSS} style={styleItemwCursor}>
                             <img src={saurabhs} alt="Saurabh Singhi" style={{width: '100%', height: 'auto'}}/>
                             <Grid container spacing={0} direction="row">
                                 <Grid item width="90%" spacing={0} direction="column">
@@ -113,7 +112,7 @@ export default function Expertise() {
                                     Saurabh Singhi
                                     </Typography>
                                     <Typography variant="subtitle1">
-                                    Senior Advisor
+                                     
                                     </Typography>
                                 </Grid>
                                 <Grid item width="10%" style={{'padding-top': '5px', 'padding-left': '5px'}}>
@@ -123,19 +122,17 @@ export default function Expertise() {
                         </Grid>
                     </Hidden>
                     <Hidden smUp>
-                        <Grid item xs={9} sm={5} md={3} direction="column"  onClick={handleOpenSS} style={styleItem}>
-                            <img src={saurabhs} alt="Saurabh Singhi" style={{width: '100%', height: 'auto'}}/>
-                            <Grid container spacing={0} direction="row">
-                                <Grid item width="90%" spacing={0} direction="column">
-                                    <Typography variant="h6" style={styleHeadline}>
-                                    Saurabh Singhi
-                                    </Typography>
+                        <Grid item xs={9} sm={5} md={3} direction="column"  style={styleItem}>
+                            <img src={saurabhs} alt="Saurabh Singhi" style={{width: '100%', height: 'auto'}}/> 
+                            <Grid item width="100%" spacing={0} direction="column">
+                                <Typography variant="h6" style={styleHeadline}>
+                                Saurabh Singhi
+                                </Typography>
+                                <Grid item direction="row" style={{'padding-top': '5px', display: 'flex', flexDirection: 'row'}}>
                                     <Typography variant="subtitle1">
-                                    Senior Advisor
+                                        
                                     </Typography>
-                                </Grid>
-                                <Grid item width="10%" style={{'padding-top': '5px', 'padding-left': '5px'}}>
-                                    <a href="https://www.linkedin.com/in/saurabh-singhi-ba42b111/" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
+                                    <a href="https://www.linkedin.com/in/saurabh-singhi-ba42b111/" target="_blank" title="LinkedIn" style={{color: '#000000', 'padding-left': '5px', 'padding-top': '5px'}}>
                                         <LinkedIn fontSize="small"/>
                                     </a>
                                 </Grid>
@@ -147,7 +144,7 @@ export default function Expertise() {
                         <Grid item xs={1}/>
                     </Hidden>
                     <Hidden only="xs">
-                        <Grid item xs={9} sm={5} md={3} direction="column"  onClick={handleOpenSB} style={styleItem}>
+                        <Grid item xs={9} sm={5} md={3} direction="column"  onClick={handleOpenSB} style={styleItemwCursor}>
                             <img src={sonalb} alt="Sonal Biyani" style={{width: '100%', height: 'auto'}}/>
                             <Grid container spacing={0} direction="row">
                                 <Grid item width="90%" spacing={0} direction="column">
@@ -165,19 +162,17 @@ export default function Expertise() {
                         </Grid>
                     </Hidden>
                     <Hidden smUp>
-                        <Grid item xs={9} sm={5} md={3} direction="column"  onClick={handleOpenSB} style={styleItem}>
-                            <img src={sonalb} alt="Sonal Biyani" style={{width: '100%', height: 'auto'}}/>
-                            <Grid container spacing={0} direction="row">
-                                <Grid item width="90%" spacing={0} direction="column">
-                                    <Typography variant="h6" style={styleHeadline}>
-                                    Sonal Biyani
-                                    </Typography>
+                        <Grid item xs={9} sm={5} md={3} direction="column"  style={styleItem}>
+                            <img src={sonalb} alt="Sonal Biyani" style={{width: '100%', height: 'auto'}}/> 
+                            <Grid item width="100%" spacing={0} direction="column">
+                                <Typography variant="h6" style={styleHeadline}>
+                                Sonal Biyani
+                                </Typography>
+                                <Grid item direction="row" style={{'padding-top': '5px', display: 'flex', flexDirection: 'row'}}>
                                     <Typography variant="subtitle1">
-                                    
+                                        
                                     </Typography>
-                                </Grid>
-                                <Grid item width="10%" style={{'padding-top': '5px', 'padding-left': '5px'}}>
-                                    <a href="https://www.linkedin.com/in/sonalbiyani/" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
+                                    <a href="https://www.linkedin.com/in/sonalbiyani/" target="_blank" title="LinkedIn" style={{color: '#000000', 'padding-left': '5px', 'padding-top': '5px'}}>
                                         <LinkedIn fontSize="small"/>
                                     </a>
                                 </Grid>
@@ -202,20 +197,21 @@ export default function Expertise() {
                     <Fade in={openPJ}>
                     <div style={{backgroundColor: 'white', border: '3px solid #f8b04b', boxShadow: 'shadows[5]', width: '60vw', 'max-height': '75vh', 'overflow-y': 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', outline: 'none'}}>
                         <Grid container style={{'padding': '10px'}}>
-                            <Grid item xs={5}>
-                                <img id="image-modal"src={pankajj} alt="Pankaj Jaju" style={{width: '90%', height: 'auto'}}></img>
-                            </Grid>
+                            
                             <Hidden mdUp>
-                                <Grid item xs={6}>
-                                    <Grid item>
+                                <Grid item xs={12} direction="column">
+                                    <Grid item width="100%" spacing={0} direction="column">
                                         <Typography variant="h6" style={styleHeadline}>
-                                        Pankaj Jaju
+                                            Pankaj Jaju
                                         </Typography>
-                                    </Grid>
-                                    <Grid item>
-                                        <Typography variant="subtitle1">
-                                        Founder & CEO
-                                        </Typography>
+                                        <Grid item direction="row" style={{'padding-top': '5px', display: 'flex', flexDirection: 'row'}}>
+                                            <Typography variant="subtitle1">
+                                                Founder & CEO
+                                            </Typography>
+                                            <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank" title="LinkedIn" style={{color: '#000000', 'padding-left': '5px', 'padding-top': '5px'}}>
+                                                <LinkedIn fontSize="small"/>
+                                            </a>
+                                        </Grid>
                                     </Grid>
                                 </Grid>
                                 <Grid container xs={12} direction="column">
@@ -224,35 +220,31 @@ export default function Expertise() {
                                         Pankaj has over 25 years of Investment Banking experience at ENAM / Axis Capital. He led several veticals such as Retail, Real Estate, Textiles and Commodities, and relationships for several large business houses and executed a host of marquee transactions across M&A, PE and Capital markets. He also headed Strategic Partnerships for Axis Bank as it built out its digital strategy. He spearheaded several IPOs, M&A and PE transactions for various sectors, including Materials, Textile, Retail, and Real Estate. Pankaj led most of the equity raising and strategic initiatives for major retail houses in India, including Arvind, Future Group, Landmark Group, and Rahejas. Additionally, he led major strategic initiatives by Grasim and ABNL between 2000 and 2014, including their acquisition of Ultratech Cement.
                                         </Typography>
                                     </Grid>
-                                    <Grid item style={{'padding-top': '5px'}}>
-                                        <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
-                                            <LinkedIn fontSize="small"/>
-                                        </a>
-                                    </Grid>
                                 </Grid>
                             </Hidden>
 
                             <Hidden smDown>
+                                <Grid item xs={5}>
+                                    <img id="image-modal"src={pankajj} alt="Pankaj Jaju" style={{width: '90%', height: 'auto'}}></img>
+                                </Grid>
                                 <Grid container md={7} direction="column">
-                                    <Grid item>
+                                    <Grid item spacing={0} direction="column">
                                         <Typography variant="h6" style={styleHeadline}>
-                                        Pankaj Jaju
+                                            Pankaj Jaju
                                         </Typography>
-                                    </Grid>
-                                    <Grid item>
-                                        <Typography variant="subtitle1">
-                                        Founder & CEO
-                                        </Typography>
+                                        <Grid item direction="row" style={{'padding-top': '5px', display: 'flex', flexDirection: 'row'}}>
+                                            <Typography variant="subtitle1">
+                                                Founder & CEO
+                                            </Typography>
+                                            <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank" title="LinkedIn" style={{color: '#000000', 'padding-left': '5px', 'padding-top': '5px'}}>
+                                                <LinkedIn fontSize="small"/>
+                                            </a>
+                                        </Grid>
                                     </Grid>
                                     <Grid item style={{'padding-top': '10px'}}>
                                         <Typography variant="body2">
                                         Pankaj has over 25 years of Investment Banking experience at ENAM / Axis Capital. He led several veticals such as Retail, Real Estate, Textiles and Commodities, and relationships for several large business houses and executed a host of marquee transactions across M&A, PE and Capital markets. He also headed Strategic Partnerships for Axis Bank as it built out its digital strategy. He spearheaded several IPOs, M&A and PE transactions for various sectors, including Materials, Textile, Retail, and Real Estate. He led most of the equity raising and strategic initiatives for major retail houses in India, including Arvind, Future Group, Landmark Group, and Rahejas. He led major strategic initiatives by Grasim and ABNL between 2000 and 2014, including their acquisition of Ultratech Cement.
                                         </Typography>
-                                    </Grid>
-                                    <Grid item style={{'padding-top': '5px'}}>
-                                        <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
-                                            <LinkedIn fontSize="small"/>
-                                        </a>
                                     </Grid>
                                 </Grid>
                             </Hidden>
@@ -278,20 +270,23 @@ export default function Expertise() {
                     <Fade in={openSS}>
                     <div style={{backgroundColor: 'white', border: '3px solid #f8b04b', boxShadow: 'shadows[5]', width: '60vw', 'max-height': '75vh', 'overflow-y': 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', outline: 'none'}}>
                         <Grid container style={{'padding': '10px'}}>
-                            <Grid item xs={5}>
-                                <img id="image-modal"src={saurabhs} alt="Saurabh Singhi" style={{width: '90%', height: 'auto'}}></img>
-                            </Grid>
+                            
                             <Hidden mdUp>
-                                <Grid item xs={6}>
-                                    <Grid item>
-                                        <Typography variant="h6" style={styleHeadline}>
-                                        Saurabh Singhi
-                                        </Typography>
-                                    </Grid>
-                                    <Grid item>
-                                        <Typography variant="subtitle1">
-                                        Senior Advisor
-                                        </Typography>
+                                <Grid item xs={12} direction="column">
+                                    <Grid container spacing={0} direction="row">
+                                        <Grid item width="90%" spacing={0} direction="column">
+                                            <Typography variant="h6" style={styleHeadline}>
+                                            Saurabh Singhi
+                                            </Typography>
+                                            <Typography variant="subtitle1">
+                                            
+                                            </Typography>
+                                        </Grid>
+                                        <Grid item width="10%" style={{'padding-top': '5px', 'padding-left': '5px'}}>
+                                            <a href="https://www.linkedin.com/in/saurabh-singhi-ba42b111/" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
+                                                <LinkedIn fontSize="small"/>
+                                            </a>
+                                        </Grid>
                                     </Grid>
                                 </Grid>
                                 <Grid container xs={12} direction="column">
@@ -300,35 +295,33 @@ export default function Expertise() {
                                         Saurabh has over 13 years of experience in financial markets across verticals like fund management, asset reconstruction, investment banking, and corporate banking. He has previously worked as an Investment Banker at Axis Capital (Mumbai) and Enam Securities (Mumbai). Saurabh is an MBA from ISB, Hyderabad and has a Degree in Commerce from Mumbai University. He is also a Chartered Accountant. Saurabh led the team for the acquisition/ merger of Henkel India with Jyothy Laboratories, while also helping Jyothy raise equity ahead of the deal. Additionally, he led USD 200mn overseas funding for Tata Communication as well as the consortium for raising USD 460mn for a subsidiary of Tata Power.
                                         </Typography>
                                     </Grid>
-                                    <Grid item style={{'padding-top': '5px'}}>
-                                        <a href="https://www.linkedin.com/in/saurabh-singhi-ba42b111/" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
-                                            <LinkedIn fontSize="small"/>
-                                        </a>
-                                    </Grid>
                                 </Grid>
                             </Hidden>
 
                             <Hidden smDown>
+                                <Grid item xs={5}>
+                                    <img id="image-modal"src={saurabhs} alt="Saurabh Singhi" style={{width: '90%', height: 'auto'}}></img>
+                                </Grid>
                                 <Grid container md={7} direction="column">
-                                    <Grid item>
-                                        <Typography variant="h6" style={styleHeadline}>
-                                        Saurabh Singhi
-                                        </Typography>
-                                    </Grid>
-                                    <Grid item>
-                                        <Typography variant="subtitle1">
-                                        Senior Advisor
-                                        </Typography>
+                                    <Grid container spacing={0} direction="row">
+                                        <Grid item width="90%" spacing={0} direction="column">
+                                            <Typography variant="h6" style={styleHeadline}>
+                                            Saurabh Singhi
+                                            </Typography>
+                                            <Typography variant="subtitle1">
+                                            
+                                            </Typography>
+                                        </Grid>
+                                        <Grid item width="10%" style={{'padding-top': '5px', 'padding-left': '5px'}}>
+                                            <a href="https://www.linkedin.com/in/saurabh-singhi-ba42b111/" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
+                                                <LinkedIn fontSize="small"/>
+                                            </a>
+                                        </Grid>
                                     </Grid>
                                     <Grid item style={{'padding-top': '10px'}}>
                                         <Typography variant="body2">
                                         Saurabh has over 13 years of experience in financial markets across verticals like fund management, asset reconstruction, investment banking, and corporate banking. He has previously worked as an Investment Banker at Axis Capital (Mumbai) and Enam Securities (Mumbai). Saurabh is an MBA from ISB, Hyderabad and has a Degree in Commerce from Mumbai University. He is also a Chartered Accountant. Saurabh led the team for the acquisition/ merger of Henkel India with Jyothy Laboratories, while also helping Jyothy raise equity ahead of the deal. Additionally, he led USD 200mn overseas funding for Tata Communication as well as the consortium for raising USD 460mn for a subsidiary of Tata Power.
                                         </Typography>
-                                    </Grid>
-                                    <Grid item style={{'padding-top': '5px'}}>
-                                        <a href="https://www.linkedin.com/in/saurabh-singhi-ba42b111/" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
-                                            <LinkedIn fontSize="small"/>
-                                        </a>
                                     </Grid>
                                 </Grid>
                             </Hidden>
@@ -354,20 +347,23 @@ export default function Expertise() {
                     <Fade in={openSB}>
                     <div style={{backgroundColor: 'white', border: '3px solid #f8b04b', boxShadow: 'shadows[5]', width: '60vw', 'max-height': '75vh', 'overflow-y': 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', outline: 'none'}}>
                         <Grid container style={{'padding': '10px'}}>
-                            <Grid item xs={5}>
-                                <img id="image-modal"src={sonalb} alt="Sonal Biyani" style={{width: '90%', height: 'auto'}}></img>
-                            </Grid>
+                            
                             <Hidden mdUp>
-                                <Grid item xs={6}>
-                                    <Grid item>
-                                        <Typography variant="h6" style={styleHeadline}>
-                                        Sonal Biyani
-                                        </Typography>
-                                    </Grid>
-                                    <Grid item>
-                                        <Typography variant="subtitle1">
-                                        
-                                        </Typography>
+                                <Grid item xs={12} direction="column">
+                                    <Grid container spacing={0} direction="row">
+                                        <Grid item width="90%" spacing={0} direction="column">
+                                            <Typography variant="h6" style={styleHeadline}>
+                                            Sonal Biyani
+                                            </Typography>
+                                            <Typography variant="subtitle1">
+                                            
+                                            </Typography>
+                                        </Grid>
+                                        <Grid item width="10%" style={{'padding-top': '5px', 'padding-left': '5px'}}>
+                                            <a href="https://www.linkedin.com/in/sonalbiyani/" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
+                                                <LinkedIn fontSize="small"/>
+                                            </a>
+                                        </Grid>
                                     </Grid>
                                 </Grid>
                                 <Grid container xs={12} direction="column">
@@ -376,35 +372,33 @@ export default function Expertise() {
                                         Sonal has over 13 years of experience in capital markets, fund raising (IPO, PE) and Mergers & Acquisitions. She has previously worked as an Investment Banker at Axis Capital (Mumbai), Enam Securities (Mumbai), and Lehman Brothers (Mumbai). Sonal is an MBA from IIFT, Delhi and has a Degree in Engineering from Jodhpur University. She is also a CFA (US) charter holder.
                                         </Typography>
                                     </Grid>
-                                    <Grid item style={{'padding-top': '5px'}}>
-                                        <a href="https://www.linkedin.com/in/sonalbiyani/" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
-                                            <LinkedIn fontSize="small"/>
-                                        </a>
-                                    </Grid>
                                 </Grid>
                             </Hidden>
 
                             <Hidden smDown>
+                                <Grid item xs={5}>
+                                    <img id="image-modal"src={sonalb} alt="Sonal Biyani" style={{width: '90%', height: 'auto'}}></img>
+                                </Grid>
                                 <Grid container md={7} direction="column">
-                                    <Grid item>
-                                        <Typography variant="h6" style={styleHeadline}>
-                                        Sonal Biyani
-                                        </Typography>
-                                    </Grid>
-                                    <Grid item>
-                                        <Typography variant="subtitle1">
-                                        
-                                        </Typography>
+                                    <Grid container spacing={0} direction="row">
+                                        <Grid item width="90%" spacing={0} direction="column">
+                                            <Typography variant="h6" style={styleHeadline}>
+                                            Sonal Biyani
+                                            </Typography>
+                                            <Typography variant="subtitle1">
+                                            
+                                            </Typography>
+                                        </Grid>
+                                        <Grid item width="10%" style={{'padding-top': '5px', 'padding-left': '5px'}}>
+                                            <a href="https://www.linkedin.com/in/sonalbiyani/" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
+                                                <LinkedIn fontSize="small"/>
+                                            </a>
+                                        </Grid>
                                     </Grid>
                                     <Grid item style={{'padding-top': '10px'}}>
                                         <Typography variant="body2">
                                         Sonal has over 13 years of experience in capital markets, fund raising (IPO, PE) and Mergers & Acquisitions. She has previously worked as an Investment Banker at Axis Capital (Mumbai), Enam Securities (Mumbai), and Lehman Brothers (Mumbai). Sonal is an MBA from IIFT, Delhi and has a Degree in Engineering from Jodhpur University. She is also a CFA (US) charter holder.
                                         </Typography>
-                                    </Grid>
-                                    <Grid item style={{'padding-top': '5px'}}>
-                                        <a href="https://www.linkedin.com/in/sonalbiyani/" target="_blank" title="LinkedIn" style={{color: '#000000'}}>
-                                            <LinkedIn fontSize="small"/>
-                                        </a>
                                     </Grid>
                                 </Grid>
                             </Hidden>

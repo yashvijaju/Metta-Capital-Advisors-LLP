@@ -3,7 +3,7 @@ import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 
 
 const styleMap = {
-    width: '98.75vw',
+    width: '100%',
     height: '70vh',
   };
 

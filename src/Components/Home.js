@@ -10,6 +10,7 @@ import withWidth from '@material-ui/core/withWidth';
 
 
 const styleItem = {display: 'flex', 'flexDirection': 'column', padding: '2vw'}
+const styleItemwCursor = {'padding-left': '5vw', 'padding-top': '5vh', 'cursor': 'pointer'}
 const styleHeadline = {color:'#f8b04b'}
 
 const styleMap = {width: '100vw', height: '30vh'};
@@ -23,7 +24,7 @@ function App() {
           <img src={Skyline} alt="Worli Sea Link" style={{'object-fit': 'fill', 'max-height': '90vh', 'width': '100vw'}}/>
         </div>
         <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '5vh', 'padding-bottom': '0vh'}}>
-            <Grid item xs={10} sm={3} direction="column" style={styleItem} >
+            <Grid item xs={10} sm={3} direction="column" style={styleItemwCursor} >
                 <NavLink to="/about-us" style={{textDecoration: 'none'}}>
                     <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
                     About Us
@@ -33,7 +34,7 @@ function App() {
                     </Typography>
                 </NavLink>
             </Grid>
-            <Grid item xs={10}  sm={3} direction="column" style={styleItem}>
+            <Grid item xs={10}  sm={3} direction="column" style={styleItemwCursor}>
                 <NavLink to="/expertise" style={{textDecoration: 'none'}}>
                     <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
                     Our Expertise
@@ -43,7 +44,7 @@ function App() {
                     </Typography>
                 </NavLink>
             </Grid>
-            <Grid item xs={10} sm={3} direction="column" style={styleItem}>
+            <Grid item xs={10} sm={3} direction="column" style={styleItemwCursor}>
                 <NavLink to="/team" style={{textDecoration: 'none'}}>
                     <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
                     Our Team

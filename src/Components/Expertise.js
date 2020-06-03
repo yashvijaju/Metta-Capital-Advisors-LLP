@@ -6,7 +6,7 @@ import Skyline from './Media/Worli.jpg'
 import Footer from './Footer';
 
 const styleItem = {display: 'flex', 'padding-left': '5vw'}
-const styleHeadline = {color:'#f8b04b', border: '2px solid #f8b04b', padding: '2vw'}
+const styleHeadline = {color:'#f8b04b', border: '2px solid #f8b04b', padding: '2vw', cursor: 'pointer'}
 
 export default function Expertise() {
     const handleClickMA = () => {
@@ -53,7 +53,7 @@ export default function Expertise() {
                 </div>
                 <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '15vh', 'padding-bottom': '5vh'}}>
                     <Grid item xs={10} sm={3} direction="column" style={styleItem}>
-                            <Typography gutterBottom variant="subtitle1" style={styleHeadline} onMouseOver={handleClickMA}>
+                            <Typography gutterBottom variant="subtitle1" style={styleHeadline} onClick={handleClickMA}>
                             Mergers & Acquisitions
                             </Typography>
                             <Typography variant="body2" gutterBottom id="MA" style={{display:'none'}}>
@@ -63,7 +63,7 @@ export default function Expertise() {
                             </Typography>
                     </Grid>
                     <Grid item xs={10}  sm={3} direction="column" style={styleItem}>
-                            <Typography gutterBottom variant="subtitle1" style={styleHeadline} onMouseOver={handleClickCR}>
+                            <Typography gutterBottom variant="subtitle1" style={styleHeadline} onClick={handleClickCR}>
                             Capital Raise
                             </Typography>
                             <Typography variant="body2" gutterBottom id="CR" style={{display:'none'}}>
@@ -71,7 +71,7 @@ export default function Expertise() {
                             </Typography>
                     </Grid>
                     <Grid item xs={10} sm={3} direction="column" style={styleItem}>
-                            <Typography gutterBottom variant="subtitle1" style={styleHeadline} onMouseOver={handleClickSA}>
+                            <Typography gutterBottom variant="subtitle1" style={styleHeadline} onClick={handleClickSA}>
                             Strategic Advisory
                             </Typography>
                             <Typography variant="body2" gutterBottom id="SA" style={{display:'none'}}> 
