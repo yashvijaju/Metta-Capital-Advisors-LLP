@@ -1,31 +1,48 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import NavBar from './NavBar';
-import Typography from '@material-ui/core/Typography'
-import Skyline from './Media/Worli.jpg'
+import {Typography, Hidden} from '@material-ui/core'
+import Skyline from './Media/bg2.png'
 import GoogleApiWrapperr from './Maps'
 import Footer from './Footer';
+import './Scroll.css';
+import bg3 from './Media/bg3.png';
+import bg2 from './Media/bg2.png';
 
 
+const font = 'Roboto';
+const grey = '#808080';
 const styleMap = {width: '100vw', height: '70vh', 'line-height': '0', float: 'left'};
-
-  const styleItem = {display: 'flex', 'flexDirection': 'column', 'justifyContent': 'center'}
-  const styleHeadline = {color:'#f8b04b'}
+const styleItem = {display: 'flex', 'flexDirection': 'column', 'justifyContent': 'center'}
+const styleHeadline = {color:'#f8b04b', fontFamily: font}
+  
 
 export default function Contact() {
     return(
         <div>
-            <div style={{'min-height': '95vh', 'padding-bottom': '5vh'}}>
+            <div style={{'min-height': '90vh', 'padding-bottom': '5vh'}}>
                 <NavBar></NavBar>
-                <div class="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
-                    <img src={Skyline} alt="Worli Sea Link" style={{'object-fit': 'fill', 'max-height': '50vh', 'width': '100vw', opacity: '0.7'}}/>
-                </div>
-                <div class="row" style={{position: 'relative', 'margin-top': '-15vh', 'padding-left': '12vw'}}>
-                    <Typography variant="h4" style={{color: 'white'}}>
-                        Contact
-                    </Typography>
-                </div>
-                <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '15vh'}}>
+                <Hidden xsDown>
+                    <div class="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
+                        <img src={bg2} alt="Worli Sea Link" style={{'object-fit': 'fill', 'max-height': '50vh', 'width': '100vw', opacity: '0.9'}}/>
+                    </div>
+                    <div class="row" style={{position: 'relative', 'margin-top': '-10vh', 'padding-left': '12vw'}}>
+                        <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
+                            Contact
+                        </Typography>
+                    </div>
+                </Hidden>
+                <Hidden smUp>
+                    <div class="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
+                        <img src={bg3} alt="Worli Sea Link" style={{'object-fit': 'fill', 'max-height': '50vh', 'width': '100vw', opacity: '0.9'}}/>
+                    </div>
+                    <div class="row" style={{position: 'relative', 'margin-top': '-10vh', 'padding-left': '12vw'}}>
+                        <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
+                            Contact
+                        </Typography>
+                    </div>
+                </Hidden>
+                <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '10vh'}}>
                     <Grid item xs={12} style={styleMap}>
                         <GoogleApiWrapperr/>
                     </Grid>
@@ -35,7 +52,7 @@ export default function Contact() {
                                 <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
                                 Address
                                 </Typography>
-                                <Typography variant="body2" gutterBottom>
+                                <Typography variant="body2" gutterBottom style={{color: grey, fontFamily: font}}>
                                 Metta Capital Advisors LLP <br/>
                                 803, Symphony, <br/>
                                 Nehru Rd, Vile Parle East, <br/>
@@ -47,17 +64,17 @@ export default function Contact() {
                                 <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
                                 Email
                                 </Typography>
-                                <Typography variant="body2" gutterBottom>
-                                mettacapital@gmail.com
+                                <Typography variant="body2" gutterBottom style={{color: grey, fontFamily: font}}>
+                                contact@mettacapital.in
                                 </Typography>
                         </Grid>
                         <Grid item xs={1} sm={0}></Grid>
                         <Grid item xs={10} sm={2} direction="column">
                                 <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
-                                Phone
+                                Tel
                                 </Typography>
-                                <Typography variant="body2" gutterBottom>
-                                +91 8888 8888
+                                <Typography variant="body2" gutterBottom style={{color: grey, fontFamily: font}}>
+                                +91 22 2611-9900
                                 </Typography>
                         </Grid>
                         <Grid item xs={1} sm={1}></Grid>

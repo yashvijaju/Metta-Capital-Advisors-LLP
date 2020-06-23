@@ -7,10 +7,12 @@ import Grid from '@material-ui/core/Grid'
 import { NavLink } from 'react-router-dom';
 import Hidden from '@material-ui/core/Hidden';
 
+const grey = '#808080';
+const font = 'Roboto';
 const styleItem = {display: 'flex', 'flexDirection': 'column', 'justifyContent': 'center'}
-const styleLink = {fontSize: '1.3vw', textDecoration: 'none', color: '#000000', textAlign: 'center'}
-const styleLinkSm = {fontSize: '2.5vw', textDecoration: 'none', color: '#000000', textAlign: 'center'}
-const activeLink = {color: "#F8B04B", fontWeight: 'bold'}
+const styleLink = {fontSize: '1.3vw', textDecoration: 'none', color: grey, textAlign: 'center', fontFamily: font}
+const styleLinkSm = {fontSize: '2.5vw', textDecoration: 'none', color: grey, textAlign: 'center', fontFamily: font}
+const activeLink = {color: "#F8B04B", fontWeight: 'bolder'}
 
 export default function NavBar() {
     let style = {

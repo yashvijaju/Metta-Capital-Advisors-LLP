@@ -1,12 +1,19 @@
 import React, {useState} from 'react'
 import Grid from '@material-ui/core/Grid'
 import NavBar from './NavBar';
-import Typography from '@material-ui/core/Typography'
-import Skyline from './Media/Worli.jpg'
+import {Typography, Hidden} from '@material-ui/core'
+import Skyline from './Media/bg2.png'
 import Footer from './Footer';
+import './Scroll.css';
+import bg3 from './Media/bg3.png';
+import bg2 from './Media/bg2.png';
 
-const styleItem = {display: 'flex', 'padding-left': '5vw'}
-const styleHeadline = {color:'#f8b04b', border: '2px solid #f8b04b', padding: '2vw', cursor: 'pointer'}
+const font = 'Helvetica Neue';
+const grey = '#808080';
+
+const styleItem = {display: 'flex', 'padding-left': '5vw', 'padding-top': '2vh'}
+const styleHeadline = {color:'#f8b04b', border: '2px solid #f8b04b', padding: '2vw', cursor: 'pointer', fontFamily: font}
+
 
 export default function Expertise() {
     const handleClickMA = () => {
@@ -41,41 +48,61 @@ export default function Expertise() {
 
     return(
         <div>
-            <div style={{'min-height': '95vh', 'padding-bottom': '5vh'}}>
+            <div style={{'min-height': '90vh', 'padding-bottom': '5vh'}}>
                 <NavBar></NavBar>
-                <div class="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
-                    <img src={Skyline} alt="Worli Sea Link" style={{'object-fit': 'fill', 'max-height': '50vh', 'width': '100vw', opacity: '0.7'}}/>
-                </div>
-                <div class="row" style={{position: 'relative', 'margin-top': '-15vh', 'padding-left': '12vw'}}>
-                    <Typography variant="h4" style={{color: 'white'}}>
-                        Expertise
-                    </Typography>
-                </div>
-                <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '15vh', 'padding-bottom': '5vh'}}>
+                <Hidden xsDown>
+                    <div class="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
+                        <img src={bg2} alt="Worli Sea Link" style={{'object-fit': 'fill', 'max-height': '50vh', 'width': '100vw', opacity: '0.9'}}/>
+                    </div>
+                    <div class="row" style={{position: 'relative', 'margin-top': '-10vh', 'padding-left': '12vw'}}>
+                        <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
+                            Expertise
+                        </Typography>
+                    </div>
+                </Hidden>
+                <Hidden smUp>
+                    <div class="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
+                        <img src={bg3} alt="Worli Sea Link" style={{'object-fit': 'fill', 'max-height': '50vh', 'width': '100vw', opacity: '0.9'}}/>
+                    </div>
+                    <div class="row" style={{position: 'relative', 'margin-top': '-10vh', 'padding-left': '12vw'}}>
+                        <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
+                            Expertise
+                        </Typography>
+                    </div>
+                </Hidden>
+                <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '8vh'}}>
                     <Grid item xs={10} sm={3} direction="column" style={styleItem}>
                             <Typography gutterBottom variant="subtitle1" style={styleHeadline} onClick={handleClickMA}>
-                            Mergers & Acquisitions
+                            M&A Advisory
                             </Typography>
-                            <Typography variant="body2" gutterBottom id="MA" style={{display:'none'}}>
-                            We provide unparalleled buy-side and sell-side advisory on corporate mergers, acquisitions and divestitures as well as equity financing to mid-market sized to large corporates.
-                            In an M&A transaction, it is crucial to comprehensively assess the deal value. Whether it be target search and short listing, term sheet or share purchase agreement negotiation, managing regulatory requirements or due diligence, team Metta is technically versed to deal with the most complex of transactions.
-                            Our focus is to enable our clients achieve sustainable growth and create long-term value by leveraging the Deep Domain Expertise, Excellence in execution and Industry relationships.
+                            <Typography variant="body2" gutterBottom id="MA" style={{display:'none', color: grey, fontFamily: font}}>
+                            We provide advisory services on mergers, acquisitions, divestures and strategic partnerships to corporates across the growth spectrum. <br/> <br/> We offer both, buy and sell side, advisory services driven by our understanding of businesses and deep insights on strategic drivers for such transactions. Our teams combine strategic advice with our understanding of regulations, structuring  and smart execution to help our clients across the entire transaction. This includes business and strategic fit, readiness, funding, structuring, regulatory requirements, due-diligence and documentation. <br/> <br/>We prioritise long-term interest of the client over the drive for a transaction. This has allowed our clients to repose their confidence in us to allow us to represent both, the buyer and seller, in more than one transaction. <br/> <br/>
+                            We have, in our short history, successfully delivered marquee transactions with both domestic and international counterparts to our clients. 
+
                             </Typography>
                     </Grid>
                     <Grid item xs={10}  sm={3} direction="column" style={styleItem}>
                             <Typography gutterBottom variant="subtitle1" style={styleHeadline} onClick={handleClickCR}>
-                            Capital Raise
+                            Strategic Advisory
                             </Typography>
-                            <Typography variant="body2" gutterBottom id="CR" style={{display:'none'}}>
-                            We provide a cluster of services from developing the effective strategy and efficient infrastructure to implementing robust policies and ensuring high-level corporate governance. Often embedded into client management teams, Metta Capital participates in discussions of business strategy, financing, governance, strategic options and other board and shareholder considerations. We support, stimulate, and challenge our client’s point of view and enhance the strategic decision-making process. Using sophisticated financial modelling tools, strategic planning analysis, business valuation techniques, and financial capacity analysis, we develop and implement initiatives to fulfil strategic and operational objectives.
+                            <Typography variant="body2" gutterBottom id="CR" style={{display:'none', color: grey, fontFamily: font}}>
+                            Our clients see us as partners in their long term growth and strategy. <br/><br/> We provide a range of services across the lifecycle to our clients, which aligns with their vision and growth trajectory. Often embedded into client management teams, Metta Capital participates in discussions on strategy, financing, strategic options and other important initiatives. <br/> <br/> 
+                            We are seen as bouncing boards, and support, stimulate and challenge our client’s point of view and support their strategic decision-making process. <br/><br/>
+                            Many of our transactions are thus natural outcomes of our engagement with our clients. 
+
                             </Typography>
                     </Grid>
                     <Grid item xs={10} sm={3} direction="column" style={styleItem}>
                             <Typography gutterBottom variant="subtitle1" style={styleHeadline} onClick={handleClickSA}>
-                            Strategic Advisory
+                            Fund Raising
                             </Typography>
-                            <Typography variant="body2" gutterBottom id="SA" style={{display:'none'}}> 
-                            Metta Capital has sectoral expertise with established credentials in Retail & Consumer sector and advises companies across all sectors in arranging private capital through their growth stages. We provide equity and other financing advisory to emerging mid-market businesses. We create compelling marketing collaterals; we develop comprehensive investor lists; we work creatively and tirelessly to initiate, negotiate and close financing transactions.
+                            <Typography variant="body2" gutterBottom id="SA" style={{display:'none', color: grey, fontFamily: font}}> 
+                            We advise companies, across sectors, in raising capital across their growth cycle. <br/><br/>
+                            Our network with global and domestic investors and deep insights into business and capital markets allows us to find the right capital and right partner for our clients. We work with our client across the transaction, right from evaluating the capital needs, to identifying the target investors, creating deal collaterals, negotiations, due diligence and documentation. <br/><br/>
+                            We have deep relationships with leading global and domestic private equity funds. We work closely with them on some of their portfolio companies and also help them evaluate investment opportunities. Our understanding of businesses and the capital markets, deal drivers and valuations, allow us to add value as both, advisors to the investor as well as the investee. <br/> <br/> 
+                            
+                            We have deep sectoral expertise in fashion, retail & consumer sector and have emerged as the go to investment bank for companies seeking capital in the sector. 
+
                             </Typography>
                     </Grid>
                 </Grid>
