@@ -29,7 +29,7 @@ function App() {
         </div>
         <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '2vh'}}>
             <Grid item xs={10} sm={3} style={styleItem}>
-                <NavLink to="/expertise" style={{textDecoration: 'none', cursor: 'pointer'}}>
+                <NavLink to="/mergers-acquisitions" style={{textDecoration: 'none', cursor: 'pointer'}}>
                     <Grid container direction="row">
                       <Grid item xs={2} sm={3} md={2}>
                         <Typography gutterBottom variant="h5" style={styleHeadline}>

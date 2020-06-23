@@ -7,13 +7,14 @@ import Grid from '@material-ui/core/Grid'
 import { NavLink } from 'react-router-dom';
 import useWindowScrollPosition from '@rehooks/window-scroll-position'
 import Hidden from '@material-ui/core/Hidden';
+import { Menu, MenuItem } from '@material-ui/core';
 
 const grey = '#808080';
 const font = 'Roboto';
 const styleItem = {display: 'flex', 'flexDirection': 'column', 'justifyContent': 'center'}
 const styleLink = {fontSize: '1.3vw', textDecoration: 'none', color: grey, textAlign: 'center', fontFamily: font}
 const styleLinkSm = {fontSize: '2.5vw', textDecoration: 'none', color: grey, textAlign: 'center', fontFamily: font}
-const activeLink = {color: "#F8B04B", fontWeight: 'bolder'}
+const activeLink = {fontSize: '1.3vw', color: "#F8B04B", fontWeight: 'bolder',textAlign: 'center', fontFamily: font}
 
 export default function NavBarHome() {
     const [change, setChange] = useState(false);
@@ -51,6 +52,22 @@ export default function NavBarHome() {
         top: 0
       };
 
+    const [customStyle, setCustomStyle] = React.useState(styleLink);
+
+    const [anchorEl, setAnchorEl] = React.useState(null);
+
+    function handleClick(event) {
+        setCustomStyle(activeLink);
+        setAnchorEl(event.currentTarget);
+    };
+
+    function handleClose(props) {
+        if (props === "selected") {
+            setCustomStyle(activeLink);
+        }
+        setAnchorEl(null);
+    };
+
 
     return(
         <div class="container">
@@ -75,9 +92,37 @@ export default function NavBarHome() {
                                     </NavLink>
                                 </Grid>
                                 <Grid item xs={1} style={styleItem}>
-                                    <NavLink to="/expertise" style={styleLink} activeStyle={activeLink}>
-                                        <p>Expertise</p>
-                                    </NavLink>
+                                    <div style={{cursor: 'pointer'}} onClick={(e)=>handleClick(e)} aria-controls="simple-menu" aria-haspopup="true">
+                                        <p style={customStyle}>Expertise</p>
+                                    </div>
+                                    <Menu
+                                        id="simple-menu"
+                                        anchorEl={anchorEl}
+                                        keepMounted
+                                        open={Boolean(anchorEl)}
+                                        onClose={handleClose}
+                                        style={{color: '#F9DDB7'}}
+                                    >
+                                        
+                                        <MenuItem onClick={()=>handleClose("selected")}>
+                                            <NavLink to="/mergers-acquisitions" style={styleLink} activeStyle={activeLink}>
+                                                M&A Advisory
+                                            </NavLink>
+                                        </MenuItem>
+
+                                        <MenuItem onClick={()=>handleClose("selected")}>
+                                            <NavLink to="/strategic-advisory" style={styleLink} activeStyle={activeLink}>
+                                                Strategic Advisory
+                                            </NavLink>
+                                        </MenuItem>
+
+                                        <MenuItem onClick={()=>handleClose("selected")}>
+                                            <NavLink to="/fund-raise" style={styleLink} activeStyle={activeLink}>
+                                                Fund Raising
+                                            </NavLink>
+                                        </MenuItem>
+                                       
+                                    </Menu>
                                 </Grid>
                                 <Grid item xs={1} style={styleItem}>
                                     <NavLink to="/team" style={styleLink} activeStyle={activeLink}>

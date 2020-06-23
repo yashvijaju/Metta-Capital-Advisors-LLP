@@ -32,7 +32,7 @@ export default function Expertise() {
                     </div>
                     <div class="row" style={{position: 'relative', 'margin-top': '-10vh', 'padding-left': '12vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
-                            M&A Advisory
+                            Strategic Advisory
                         </Typography>
                     </div>
                 </Hidden>
@@ -42,7 +42,7 @@ export default function Expertise() {
                     </div>
                     <div class="row" style={{position: 'relative', 'margin-top': '-10vh', 'padding-left': '12vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
-                            M&A Advisory
+                            Strategic Advisory
                         </Typography>
                     </div>
                 </Hidden>
@@ -51,13 +51,13 @@ export default function Expertise() {
                 <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '8vh', 'padding-left': '12vw', 'padding-right': '3vw'}}>
                     <Grid item xs={10} sm={6} style={styleItem}>
                             <Typography variant="body1" gutterBottom id="MA" style={{color: grey, fontFamily: font}}>
-                            <span style={{fontWeight:'bold'}}>We provide advisory services on mergers, acquisitions, divestures and strategic partnerships to corporates across the growth spectrum.</span>
+                            <span style={{fontWeight:'bold'}}>We provide a range of services across the lifecycle to our clients, which aligns with their vision and growth trajectory. Often embedded into client management teams, Metta Capital participates in discussions on strategy, financing, strategic options and other important initiatives.</span>
                             <br/> <br/> 
-                            We offer both, buy and sell side, advisory services driven by our understanding of businesses and deep insights on strategic drivers for such transactions. Our teams combine strategic advice with our understanding of regulations, structuring  and smart execution to help our clients across the entire transaction. This includes business and strategic fit, readiness, funding, structuring, regulatory requirements, due-diligence and documentation. 
-                            <br/> <br/>
-                            We prioritise long-term interest of the client over the drive for a transaction. This has allowed our clients to repose their confidence in us to allow us to represent both, the buyer and seller, in more than one transaction. 
-                            <br/> <br/>
-                            We have, in our short history, successfully delivered marquee transactions with both domestic and international counterparts to our clients. 
+                            Our clients see us as partners in their long term growth and strategy. 
+                            <br/> <br/> 
+                            We are seen as bouncing boards, and support, stimulate and challenge our client’s point of view and support their strategic decision-making process. 
+                            <br/><br/>
+                            Many of our transactions are thus natural outcomes of our engagement with our clients. 
                             </Typography>
                     </Grid>
                     <Grid item xs={10} sm={6} style={styleItem}>

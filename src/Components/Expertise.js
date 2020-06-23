@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Grid from '@material-ui/core/Grid'
 import NavBar from './NavBar';
+import { NavLink } from 'react-router-dom';
 import {Typography, Hidden} from '@material-ui/core'
 import Skyline from './Media/bg2.png'
 import Footer from './Footer';
@@ -72,9 +73,11 @@ export default function Expertise() {
                 </Hidden>
                 <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '8vh'}}>
                     <Grid item xs={10} sm={3} direction="column" style={styleItem}>
+                            <NavLink to="/mergers-acquisitions" style={{textDecoration: 'none', cursor: 'pointer'}}>
                             <Typography gutterBottom variant="subtitle1" style={styleHeadline} onClick={handleClickMA}>
                             M&A Advisory
                             </Typography>
+                            </NavLink>
                             <Typography variant="body2" gutterBottom id="MA" style={{display:'none', color: grey, fontFamily: font}}>
                             We provide advisory services on mergers, acquisitions, divestures and strategic partnerships to corporates across the growth spectrum. <br/> <br/> We offer both, buy and sell side, advisory services driven by our understanding of businesses and deep insights on strategic drivers for such transactions. Our teams combine strategic advice with our understanding of regulations, structuring  and smart execution to help our clients across the entire transaction. This includes business and strategic fit, readiness, funding, structuring, regulatory requirements, due-diligence and documentation. <br/> <br/>We prioritise long-term interest of the client over the drive for a transaction. This has allowed our clients to repose their confidence in us to allow us to represent both, the buyer and seller, in more than one transaction. <br/> <br/>
                             We have, in our short history, successfully delivered marquee transactions with both domestic and international counterparts to our clients. 
@@ -82,20 +85,23 @@ export default function Expertise() {
                             </Typography>
                     </Grid>
                     <Grid item xs={10}  sm={3} direction="column" style={styleItem}>
+                            <NavLink to="/strategic-advisory" style={{textDecoration: 'none', cursor: 'pointer'}}>
                             <Typography gutterBottom variant="subtitle1" style={styleHeadline} onClick={handleClickCR}>
                             Strategic Advisory
                             </Typography>
+                            </NavLink>
                             <Typography variant="body2" gutterBottom id="CR" style={{display:'none', color: grey, fontFamily: font}}>
                             Our clients see us as partners in their long term growth and strategy. <br/><br/> We provide a range of services across the lifecycle to our clients, which aligns with their vision and growth trajectory. Often embedded into client management teams, Metta Capital participates in discussions on strategy, financing, strategic options and other important initiatives. <br/> <br/> 
                             We are seen as bouncing boards, and support, stimulate and challenge our client’s point of view and support their strategic decision-making process. <br/><br/>
                             Many of our transactions are thus natural outcomes of our engagement with our clients. 
-
                             </Typography>
                     </Grid>
                     <Grid item xs={10} sm={3} direction="column" style={styleItem}>
+                            <NavLink to="/fund-raise" style={{textDecoration: 'none', cursor: 'pointer'}}>
                             <Typography gutterBottom variant="subtitle1" style={styleHeadline} onClick={handleClickSA}>
                             Fund Raising
                             </Typography>
+                            </NavLink>
                             <Typography variant="body2" gutterBottom id="SA" style={{display:'none', color: grey, fontFamily: font}}> 
                             We advise companies, across sectors, in raising capital across their growth cycle. <br/><br/>
                             Our network with global and domestic investors and deep insights into business and capital markets allows us to find the right capital and right partner for our clients. We work with our client across the transaction, right from evaluating the capital needs, to identifying the target investors, creating deal collaterals, negotiations, due diligence and documentation. <br/><br/>

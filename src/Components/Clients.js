@@ -100,9 +100,9 @@ export default function Transactions() {
                     </Grid>
                     <Hidden smUp>
                         <Grid item xs={8} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                            <Grid item xs={12} style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-                                <img src={arrayImg[arrayIndex]} alt="Future Retail" width="50%"/>
-                                <img src={arrayImg2[arrayIndex]} alt="Future Retail" width="50%"/>
+                            <Grid item xs={12} style={{display: 'flex', flexDirection: 'row'}}>
+                                <img src={arrayImg[arrayIndex]} alt="Future Retail" width="45%" style={{marginRight: '3vw'}}/>
+                                <img src={arrayImg2[arrayIndex]} alt="Future Retail" width="45%"/>
                             </Grid>
                             <Grid item xs={12} style={{marginTop: '2vh'}}>
                                 <Grid container direction="column">
@@ -128,7 +128,7 @@ export default function Transactions() {
                     <Hidden mdDown>
                         <Grid item xs={8} style={{display: 'flex', flexDirection: 'row'}}>
                             <Grid item xs={5} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                                <img src={arrayImg[arrayIndex]} alt="Future Retail" width="50%"/>
+                                <img src={arrayImg[arrayIndex]} alt="Future Retail" width="50%" style={{marginBottom: '1vh'}}/>
                                 <img src={arrayImg2[arrayIndex]} alt="Future Retail" width="50%"/>
                             </Grid>
                             <Grid item xs={7}>

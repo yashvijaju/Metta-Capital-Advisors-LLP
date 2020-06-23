@@ -32,7 +32,7 @@ export default function Expertise() {
                     </div>
                     <div class="row" style={{position: 'relative', 'margin-top': '-10vh', 'padding-left': '12vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
-                            M&A Advisory
+                            Fund Raising
                         </Typography>
                     </div>
                 </Hidden>
@@ -42,7 +42,7 @@ export default function Expertise() {
                     </div>
                     <div class="row" style={{position: 'relative', 'margin-top': '-10vh', 'padding-left': '12vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
-                            M&A Advisory
+                            Fund Raising
                         </Typography>
                     </div>
                 </Hidden>
@@ -51,13 +51,15 @@ export default function Expertise() {
                 <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '8vh', 'padding-left': '12vw', 'padding-right': '3vw'}}>
                     <Grid item xs={10} sm={6} style={styleItem}>
                             <Typography variant="body1" gutterBottom id="MA" style={{color: grey, fontFamily: font}}>
-                            <span style={{fontWeight:'bold'}}>We provide advisory services on mergers, acquisitions, divestures and strategic partnerships to corporates across the growth spectrum.</span>
+                            <span style={{fontWeight:'bold'}}>We have deep sectoral expertise in fashion, retail & consumer sector and have emerged as the go-to investment bank for companies seeking capital in the sector.</span>
                             <br/> <br/> 
-                            We offer both, buy and sell side, advisory services driven by our understanding of businesses and deep insights on strategic drivers for such transactions. Our teams combine strategic advice with our understanding of regulations, structuring  and smart execution to help our clients across the entire transaction. This includes business and strategic fit, readiness, funding, structuring, regulatory requirements, due-diligence and documentation. 
-                            <br/> <br/>
-                            We prioritise long-term interest of the client over the drive for a transaction. This has allowed our clients to repose their confidence in us to allow us to represent both, the buyer and seller, in more than one transaction. 
-                            <br/> <br/>
-                            We have, in our short history, successfully delivered marquee transactions with both domestic and international counterparts to our clients. 
+                            We advise companies, across sectors, in raising capital across their growth cycle. 
+                            <br/><br/>
+                            Our network with global and domestic investors and deep insights into business and capital markets allows us to find the right capital and right partner for our clients. We work with our client across the transaction, right from evaluating the capital needs, to identifying the target investors, creating deal collaterals, negotiations, due diligence and documentation. 
+                            <br/><br/>
+                            We have deep relationships with leading global and domestic private equity funds. We work closely with them on some of their portfolio companies and also help them evaluate investment opportunities. Our understanding of businesses and the capital markets, deal drivers and valuations, allow us to add value as both, advisors to the investor as well as the investee. 
+                            <br/> <br/> 
+                            
                             </Typography>
                     </Grid>
                     <Grid item xs={10} sm={6} style={styleItem}>

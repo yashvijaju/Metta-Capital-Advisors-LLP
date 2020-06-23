@@ -9,6 +9,10 @@ import Contact from './Components/Contact';
 import Expertise from './Components/Expertise';
 import Team from './Components/Team';
 
+import MA from './Components/M&A';
+import SA from './Components/StrategicAdvisory';
+import FR from './Components/FundRaise';
+
 
 class App extends Component {
   render() {
@@ -23,6 +27,12 @@ class App extends Component {
              <Route path="/about-us" component={WhyUs}/>
              <Route path="/expertise" component={Expertise}/>
              <Route path="/team" component={Team}/>
+
+             <Route path="/mergers-acquisitions" component={MA}/>
+             <Route path="/strategic-advisory" component={SA}/>
+             <Route path="/fund-raise" component={FR}/>
+             
+
             <Route component={Error}/>
            </Switch>
            
