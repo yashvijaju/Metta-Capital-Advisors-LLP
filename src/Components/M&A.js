@@ -21,6 +21,7 @@ const grey = '#808080';
 
 const styleItem = {display: 'flex', 'paddingTop': '2vh'}
 const styleHeadline = {color:'#f8b04b', border: '2px solid #f8b04b', padding: '2vw', cursor: 'pointer', fontFamily: font}
+const textStyle = {fontFamily: font, color: grey}
 
 
 export default function Expertise() {
@@ -71,8 +72,8 @@ export default function Expertise() {
                                     <img src={shopperstop} alt="Shoppers Stop" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>
-                                    <Typography variant="body2">
-                                    Sale of HyperCity to Future Retail
+                                    <Typography variant="body2" style={textStyle}>
+                                    Sale of HyperCity by Shoppers Stop to Future Retail
                                     </Typography>
                                 </Grid>
                             </Grid>
@@ -82,7 +83,7 @@ export default function Expertise() {
                                     <img src={fretail} alt="Fashion Retail" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>
-                                    <Typography variant="body2">
+                                    <Typography variant="body2" style={textStyle}>
                                     Acquisition of Foodworld Supermarkets by Future Retail
                                     </Typography>
                                 </Grid>
@@ -93,7 +94,7 @@ export default function Expertise() {
                                     <img src={fsc} alt="Future Supply Chain" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>
-                                    <Typography variant="body2">
+                                    <Typography variant="body2" style={textStyle}>
                                     Acquisition of Vulcan Express by Future Supply Chain Solutions
                                     </Typography>
                                 </Grid>

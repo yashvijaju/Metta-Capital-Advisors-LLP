@@ -62,7 +62,7 @@ export default function NavBar() {
                                 <Grid item xs={1}></Grid>
                                 <Grid item xs={2} style={styleItem}>
                                     <NavLink to="/">
-                                        <img src={logo} alt="Metta Capital Logo" style={{width: '10vw'}}></img>
+                                        <img src={logo} alt="Metta Capital Logo" style={{width: '10vw', textAlign: 'left'}}></img>
                                     </NavLink>
                                 </Grid>
                                 <Grid item xs={1}></Grid>

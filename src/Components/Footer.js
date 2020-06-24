@@ -11,10 +11,9 @@ export default function Footer() {
         <div>
             <Hidden smDown>
                 <div style={{'backgroundColor': "#F9DDB7", 'maxHeight': '10vh', 'minHeight': '3vh', height: 'auto', position: 'relative', 'bottom': '0', width: '100%', display: 'flex', flexDirection: 'column', justify: 'center', 'paddingTop': '2vh', 'paddingBottom': '1vh'}}>
-                    <Grid container direction="row" style={{color: grey, fontFamily: font}}>
-                        <Grid item xs={1}></Grid>
-                        <Grid item xs={11}>
-                            <Typography style={{fontSize: 'min(1vw,13px)'}}>
+                    <Grid container direction="row" style={{color: grey, fontFamily: font, paddingLeft: '10vw'}}>
+                        <Grid item xs={10}>
+                            <Typography variant="caption" style={{fontFamily: font}}>
                             © 2016 Metta Capital Advisors LLP. &nbsp; All rights reserved <br/>
                             +91 22 2611-9900 &nbsp;| &nbsp;contact@mettacapital.in &nbsp; | &nbsp; 
                             803 Symphony, Nehru Rd, Vile Parle East, Mumbai - 400057
@@ -29,7 +28,7 @@ export default function Footer() {
                     <Grid container direction="row" style={{color: grey, fontFamily: font}}>
                         <Grid item xs={1}></Grid>
                         <Grid item xs={11}>
-                            <Typography style={{fontSize: 'min(1.4vw,17px)'}}>
+                            <Typography variant="caption" style={{fontFamily: font}}>
                             © 2016 Metta Capital Advisors LLP. &nbsp; All rights reserved <br/>
                             +91 22 2611-9900&nbsp; |&nbsp; contact@mettacapital.in &nbsp; | &nbsp;
                             803 Symphony, Nehru Rd, Vile Parle East, Mumbai - 400057

@@ -18,6 +18,7 @@ const grey = '#808080';
 
 const styleItem = {display: 'flex', 'paddingTop': '2vh'}
 const styleHeadline = {color:'#f8b04b', border: '2px solid #f8b04b', padding: '2vw', cursor: 'pointer', fontFamily: font}
+const textStyle = {fontFamily: font, color: grey}
 
 
 export default function Expertise() {
@@ -70,7 +71,7 @@ export default function Expertise() {
                                     <img src={multiples} alt="Multiples" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>
-                                    <Typography variant="body2">
+                                    <Typography variant="body2"style={textStyle}>
                                     Private Equity Investment in Arvind Fashions by Multiples 
                                     </Typography>
                                 </Grid>
@@ -80,7 +81,7 @@ export default function Expertise() {
                                     <img src={fretail} alt="Future Retail" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>
-                                    <Typography variant="body2">
+                                    <Typography variant="body2"style={textStyle}>
                                     Investment in Future Coupons by Amazon
                                     </Typography>
                                 </Grid>
@@ -90,7 +91,7 @@ export default function Expertise() {
                                     <img src={nse} alt="NSE" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>
-                                    <Typography variant="body2">
+                                    <Typography variant="body2"style={textStyle}>
                                     NSE Block Deal 
                                     </Typography>
                                 </Grid>
@@ -100,7 +101,7 @@ export default function Expertise() {
                                     <img src={arvindfashion} alt="Arvind Fashion" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>
-                                    <Typography variant="body2">
+                                    <Typography variant="body2"style={textStyle}>
                                     Advisor to Rights issue
                                     </Typography>
                                 </Grid>

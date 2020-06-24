@@ -26,7 +26,7 @@ function App() {
         </div>
         <Hidden xlDown>
           <div style={{marginTop:'-75vh', paddingLeft: '10vw', paddingBottom: '50vh'}}>
-            <Typography variant="h2" style={{color:'#000000', fontFamily: font}}>
+            <Typography variant="h3" style={{color:'#000000', fontFamily: font, fontWeight:'bold'}}>
               Metta Capital Advisors LLP
             </Typography>
             <Typography variant="h6" style={{color:'#000000', fontFamily: font}}>
@@ -57,8 +57,37 @@ function App() {
           </Hidden>
         </Hidden>
         
-        <Grid container spacing={0} direction="row" justify="center" style={{paddingTop: '2vh'}}>
-            <Grid item xs={10} sm={3} style={styleItem}>
+        <Hidden smDown>
+          <Grid container spacing={0} direction="row" style={{paddingTop: '2vh', backgroundColor: '#F9DDB7', padding: '5vh 0vw 5vh 10vw'}}>
+            <Grid item xs={10}>
+              <Typography variant="h4" style={{color: 'black', fontFamily: font}}>
+                Metta Capital Advisors LLP
+              </Typography>
+            </Grid>
+            <Grid item xs={10}>
+              <Typography variant="body1" style={{color: 'black', fontFamily: font}}>
+                A boutique investment bank led by seasoned bankers
+              </Typography>
+            </Grid>
+          </Grid>
+        </Hidden>
+        <Hidden mdUp>
+          <Grid container spacing={0} direction="row" style={{paddingTop: '2vh', backgroundColor: '#F9DDB7', padding: '3vh 0vw 3vh 10vw'}}>
+            <Grid item xs={10}>
+              <Typography variant="h6" style={{color: 'black', fontFamily: font}}>
+                Metta Capital Advisors LLP
+              </Typography>
+            </Grid>
+            <Grid item xs={10}>
+              <Typography variant="body2" style={{color: 'black', fontFamily: font}}>
+                A boutique investment bank led by seasoned bankers
+              </Typography>
+            </Grid>
+          </Grid>
+        </Hidden>
+
+        <Grid container spacing={0} direction="row" style={{padding: '5vh 0vw 5vh 5vw'}}>
+            <Grid item xs={10} sm={4} style={styleItem}>
                 <NavLink to="/mergers-acquisitions" style={{textDecoration: 'none', cursor: 'pointer'}}>
                     <Grid container direction="row">
                       <Grid item xs={2} sm={3} md={2}>
@@ -74,22 +103,6 @@ function App() {
                     </Grid>
                 </NavLink>
             </Grid>
-            <Grid item xs={10} sm={3} style={styleItem}>
-                <NavLink to="/team" style={{textDecoration: 'none', cursor: 'pointer'}}>
-                    <Grid container direction="row">
-                      <Grid item xs={2} sm={3} md={2}>
-                        <Typography gutterBottom variant="h5" style={styleHeadline}>
-                        17
-                        </Typography>
-                      </Grid>
-                      <Grid item xs={10} sm={9} md={10}>
-                        <Typography variant="body2" gutterBottom style={{color: grey, fontFamily: font}}>
-                        Our Leadership Team has an average of 17 years of experience in Investment Banking.
-                        </Typography>
-                      </Grid>
-                    </Grid>
-                </NavLink>
-            </Grid>
             <Grid item xs={10} sm={3} style={styleItem} >
                 <NavLink to="/transactions" style={{textDecoration: 'none', cursor: 'pointer'}}>
                     <Grid container direction="row">
@@ -100,7 +113,23 @@ function App() {
                       </Grid>
                       <Grid item xs={10} sm={9} md={10}>
                         <Typography variant="body2" gutterBottom style={{color: grey, fontFamily: font}}>
-                        Executed 10 transactions in the last 4 years.
+                        We have executed 10 transactions in the last 4 years.
+                        </Typography>
+                      </Grid>
+                    </Grid>
+                </NavLink>
+            </Grid>
+            <Grid item xs={10} sm={4} style={styleItem}>
+                <NavLink to="/team" style={{textDecoration: 'none', cursor: 'pointer'}}>
+                    <Grid container direction="row">
+                      <Grid item xs={2} sm={3} md={2}>
+                        <Typography gutterBottom variant="h5" style={styleHeadline}>
+                        17
+                        </Typography>
+                      </Grid>
+                      <Grid item xs={10} sm={9} md={10}>
+                        <Typography variant="body2" gutterBottom style={{color: grey, fontFamily: font}}>
+                        Our Leadership Team has an average of 17 years of experience in Investment Banking.
                         </Typography>
                       </Grid>
                     </Grid>

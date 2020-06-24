@@ -18,6 +18,7 @@ const activeLinkSm = {fontSize: '2.5vw', color: "#F8B04B", fontWeight: 'bolder',
 
 export default function NavBarHome() {
     const [change, setChange] = useState(false);
+    const [colorBG, setColorBG] = useState('#99A8AF');
     const changePosition = 5;
 
     let position = useWindowScrollPosition();
@@ -25,10 +26,12 @@ export default function NavBarHome() {
 
     if (position.y > changePosition && !change) {
         setChange(true);
+        setColorBG('#F9DDB7');
     }
 
     if (position.y <= changePosition && change) {
         setChange(false);
+        setColorBG('#99A8AF');
     }
 
     let style = {
@@ -103,7 +106,7 @@ export default function NavBarHome() {
                                         elevation={0}
                                        
                                     >
-                                        <div style={{backgroundColor: '#ACB5B4', marginTop: '-1vh', paddingTop: '2vh', marginBottom: '-1.25vh'}}>
+                                        <div style={{backgroundColor:colorBG, marginTop: '-1vh', paddingTop: '2vh', marginBottom: '-1.25vh'}}>
                                             <NavLink to="/mergers-acquisitions" style={styleLink} activeStyle={activeLink}>
                                                 <MenuItem onClick={()=>handleClose("selected")}>
                                                     M&A Advisory

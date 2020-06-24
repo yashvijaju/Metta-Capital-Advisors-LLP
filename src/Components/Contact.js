@@ -45,11 +45,8 @@ export default function Contact() {
                         <GoogleApiWrapperr/>
                     </Grid>
                     <Grid item xs={12}  style={{position: 'relative', 'paddingTop': '5vh', 'marginBottom': '0vh', 'paddingBottom': '0vh'}}>
-                        <Grid container direction="row" justify="center" >
-                            <Hidden xsDown>
-                                <Grid item sm={1}></Grid>
-                            </Hidden>
-                            <Grid item xs={10} sm={2}>
+                        <Grid container direction="row" justify="center">
+                            <Grid item xs={10} sm={3}>
                                 <Grid container direction="column">
                                     <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
                                     Address
@@ -62,10 +59,7 @@ export default function Contact() {
                                     </Typography>
                                 </Grid>
                             </Grid>
-                            <Hidden smUp>
-                                <Grid item xs={1}/>
-                            </Hidden>
-                            <Grid item xs={10}  sm={2}>
+                            <Grid item xs={10}  sm={3} >
                                 <Grid container direction="column">
                                     <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
                                     Email
@@ -75,9 +69,6 @@ export default function Contact() {
                                     </Typography>
                                 </Grid>
                             </Grid>
-                            <Hidden smUp>
-                                <Grid item xs={1}/>
-                            </Hidden>
                             <Grid item xs={10} sm={2}>
                                 <Grid container direction="column">
                                     <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
@@ -88,7 +79,6 @@ export default function Contact() {
                                     </Typography>
                                 </Grid>
                             </Grid>
-                            <Grid item xs={1} sm={1}></Grid>
                         </Grid>
                     </Grid>
                 </Grid>

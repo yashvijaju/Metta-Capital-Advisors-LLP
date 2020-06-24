@@ -18,6 +18,7 @@ const grey = '#808080';
 
 const styleItem = {display: 'flex', 'paddingTop': '2vh'}
 const styleHeadline = {color:'#f8b04b', border: '2px solid #f8b04b', padding: '2vw', cursor: 'pointer', fontFamily: font}
+const textStyle = {fontFamily: font, color: grey}
 
 
 export default function Expertise() {
@@ -51,11 +52,11 @@ export default function Expertise() {
                 <Grid container spacing={0} direction="row" justify="center" style={{'paddingTop': '8vh', 'paddingLeft': '12vw', 'paddingRight': '3vw'}}>
                     <Grid item xs={10} sm={6} style={styleItem}>
                             <Typography variant="body1" gutterBottom id="MA" style={{color: grey, fontFamily: font}}>
-                            <span style={{fontWeight:'bold'}}>We provide a range of services across the lifecycle to our clients, which aligns with their vision and growth trajectory. Often embedded into client management teams, Metta Capital participates in discussions on strategy, financing, strategic options and other important initiatives.</span>
+                            <span style={{fontWeight:'bold'}}>We provide a range of services across the lifecycle to our clients, which aligns with their vision and growth trajectory. </span>
                             <br/> <br/> 
-                            Our clients see us as partners in their long term growth and strategy. 
+                            Often embedded into client management teams, Metta Capital participates in discussions on strategy, financing, strategic options and other important initiatives. 
                             <br/> <br/> 
-                            We are seen as bouncing boards, and support, stimulate and challenge our client’s point of view and support their strategic decision-making process. 
+                            We are seen as bouncing boards, and support, stimulate and challenge our client’s point of view and support their strategic decision-making process. Our clients see us as partners in their long term growth and strategy.  
                             <br/><br/>
                             Many of our transactions are thus natural outcomes of our engagement with our clients. 
                             </Typography>
@@ -67,7 +68,7 @@ export default function Expertise() {
                                     <img src={landmark} alt="Landmark Auto" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>
-                                    <Typography variant="body2">
+                                    <Typography variant="body2"style={textStyle}>
                                     Consolidation of Landmark Auto companies
                                     </Typography>
                                 </Grid>
@@ -77,7 +78,7 @@ export default function Expertise() {
                                     <img src={arvind} alt="Arvind" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>
-                                    <Typography variant="body2">
+                                    <Typography variant="body2" style={textStyle}>
                                     Demerger & Listing of Branded Apparel & Engineering Businesses
                                     </Typography>
                                 </Grid>

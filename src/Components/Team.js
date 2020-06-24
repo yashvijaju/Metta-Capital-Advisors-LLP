@@ -90,10 +90,10 @@ export default function Expertise() {
                             <Grid container spacing={0} direction="row">
                                 <Grid item width="90%">
                                     <Grid container direction="column">
-                                        <Typography variant="h6" style={styleHeadline}>
+                                        <Typography variant="subtitle1" style={styleHeadline}>
                                             Pankaj Jaju
                                         </Typography>
-                                        <Typography variant="subtitle1" style={{color: grey}}>
+                                        <Typography variant="caption" style={{color: grey}}>
                                             Founder & CEO
                                         </Typography>
                                     </Grid>
@@ -109,11 +109,11 @@ export default function Expertise() {
                             <img src={pankajjaju} alt="Pankaj Jaju" style={{width: '100%', height: 'auto'}}/>
                             <Grid item width="100%">
                                 <Grid container direction="column">
-                                    <Typography variant="h6" style={styleHeadline}>
+                                    <Typography variant="subtitle1" style={styleHeadline}>
                                         Pankaj Jaju
                                     </Typography>
                                     <Grid item style={{'paddingTop': '5px', display: 'flex', flexDirection: 'row'}}>
-                                        <Typography variant="subtitle1">
+                                        <Typography variant="caption">
                                             Founder & CEO
                                         </Typography>
                                         <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: grey, 'paddingLeft': '5px', 'paddingTop': '5px'}}>
@@ -134,10 +134,10 @@ export default function Expertise() {
                             <Grid container spacing={0} direction="row">
                                 <Grid item width="90%">
                                     <Grid container direction="column">
-                                        <Typography variant="h6" style={styleHeadline}>
+                                        <Typography variant="subtitle1" style={styleHeadline}>
                                         Saurabh Singhi
                                         </Typography>
-                                        <Typography variant="subtitle1">
+                                        <Typography variant="caption">
                                         
                                         </Typography>
                                     </Grid>
@@ -153,11 +153,11 @@ export default function Expertise() {
                             <img src={saurabhsinghi} alt="Saurabh Singhi" style={{width: '100%', height: 'auto'}}/> 
                             <Grid item width="100%">
                                 <Grid container direction="column">
-                                    <Typography variant="h6" style={styleHeadline}>
+                                    <Typography variant="subtitle1" style={styleHeadline}>
                                     Saurabh Singhi
                                     </Typography>
                                     <Grid item style={{'paddingTop': '5px', display: 'flex', flexDirection: 'row'}}>
-                                        <Typography variant="subtitle1">
+                                        <Typography variant="caption">
                                             
                                         </Typography>
                                         <a href="https://www.linkedin.com/in/saurabh-singhi-ba42b111/" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: grey, 'paddingLeft': '5px', 'paddingTop': '5px'}}>
@@ -178,10 +178,10 @@ export default function Expertise() {
                             <Grid container spacing={0} direction="row">
                                 <Grid item width="90%">
                                     <Grid container direction="column">
-                                        <Typography variant="h6" style={styleHeadline}>
+                                        <Typography variant="subtitle1" style={styleHeadline}>
                                         Sonal Biyani
                                         </Typography>
-                                        <Typography variant="subtitle1">
+                                        <Typography variant="caption">
                                         
                                         </Typography>
                                     </Grid>
@@ -197,11 +197,11 @@ export default function Expertise() {
                             <img src={sonalbiyani} alt="Sonal Biyani" style={{width: '100%', height: 'auto'}}/> 
                             <Grid item width="100%">
                                 <Grid container direction="column">
-                                    <Typography variant="h6" style={styleHeadline}>
+                                    <Typography variant="subtitle1" style={styleHeadline}>
                                     Sonal Biyani
                                     </Typography>
                                     <Grid item style={{'paddingTop': '5px', display: 'flex', flexDirection: 'row'}}>
-                                        <Typography variant="subtitle1">
+                                        <Typography variant="caption">
                                             
                                         </Typography>
                                         <a href="https://www.linkedin.com/in/sonalbiyani/" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: grey, 'paddingLeft': '5px', 'paddingTop': '5px'}}>
