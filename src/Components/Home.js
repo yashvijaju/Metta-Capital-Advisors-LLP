@@ -1,33 +1,63 @@
 import React from 'react';
 import NavBarHome from './NavBarHome';
-import Skyline from './Media/Worli.jpg';
 import bg from './Media/bg.jpg';
-import bg2 from './Media/bg2.png';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Footer from './Footer';
-import Button from '@material-ui/core/Button';
 import { NavLink } from 'react-router-dom';
 import withWidth from '@material-ui/core/withWidth';
+import Hidden from '@material-ui/core/Hidden';
 import './Scroll.css';
 
 
 const grey = '#808080';
-const font = 'Helvetica Neue';
+const font = 'Lato';
 
-const styleItem = {'padding-top': '3vw', 'padding-left': '5vw'}
+const styleItem = {'paddingTop': '3vw', 'paddingLeft': '5vw'}
 const styleHeadline = {color:'#f8b04b', fontFamily: font}
-const styleMap = {width: '100vw', height: '30vh'};
 
 function App() {
   return (
     <div>
-      <div style={{'min-height': '90vh', 'padding-bottom': '5vh'}}>
+      <div style={{'minHeight': '90vh', 'paddingBottom': '5vh'}}>
         <NavBarHome></NavBarHome>
-        <div class="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative'}}>
-          <img src={bg} alt="Worli Sea Link" style={{'object-fit': 'fill', 'max-height': '90vh', 'width': '100vw'}}/>
+        <div className="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative'}}>
+          <img src={bg} alt="Worli Sea Link" style={{objectFit: 'fill', maxHeight: '90vh', width: '100vw', zIndex: '-1'}}/>
         </div>
-        <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '2vh'}}>
+        <Hidden xlDown>
+          <div style={{marginTop:'-75vh', paddingLeft: '10vw', paddingBottom: '50vh'}}>
+            <Typography variant="h2" style={{color:'#000000', fontFamily: font}}>
+              Metta Capital Advisors LLP
+            </Typography>
+            <Typography variant="h6" style={{color:'#000000', fontFamily: font}}>
+              A boutique investment bank led by seasoned bankers.
+            </Typography>
+          </div>
+        </Hidden>
+        <Hidden xsUp>
+          <Hidden xsDown>
+            <div style={{marginTop:'-50vh', paddingLeft: '10vw', paddingBottom: '35vh'}}>
+              <Typography variant="h3" style={{color:'#000000', fontFamily: font}}>
+                Metta Capital Advisors LLP
+              </Typography>
+              <Typography variant="h6" style={{color:'#000000', fontFamily: font}}>
+                A boutique investment bank led by seasoned bankers.
+              </Typography>
+            </div>
+          </Hidden>
+          <Hidden smUp>
+            <div style={{marginTop:'-15vh', paddingLeft: '10vw', paddingBottom: '0vh'}}>
+              <Typography variant="h5" style={{color:'#ffffff', fontFamily: font}}>
+                Metta Capital Advisors LLP
+              </Typography>
+              <Typography variant="body2" style={{color:'#ffffff', fontFamily: font}}>
+                A boutique investment bank led by seasoned bankers.
+              </Typography>
+            </div>
+          </Hidden>
+        </Hidden>
+        
+        <Grid container spacing={0} direction="row" justify="center" style={{paddingTop: '2vh'}}>
             <Grid item xs={10} sm={3} style={styleItem}>
                 <NavLink to="/mergers-acquisitions" style={{textDecoration: 'none', cursor: 'pointer'}}>
                     <Grid container direction="row">

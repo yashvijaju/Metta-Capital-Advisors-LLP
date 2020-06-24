@@ -8,7 +8,7 @@ const styleMap = {
   };
 
   const styleDiv = {
-    'line-height': '0',
+    'lineHeight': '0',
     float: 'left'
   };
 

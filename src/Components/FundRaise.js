@@ -1,22 +1,22 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import NavBar from './NavBar';
 import {Typography, Hidden} from '@material-ui/core'
-import Skyline from './Media/bg2.png'
 import Footer from './Footer';
 import './Scroll.css';
 import bg3 from './Media/bg3.png';
 import bg2 from './Media/bg2.png';
 
+import arvind from './Media/arvind.png'
+import multiples from './Media/multiples.png'
+import nse from './Media/nse.png'
+import fretail from './Media/fretail.jpg'
+import arvindfashion from './Media/arvindfashion.png'
 
-import hypercity from './Media/hypercity.png'
-import amazon from './Media/amazon.jpg'
-
-
-const font = 'Helvetica Neue';
+const font = 'Lato';
 const grey = '#808080';
 
-const styleItem = {display: 'flex', 'padding-top': '2vh'}
+const styleItem = {display: 'flex', 'paddingTop': '2vh'}
 const styleHeadline = {color:'#f8b04b', border: '2px solid #f8b04b', padding: '2vw', cursor: 'pointer', fontFamily: font}
 
 
@@ -24,23 +24,23 @@ export default function Expertise() {
 
     return(
         <div>
-            <div style={{'min-height': '90vh', 'padding-bottom': '5vh'}}>
+            <div style={{'minHeight': '90vh', 'paddingBottom': '5vh'}}>
                 <NavBar></NavBar>
                 <Hidden xsDown>
-                    <div class="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
-                        <img src={bg2} alt="Worli Sea Link" style={{'object-fit': 'fill', 'max-height': '50vh', 'width': '100vw', opacity: '0.9'}}/>
+                    <div className="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
+                        <img src={bg2} alt="Worli Sea Link" style={{'objectFit': 'fill', 'maxHeight': '50vh', 'width': '100vw', opacity: '0.9'}}/>
                     </div>
-                    <div class="row" style={{position: 'relative', 'margin-top': '-10vh', 'padding-left': '12vw'}}>
+                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '12vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
                             Fund Raising
                         </Typography>
                     </div>
                 </Hidden>
                 <Hidden smUp>
-                    <div class="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
-                        <img src={bg3} alt="Worli Sea Link" style={{'object-fit': 'fill', 'max-height': '50vh', 'width': '100vw', opacity: '0.9'}}/>
+                    <div className="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
+                        <img src={bg3} alt="Worli Sea Link" style={{'objectFit': 'fill', 'maxHeight': '50vh', 'width': '100vw', opacity: '0.9'}}/>
                     </div>
-                    <div class="row" style={{position: 'relative', 'margin-top': '-10vh', 'padding-left': '12vw'}}>
+                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '12vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
                             Fund Raising
                         </Typography>
@@ -48,7 +48,7 @@ export default function Expertise() {
                 </Hidden>
 
 
-                <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '8vh', 'padding-left': '12vw', 'padding-right': '3vw'}}>
+                <Grid container spacing={0} direction="row" justify="center" style={{'paddingTop': '8vh', 'paddingLeft': '12vw', 'paddingRight': '3vw'}}>
                     <Grid item xs={10} sm={6} style={styleItem}>
                             <Typography variant="body1" gutterBottom id="MA" style={{color: grey, fontFamily: font}}>
                             <span style={{fontWeight:'bold'}}>We have deep sectoral expertise in fashion, retail & consumer sector and have emerged as the go-to investment bank for companies seeking capital in the sector.</span>
@@ -63,10 +63,21 @@ export default function Expertise() {
                             </Typography>
                     </Grid>
                     <Grid item xs={10} sm={6} style={styleItem}>
-                        <Grid container direction="column">
+                    <Grid container direction="column">
                             <Grid container direction="row" justify="center" alignItems="center" style={{marginBottom: '5vh'}}>
-                                <Grid item xs={4} style={{textAlign: 'right'}}>
-                                    <img src={amazon} style={{width:'75%', height: 'auto'}}/>
+                                <Grid item xs={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
+                                    <img src={arvind} alt="Arvind" style={{width:'75%', height: 'auto'}}/>
+                                    <img src={multiples} alt="Multiples" style={{width:'75%', height: 'auto'}}/>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <Typography variant="body2">
+                                    Private Equity Investment in Arvind Fashions by Multiples 
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+                            <Grid container direction="row" justify="center" alignItems="center" style={{marginBottom: '5vh'}}>
+                                <Grid item xs={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
+                                    <img src={fretail} alt="Future Retail" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>
                                     <Typography variant="body2">
@@ -75,22 +86,22 @@ export default function Expertise() {
                                 </Grid>
                             </Grid>
                             <Grid container direction="row" justify="center" alignItems="center" style={{marginBottom: '5vh'}}>
-                                <Grid item xs={4} style={{textAlign: 'right'}}>
-                                    <img src={amazon} style={{width:'75%', height: 'auto'}}/>
+                                <Grid item xs={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
+                                    <img src={nse} alt="NSE" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>
                                     <Typography variant="body2">
-                                    Investment in Future Coupons by Amazon
+                                    NSE Block Deal 
                                     </Typography>
                                 </Grid>
                             </Grid>
                             <Grid container direction="row" justify="center" alignItems="center" style={{marginBottom: '5vh'}}>
-                                <Grid item xs={4} style={{textAlign: 'right'}}>
-                                    <img src={amazon} style={{width:'75%', height: 'auto'}}/>
+                                <Grid item xs={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
+                                    <img src={arvindfashion} alt="Arvind Fashion" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>
                                     <Typography variant="body2">
-                                    Investment in Future Coupons by Amazon
+                                    Advisor to Rights issue
                                     </Typography>
                                 </Grid>
                             </Grid>

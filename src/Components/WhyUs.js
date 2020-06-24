@@ -2,47 +2,46 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import NavBar from './NavBar';
 import {Typography, Hidden} from '@material-ui/core'
-import Skyline from './Media/Worli.jpg'
 import bg2 from './Media/bg2.png';
 import bg3 from './Media/bg3.png';
 
 import Footer from './Footer';
 import './Scroll.css';
 
-const font = 'Helvetica Neue';
+const font = 'Lato';
 const grey = '#808080';
 
-const styleItem = {display: 'flex', 'flexDirection': 'column', 'padding-left': '5vw'}
+const styleItem = {display: 'flex', 'flexDirection': 'column', 'paddingLeft': '5vw'}
 const styleHeadline = {color:'#f8b04b', fontFamily: font, fontWeight: '700'}
 
 export default function WhyUs() {
     return(
         <div>
-            <div style={{'min-height': '90vh', 'padding-bottom': '5vh'}}>
+            <div style={{'minHeight': '90vh', 'paddingBottom': '5vh'}}>
                 <NavBar></NavBar>
                 <Hidden xsDown>
-                    <div class="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
-                        <img src={bg2} alt="Worli Sea Link" style={{'object-fit': 'fill', 'max-height': '50vh', 'width': '100vw', opacity: '0.9'}}/>
+                    <div className="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
+                        <img src={bg2} alt="Worli Sea Link" style={{'objectFit': 'fill', 'maxHeight': '50vh', 'width': '100vw', opacity: '0.9'}}/>
                     </div>
-                    <div class="row" style={{position: 'relative', 'margin-top': '-10vh', 'padding-left': '12vw'}}>
+                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '12vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
                             About Us
                         </Typography>
                     </div>
                 </Hidden>
                 <Hidden smUp>
-                    <div class="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
-                        <img src={bg3} alt="Worli Sea Link" style={{'object-fit': 'fill', 'max-height': '50vh', 'width': '100vw', opacity: '0.9'}}/>
+                    <div className="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
+                        <img src={bg3} alt="Worli Sea Link" style={{'objectFit': 'fill', 'maxHeight': '50vh', 'width': '100vw', opacity: '0.9'}}/>
                     </div>
-                    <div class="row" style={{position: 'relative', 'margin-top': '-10vh', 'padding-left': '12vw'}}>
+                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '12vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
                             About Us
                         </Typography>
                     </div>
                 </Hidden>
-                <Grid container spacing={0} justify="center" style={{'padding-top': '10vh'}}>
+                <Grid container spacing={0} justify="center" style={{'paddingTop': '10vh'}}>
                     <Grid item xs={1} sm={7}/>
-                    <Grid item xs={11} sm={3} style={{display: 'flex', 'flexDirection': 'column', 'justifyContent': 'center', 'margin-left': '2vw'}}>
+                    <Grid item xs={11} sm={3} style={{display: 'flex', 'flexDirection': 'column', 'justifyContent': 'center', 'marginLeft': '2vw'}}>
                         <Typography variant="h6" gutterBottom style={{fontFamily: font, color: grey, fontWeight: '700'}}>
                         We Are
                         </Typography>
@@ -51,8 +50,8 @@ export default function WhyUs() {
                         </Typography>
                     </Grid>
                 </Grid>
-                <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '2vh'}}>
-                    <Grid item xs={10} sm={3} direction="column" style={styleItem}>
+                <Grid container spacing={0} direction="row" justify="center" style={{'paddingTop': '2vh'}}>
+                    <Grid item xs={10} sm={3} style={styleItem}>
                             <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
                             Early Beginnings
                             </Typography>
@@ -61,7 +60,7 @@ export default function WhyUs() {
                             We also bring in invaulable expertise in a multitude of other sectors such as Auto, Consumer, Industrials and Real Estate, and offer strategic advisory services including Mergers & Acquisitions, Capital Raise, and Strategic Advisory.
                             </Typography>
                     </Grid>
-                    <Grid item xs={10}  sm={3} direction="column" style={styleItem}>
+                    <Grid item xs={10} sm={3} style={styleItem}>
                             <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
                             Trusted Advisor
                             </Typography>
@@ -70,7 +69,7 @@ export default function WhyUs() {
                             Metta is seen as a dependable and trusted advisor with a client-focused approach, providing unbiased and independent advice that focuses on our clients' long-term interests. This ideology has allowed us to create strong relationships and work closely with entrepreneurs over the years.
                             </Typography>
                     </Grid>
-                    <Grid item xs={10} sm={3} direction="column" style={styleItem}>
+                    <Grid item xs={10} sm={3} style={styleItem}>
                             <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
                             Deep Domain Expertise
                             </Typography>

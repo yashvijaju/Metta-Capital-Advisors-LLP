@@ -1,5 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
-import ReactDOM from "react-dom";
+import React from 'react';
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import logo from './Media/logo.gif'
@@ -9,16 +8,17 @@ import Hidden from '@material-ui/core/Hidden';
 import { Menu, MenuItem } from '@material-ui/core';
 
 const grey = '#808080';
-const font = 'Roboto';
+const font = 'Lato';
 const styleItem = {display: 'flex', 'flexDirection': 'column', 'justifyContent': 'center'}
 const styleLink = {fontSize: '1.3vw', textDecoration: 'none', color: grey, textAlign: 'center', fontFamily: font}
 const styleLinkSm = {fontSize: '2.5vw', textDecoration: 'none', color: grey, textAlign: 'center', fontFamily: font}
 const activeLink = {fontSize: '1.3vw', color: "#F8B04B", fontWeight: 'bolder',textAlign: 'center', fontFamily: font}
+const activeLinkSm = {fontSize: '2.5vw', color: "#F8B04B", fontWeight: 'bolder',textAlign: 'center', fontFamily: font}
 
 export default function NavBar() {
     let style = {
         backgroundColor: "#F9DDB7",
-        'max-height': '10vh',
+        'maxHeight': '10vh',
         height: 'auto',
         position: "fixed",
         right: 0,
@@ -28,7 +28,7 @@ export default function NavBar() {
 
       let styleSm = {
         backgroundColor: "#F9DDB7",
-        'max-height': '8vh',
+        'maxHeight': '8vh',
         height: 'auto',
         position: "fixed",
         right: 0,
@@ -36,26 +36,25 @@ export default function NavBar() {
         top: 0
       };
 
-    const [customStyle, setCustomStyle] = React.useState(styleLink);
+    const [customStyle, setCustomStyle] = React.useState(grey);
 
     const [anchorEl, setAnchorEl] = React.useState(null);
 
     function handleClick(event) {
-        setCustomStyle(activeLink);
         setAnchorEl(event.currentTarget);
     };
 
     function handleClose(props) {
         if (props === "selected") {
-            setCustomStyle(activeLink);
+            setCustomStyle('#F8B04B');
         }
         setAnchorEl(null);
     };
 
 
     return(
-        <div class="container">
-            <div class="row">
+        <div className="container">
+            <div className="row">
                 <Hidden xsDown>
                     <AppBar elevation={0} style={style}>
                         <Toolbar>
@@ -77,7 +76,7 @@ export default function NavBar() {
                                 </Grid>
                                 <Grid item xs={1} style={styleItem}>
                                     <div style={{cursor: 'pointer'}} onClick={(e)=>handleClick(e)} aria-controls="simple-menu" aria-haspopup="true">
-                                        <p style={customStyle}>Expertise</p>
+                                        <p id="Expertise Dropdown" style={{fontSize: '1.3vw', color:customStyle, textAlign: 'center', fontFamily: font}}>Expertise</p>
                                     </div>
                                     <Menu
                                         id="simple-menu"
@@ -85,27 +84,30 @@ export default function NavBar() {
                                         keepMounted
                                         open={Boolean(anchorEl)}
                                         onClose={handleClose}
-                                        style={{color: '#F9DDB7'}}
-                                    >
+                                        elevation={0}
                                         
-                                        <MenuItem onClick={()=>handleClose("selected")}>
+                                        transformOrigin={{
+                                            vertical: 'top',
+                                            horizontal: 'center',
+                                        }}
+                                    >
+                                        <div style={{backgroundColor: '#F9DDB7', marginTop: '-1vh', paddingTop: '2vh', marginBottom: '-1vh'}}>
                                             <NavLink to="/mergers-acquisitions" style={styleLink} activeStyle={activeLink}>
-                                                M&A Advisory
+                                                <MenuItem>
+                                                    M&A Advisory
+                                                </MenuItem>
                                             </NavLink>
-                                        </MenuItem>
-
-                                        <MenuItem onClick={()=>handleClose("selected")}>
                                             <NavLink to="/strategic-advisory" style={styleLink} activeStyle={activeLink}>
+                                                <MenuItem>
                                                 Strategic Advisory
+                                                </MenuItem>
                                             </NavLink>
-                                        </MenuItem>
-
-                                        <MenuItem onClick={()=>handleClose("selected")}>
                                             <NavLink to="/fund-raise" style={styleLink} activeStyle={activeLink}>
+                                                <MenuItem>
                                                 Fund Raising
+                                                </MenuItem>
                                             </NavLink>
-                                        </MenuItem>
-                                       
+                                        </div>
                                     </Menu>
                                 </Grid>
                                 <Grid item xs={1} style={styleItem}>
@@ -138,23 +140,59 @@ export default function NavBar() {
                                     </NavLink>
                                 </Grid>
                                 <Grid item xs={1}></Grid>
-                                <Grid container xs={8} direction="row" justify="space-around">
-                                    <NavLink to="/about-us" style={styleLinkSm} activeStyle={activeLink}>
-                                        <p>About Us</p>
-                                    </NavLink>
-                                
-                                    <NavLink to="/expertise" style={styleLinkSm} activeStyle={activeLink}>
-                                        <p>Expertise</p>
-                                    </NavLink>
-                                    <NavLink to="/team" style={styleLinkSm} activeStyle={activeLink}>
-                                        <p>Team</p>
-                                    </NavLink>
-                                    <NavLink to="/transactions" style={styleLinkSm} activeStyle={activeLink}>
-                                        <p>Transactions</p>
-                                    </NavLink>
-                                    <NavLink to="/contact" style={styleLinkSm} activeStyle={activeLink}>
-                                        <p>Contact</p>
-                                    </NavLink>
+                                <Grid item xs={8} >
+                                    <Grid container direction="row" justify="space-around">
+                                        <NavLink to="/about-us" style={styleLinkSm} activeStyle={activeLinkSm}>
+                                            <p>About Us</p>
+                                        </NavLink>
+                                    
+                                        <div style={{cursor: 'pointer'}} onClick={(e)=>handleClick(e)} aria-controls="simple-menu" aria-haspopup="true">
+                                            <p id="Expertise Dropdown" style={{fontSize: '2.5vw', color:customStyle, textAlign: 'center', fontFamily: font}}>Expertise</p>
+                                        </div>
+                                        <Menu
+                                            id="simple-menu"
+                                            anchorEl={anchorEl}
+                                            keepMounted
+                                            open={anchorEl}
+                                            onClose={handleClose}
+                                            elevation={0}
+                                            anchorOrigin={{
+                                                vertical: 'bottom',
+                                                horizontal: 'center',
+                                            }}
+                                            transformOrigin={{
+                                                vertical: 'top',
+                                                horizontal: 'center',
+                                            }}
+                                        >
+                                            <div style={{backgroundColor: '#F9DDB7', marginTop: '-1.25vh', paddingTop: '2vh', marginBottom: '-1.25vh'}}>
+                                                <NavLink to="/mergers-acquisitions" style={styleLinkSm} activeStyle={activeLinkSm}>
+                                                    <MenuItem onClick={()=>handleClose("selected")} color="white">
+                                                        M&A Advisory
+                                                    </MenuItem>
+                                                </NavLink>
+                                                <NavLink to="/strategic-advisory" style={styleLinkSm} activeStyle={activeLinkSm}>
+                                                    <MenuItem onClick={()=>handleClose("selected")}>
+                                                    Strategic Advisory
+                                                    </MenuItem>
+                                                </NavLink>
+                                                <NavLink to="/fund-raise" style={styleLinkSm} activeStyle={activeLinkSm}>
+                                                    <MenuItem onClick={()=>handleClose("selected")}>
+                                                    Fund Raising
+                                                    </MenuItem>
+                                                </NavLink>
+                                            </div>
+                                        </Menu>
+                                        <NavLink to="/team" style={styleLinkSm} activeStyle={activeLinkSm}>
+                                            <p>Team</p>
+                                        </NavLink>
+                                        <NavLink to="/transactions" style={styleLinkSm} activeStyle={activeLinkSm}>
+                                            <p>Transactions</p>
+                                        </NavLink>
+                                        <NavLink to="/contact" style={styleLinkSm} activeStyle={activeLinkSm}>
+                                            <p>Contact</p>
+                                        </NavLink>
+                                    </Grid>
                                 </Grid>
                             </Grid>
                         </Toolbar>

@@ -1,18 +1,17 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import NavBar from './NavBar';
 import { NavLink } from 'react-router-dom';
 import {Typography, Hidden} from '@material-ui/core'
-import Skyline from './Media/bg2.png'
 import Footer from './Footer';
 import './Scroll.css';
 import bg3 from './Media/bg3.png';
 import bg2 from './Media/bg2.png';
 
-const font = 'Helvetica Neue';
+const font = 'Lato';
 const grey = '#808080';
 
-const styleItem = {display: 'flex', 'padding-left': '5vw', 'padding-top': '2vh'}
+const styleItem = {display: 'flex', 'paddingLeft': '5vw', 'paddingTop': '2vh'}
 const styleHeadline = {color:'#f8b04b', border: '2px solid #f8b04b', padding: '2vw', cursor: 'pointer', fontFamily: font}
 
 
@@ -49,13 +48,13 @@ export default function Expertise() {
 
     return(
         <div>
-            <div style={{'min-height': '90vh', 'padding-bottom': '5vh'}}>
+            <div style={{'minHeight': '90vh', 'paddingBottom': '5vh'}}>
                 <NavBar></NavBar>
                 <Hidden xsDown>
                     <div class="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
-                        <img src={bg2} alt="Worli Sea Link" style={{'object-fit': 'fill', 'max-height': '50vh', 'width': '100vw', opacity: '0.9'}}/>
+                        <img src={bg2} alt="Worli Sea Link" style={{'objectFit': 'fill', 'maxHeight': '50vh', 'width': '100vw', opacity: '0.9'}}/>
                     </div>
-                    <div class="row" style={{position: 'relative', 'margin-top': '-10vh', 'padding-left': '12vw'}}>
+                    <div class="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '12vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
                             Expertise
                         </Typography>
@@ -63,15 +62,15 @@ export default function Expertise() {
                 </Hidden>
                 <Hidden smUp>
                     <div class="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
-                        <img src={bg3} alt="Worli Sea Link" style={{'object-fit': 'fill', 'max-height': '50vh', 'width': '100vw', opacity: '0.9'}}/>
+                        <img src={bg3} alt="Worli Sea Link" style={{'objectFit': 'fill', 'maxHeight': '50vh', 'width': '100vw', opacity: '0.9'}}/>
                     </div>
-                    <div class="row" style={{position: 'relative', 'margin-top': '-10vh', 'padding-left': '12vw'}}>
+                    <div class="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '12vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
                             Expertise
                         </Typography>
                     </div>
                 </Hidden>
-                <Grid container spacing={0} direction="row" justify="center" style={{'padding-top': '8vh'}}>
+                <Grid container spacing={0} direction="row" justify="center" style={{'paddingTop': '8vh'}}>
                     <Grid item xs={10} sm={3} direction="column" style={styleItem}>
                             <NavLink to="/mergers-acquisitions" style={{textDecoration: 'none', cursor: 'pointer'}}>
                             <Typography gutterBottom variant="subtitle1" style={styleHeadline} onClick={handleClickMA}>
