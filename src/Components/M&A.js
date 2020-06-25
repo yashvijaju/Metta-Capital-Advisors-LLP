@@ -20,7 +20,6 @@ const font = 'Lato';
 const grey = '#808080';
 
 const styleItem = {display: 'flex', 'paddingTop': '2vh'}
-const styleHeadline = {color:'#f8b04b', border: '2px solid #f8b04b', padding: '2vw', cursor: 'pointer', fontFamily: font}
 const textStyle = {fontFamily: font, color: grey}
 
 
@@ -95,7 +94,7 @@ export default function Expertise() {
                                 </Grid>
                                 <Grid item xs={6}>
                                     <Typography variant="body2" style={textStyle}>
-                                    Acquisition of Vulcan Express by Future Supply Chain Solutions
+                                    Acquisition of Vulcan Express by Future Supply Chain Solutions from Snapdeal
                                     </Typography>
                                 </Grid>
                             </Grid>

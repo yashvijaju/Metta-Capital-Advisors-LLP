@@ -17,6 +17,7 @@ import koovs from './Media/koovs.jpg'
 import flf from './Media/flf.jpg'
 import fretail from './Media/fretail.jpg'
 import foodworld from './Media/foodworld.png'
+import fgroup from './Media/fgroup.png'
 import nulll from './Media/null.jpg'
 import Footer from './Footer';
 import './Scroll.css';
@@ -29,7 +30,6 @@ import { KeyboardArrowLeftOutlined, KeyboardArrowRightOutlined } from '@material
 const font = 'Lato';
 const grey = '#808080';
 
-const styleItem = {display: 'flex', flexDirection: 'column', 'paddingTop': '3vh', 'paddingLeft': '5vw', fontFamily: font}
 const styleDesc = {color: grey, fontFamily: font, marginTop: '2vh'}
 const styleHeadline = {color:'#f8b04b', fontfamily: font}
 
@@ -66,10 +66,10 @@ export default function Transactions() {
         setArrayIndex(value-1);
     }
 
-    let arrayImg = [fretail,shopperstop,arvind,arvind,koovs,foodworld,vulcan,nse,landmark,arvindfashion];
+    let arrayImg = [fgroup,shopperstop,arvind,arvind,koovs,foodworld,vulcan,nse,landmark,arvindfashion];
     let arrayImg2 = [amazon,hypercity,multiples,nulll,flf,fretail,fsc,nulll,nulll,nulll];
-    let arrayTitles = ['Investment in Future Coupons by Amazon','Sale of HyperCity by Shoppers Stop to Future Retail','Private Equity Investment in Arvind Fashions by Multiples','Demerger & Listing of Branded Apparel & Engineering Businesses','Acquisition of 29.9% Stake in Koovs PLC by Future Lifestyle','Acquisition of Foodworld Supermarkets by Future Retail','Acquisition of Vulcan Express by Future Supply Chain Solutions','NSE Block Deal','Consolidation of Landmark Auto companies','Advisor to Rights Issue'];
-    let arrayDesc = ['Undisclosed (Investment)','Represented both Buy- and Sell- side. Rs 9,100 Mn (Acquisition)','Rs 7,400 Mn (Private Equity)','Rs 66,000 Mn (Restructuring)','Rs 1,400 Mn (Investment)','Rs 408 Mn (Acquisition)','Acquisition','','(Restructuring)','Rs. 400 Cr'];
+    let arrayTitles = ['Investment in Future Coupons by Amazon','Sale of HyperCity by Shoppers Stop to Future Retail','Private Equity Investment in Arvind Fashions by Multiples','Demerger & Listing of Branded Apparel & Engineering Businesses','Acquisition of 29.9% Stake in Koovs PLC by Future Lifestyle','Acquisition of Foodworld Supermarkets by Future Retail','Acquisition of Vulcan Express by Future Supply Chain Solutions from Snapdeal','Block Deal','Consolidation of Landmark Auto companies','Advisor to Rights Issue'];
+    let arrayDesc = ['','Represented both - Buyer and Seller (Rs 910 Cr)','(Rs 740 Cr)','(Rs 6,600 Cr)','(Rs 140 Cr)','(Rs 40.8 Cr)','','','','(Rs 400 Cr)'];
     let arrayMedia = ['','','','','','','','','',''];
 
 
@@ -93,7 +93,7 @@ export default function Transactions() {
                     </div>
                     <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '12vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
-                            Transactions
+                            Recent Transactions
                         </Typography>
                     </div>
                 </Hidden>
@@ -169,7 +169,7 @@ export default function Transactions() {
                     </Grid>
                 </Hidden>
 
-                <Grid item style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '5vh'}}>
+                <Grid item style={{display: 'none', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '5vh'}}>
                     <Pagination count={intMax+1} page={arrayIndex+1} onChange={handleChange} shape="rounded" size="small"/>
                 </Grid>
             </div>

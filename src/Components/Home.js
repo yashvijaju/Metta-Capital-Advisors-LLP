@@ -13,7 +13,7 @@ import './Scroll.css';
 const grey = '#808080';
 const font = 'Lato';
 
-const styleItem = {'paddingTop': '3vw', 'paddingLeft': '5vw'}
+const styleItem = {'paddingTop': '3vw', 'paddingLeft': '10vw'}
 const styleHeadline = {color:'#f8b04b', fontFamily: font}
 
 function App() {
@@ -86,8 +86,8 @@ function App() {
           </Grid>
         </Hidden>
 
-        <Grid container spacing={0} direction="row" style={{padding: '5vh 0vw 5vh 5vw'}}>
-            <Grid item xs={10} sm={4} style={styleItem}>
+        <Grid container spacing={0} direction="row" style={{padding: '5vh 0vw 5vh 0vw'}}>
+            <Grid item xs={10} sm={5} style={styleItem}>
                 <NavLink to="/mergers-acquisitions" style={{textDecoration: 'none', cursor: 'pointer'}}>
                     <Grid container direction="row">
                       <Grid item xs={2} sm={3} md={2}>
@@ -103,7 +103,7 @@ function App() {
                     </Grid>
                 </NavLink>
             </Grid>
-            <Grid item xs={10} sm={3} style={styleItem} >
+            <Grid item xs={10} sm={3} style={{display:'none'}} >
                 <NavLink to="/about-us" style={{textDecoration: 'none', cursor: 'pointer'}}>
                     <Grid container direction="row">
                       <Grid item xs={2} sm={3} md={2}>
@@ -119,7 +119,7 @@ function App() {
                     </Grid>
                 </NavLink>
             </Grid>
-            <Grid item xs={10} sm={4} style={styleItem}>
+            <Grid item xs={10} sm={5} style={styleItem}>
                 <NavLink to="/team" style={{textDecoration: 'none', cursor: 'pointer'}}>
                     <Grid container direction="row">
                       <Grid item xs={2} sm={3} md={2}>

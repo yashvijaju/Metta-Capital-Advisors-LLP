@@ -55,7 +55,7 @@ export default function Contact() {
                                     Metta Capital Advisors LLP <br/>
                                     803, Symphony, <br/>
                                     Nehru Rd, Vile Parle East, <br/>
-                                    Mumbai, Maharashtra 400057
+                                    Mumbai - 400057
                                     </Typography>
                                 </Grid>
                             </Grid>

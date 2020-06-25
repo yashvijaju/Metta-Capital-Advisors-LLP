@@ -108,18 +108,18 @@ export default function NavBarHome() {
                                     >
                                         <div style={{backgroundColor:colorBG, marginTop: '-1vh', paddingTop: '2vh', marginBottom: '-1.25vh'}}>
                                             <NavLink to="/mergers-acquisitions" style={styleLink} activeStyle={activeLink}>
-                                                <MenuItem onClick={()=>handleClose("selected")}>
-                                                    M&A Advisory
+                                                <MenuItem onClick={()=>handleClose("selected")} style={{marginBottom: '-2vh'}}>
+                                                    <p style={{fontSize: '1.3vw'}}>M&A Advisory</p>
                                                 </MenuItem>
                                             </NavLink>
                                             <NavLink to="/strategic-advisory" style={styleLink} activeStyle={activeLink}>
-                                                <MenuItem onClick={()=>handleClose("selected")}>
-                                                Strategic Advisory
+                                                <MenuItem onClick={()=>handleClose("selected")} style={{marginBottom: '-2vh'}}>
+                                                    <p style={{fontSize: '1.3vw'}}>Strategic Advisory</p>
                                                 </MenuItem>
                                             </NavLink>
                                             <NavLink to="/fund-raise" style={styleLink} activeStyle={activeLink}>
                                                 <MenuItem onClick={()=>handleClose("selected")}>
-                                                Fund Raising
+                                                    <p style={{fontSize: '1.3vw'}}>Fund Raising</p>
                                                 </MenuItem>
                                             </NavLink>
                                         </div>
@@ -175,18 +175,18 @@ export default function NavBarHome() {
                                             
                                             <div style={{backgroundColor: '#ACB5B4', marginTop: '-1.25vh', marginBottom: '-1.25vh'}}>
                                                 <NavLink to="/mergers-acquisitions" style={styleLinkSm} activeStyle={activeLinkSm}>
-                                                    <MenuItem onClick={()=>handleClose("selected")}>
-                                                        M&A Advisory
+                                                    <MenuItem onClick={()=>handleClose("selected")} style={{marginBottom: '-2vh'}}>
+                                                        <p style={{fontSize: '2.5vw'}}>M&A Advisory</p>
                                                     </MenuItem>
                                                 </NavLink>
                                                 <NavLink to="/strategic-advisory" style={styleLinkSm} activeStyle={activeLinkSm}>
-                                                    <MenuItem onClick={()=>handleClose("selected")}>
-                                                    Strategic Advisory
+                                                    <MenuItem onClick={()=>handleClose("selected")} style={{marginBottom: '-2vh'}}>
+                                                        <p style={{fontSize: '2.5vw'}}>Strategic Advisory</p>
                                                     </MenuItem>
                                                 </NavLink>
                                                 <NavLink to="/fund-raise" style={styleLinkSm} activeStyle={activeLinkSm}>
-                                                    <MenuItem onClick={()=>handleClose("selected")}>
-                                                    Fund Raising
+                                                    <MenuItem onClick={()=>handleClose("selected")} >
+                                                    <p style={{fontSize: '2.5vw'}}>Fund Raising</p>
                                                     </MenuItem>
                                                 </NavLink>
                                             </div>

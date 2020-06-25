@@ -86,10 +86,6 @@ export default function NavBar() {
                                         onClose={handleClose}
                                         elevation={0}
                                         
-                                        transformOrigin={{
-                                            vertical: 'top',
-                                            horizontal: 'center',
-                                        }}
                                     >
                                         <div style={{backgroundColor: '#F9DDB7', marginTop: '-1vh', paddingTop: '2vh', marginBottom: '-1vh'}}>
                                             <NavLink to="/mergers-acquisitions" style={styleLink} activeStyle={activeLink}>
@@ -156,10 +152,7 @@ export default function NavBar() {
                                             open={Boolean(anchorEl)}
                                             onClose={handleClose}
                                             elevation={0}
-                                            transformOrigin={{
-                                                vertical: 'top',
-                                                horizontal: 'center',
-                                            }}
+                                            
                                         >
                                             <div style={{backgroundColor: '#F9DDB7', marginTop: '-1.25vh', paddingTop: '2vh', marginBottom: '-1.25vh'}}>
                                                 <NavLink to="/mergers-acquisitions" style={styleLinkSm} activeStyle={activeLinkSm}>

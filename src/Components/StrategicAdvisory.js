@@ -17,7 +17,6 @@ const font = 'Lato';
 const grey = '#808080';
 
 const styleItem = {display: 'flex', 'paddingTop': '2vh'}
-const styleHeadline = {color:'#f8b04b', border: '2px solid #f8b04b', padding: '2vw', cursor: 'pointer', fontFamily: font}
 const textStyle = {fontFamily: font, color: grey}
 
 
@@ -61,10 +60,10 @@ export default function Expertise() {
                             Many of our transactions are thus natural outcomes of our engagement with our clients. 
                             </Typography>
                     </Grid>
-                    <Grid item xs={10} sm={6} style={styleItem}>
-                    <Grid container direction="column">
+                    <Grid item xs={12} sm={6} style={styleItem}>
+                        <Grid container direction="column">
                             <Grid container direction="row" justify="center" alignItems="center" style={{marginBottom: '5vh'}}>
-                                <Grid item xs={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
+                                <Grid item xs={6} md={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
                                     <img src={landmark} alt="Landmark Auto" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>
@@ -74,7 +73,7 @@ export default function Expertise() {
                                 </Grid>
                             </Grid>
                             <Grid container direction="row" justify="center" alignItems="center" style={{marginBottom: '5vh'}}>
-                                <Grid item xs={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
+                                <Grid item xs={6} md={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
                                     <img src={arvind} alt="Arvind" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>

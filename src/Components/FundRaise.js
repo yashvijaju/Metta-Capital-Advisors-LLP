@@ -6,18 +6,17 @@ import Footer from './Footer';
 import './Scroll.css';
 import bg3 from './Media/bg3.png';
 import bg2 from './Media/bg2.png';
-
+import fgroup from './Media/fgroup.png'
 import arvind from './Media/arvind.png'
 import multiples from './Media/multiples.png'
+import amazon from './Media/amazon.jpg'
 import nse from './Media/nse.png'
-import fretail from './Media/fretail.jpg'
 import arvindfashion from './Media/arvindfashion.png'
 
 const font = 'Lato';
 const grey = '#808080';
 
 const styleItem = {display: 'flex', 'paddingTop': '2vh'}
-const styleHeadline = {color:'#f8b04b', border: '2px solid #f8b04b', padding: '2vw', cursor: 'pointer', fontFamily: font}
 const textStyle = {fontFamily: font, color: grey}
 
 
@@ -52,9 +51,10 @@ export default function Expertise() {
                 <Grid container spacing={0} direction="row" justify="center" style={{'paddingTop': '8vh', 'paddingLeft': '12vw', 'paddingRight': '3vw'}}>
                     <Grid item xs={10} sm={6} style={styleItem}>
                             <Typography variant="body1" gutterBottom id="MA" style={{color: grey, fontFamily: font}}>
-                            <span style={{fontWeight:'bold'}}>We have deep sectoral expertise in fashion, retail & consumer sector and have emerged as the go-to investment bank for companies seeking capital in the sector.</span>
+                            <span style={{fontWeight:'bold'}}>We advise companies, across sectors, in raising capital across their growth cycle.</span>
                             <br/> <br/> 
-                            We advise companies, across sectors, in raising capital across their growth cycle. 
+                            
+                            We have deep sectoral expertise in fashion, retail & consumer sector and have emerged as the go-to investment bank for companies seeking capital in the sector.
                             <br/><br/>
                             Our network with global and domestic investors and deep insights into business and capital markets allows us to find the right capital and right partner for our clients. We work with our client across the transaction, right from evaluating the capital needs, to identifying the target investors, creating deal collaterals, negotiations, due diligence and documentation. 
                             <br/><br/>
@@ -63,10 +63,10 @@ export default function Expertise() {
                             
                             </Typography>
                     </Grid>
-                    <Grid item xs={10} sm={6} style={styleItem}>
+                    <Grid item xs={12} sm={6} style={styleItem}>
                     <Grid container direction="column">
                             <Grid container direction="row" justify="center" alignItems="center" style={{marginBottom: '5vh'}}>
-                                <Grid item xs={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
+                                <Grid item xs={6} md={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
                                     <img src={arvind} alt="Arvind" style={{width:'75%', height: 'auto'}}/>
                                     <img src={multiples} alt="Multiples" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
@@ -77,8 +77,9 @@ export default function Expertise() {
                                 </Grid>
                             </Grid>
                             <Grid container direction="row" justify="center" alignItems="center" style={{marginBottom: '5vh'}}>
-                                <Grid item xs={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
-                                    <img src={fretail} alt="Future Retail" style={{width:'75%', height: 'auto'}}/>
+                                <Grid item xs={6} md={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
+                                    <img src={fgroup} alt="Future Group" style={{width:'75%', height: 'auto'}}/>
+                                    <img src={amazon} alt="Amazon" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>
                                     <Typography variant="body2"style={textStyle}>
@@ -87,17 +88,17 @@ export default function Expertise() {
                                 </Grid>
                             </Grid>
                             <Grid container direction="row" justify="center" alignItems="center" style={{marginBottom: '5vh'}}>
-                                <Grid item xs={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
+                                <Grid item xs={6} md={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
                                     <img src={nse} alt="NSE" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>
                                     <Typography variant="body2"style={textStyle}>
-                                    NSE Block Deal 
+                                    Block Deal 
                                     </Typography>
                                 </Grid>
                             </Grid>
                             <Grid container direction="row" justify="center" alignItems="center" style={{marginBottom: '5vh'}}>
-                                <Grid item xs={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
+                                <Grid item xs={6} md={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
                                     <img src={arvindfashion} alt="Arvind Fashion" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>
