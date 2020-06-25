@@ -6,7 +6,7 @@ import Footer from './Footer';
 import './Scroll.css';
 import bg3 from './Media/bg3.png';
 import bg2 from './Media/bg2.png';
-
+import maps from './Media/maps.jpg';
 
 const font = 'Lato';
 const grey = '#808080';
