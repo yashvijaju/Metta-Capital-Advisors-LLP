@@ -104,16 +104,16 @@ function App() {
                 </NavLink>
             </Grid>
             <Grid item xs={10} sm={3} style={styleItem} >
-                <NavLink to="/transactions" style={{textDecoration: 'none', cursor: 'pointer'}}>
+                <NavLink to="/about-us" style={{textDecoration: 'none', cursor: 'pointer'}}>
                     <Grid container direction="row">
                       <Grid item xs={2} sm={3} md={2}>
                         <Typography gutterBottom variant="h5" style={styleHeadline}>
-                        10
+                        4
                         </Typography>
                       </Grid>
                       <Grid item xs={10} sm={9} md={10}>
                         <Typography variant="body2" gutterBottom style={{color: grey, fontFamily: font}}>
-                        We have executed 10 transactions in the last 4 years.
+                        Founded in 2016, we are now 4 years old
                         </Typography>
                       </Grid>
                     </Grid>

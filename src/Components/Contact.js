@@ -2,7 +2,6 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import NavBar from './NavBar';
 import {Typography, Hidden} from '@material-ui/core'
-import GoogleApiWrapperr from './Maps'
 import Footer from './Footer';
 import './Scroll.css';
 import bg3 from './Media/bg3.png';
@@ -42,7 +41,9 @@ export default function Contact() {
                 </Hidden>
                 <Grid container spacing={0} direction="row" justify="center" style={{'paddingTop': '10vh'}}>
                     <Grid item xs={12} style={styleMap}>
-                        <GoogleApiWrapperr/>
+                        <a href="https://www.google.com/maps/place/Metta+Capital+Advisors+LLP/@19.0975382,72.8477836,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7c9498df952fb:0x9defdc99ff341c7e!8m2!3d19.0975382!4d72.8499723" target="_blank" rel="noopener noreferrer" >
+                            <img src={maps} alt="Maps" style={{'width': '100vw'}}/>
+                        </a>
                     </Grid>
                     <Grid item xs={12}  style={{position: 'relative', 'paddingTop': '5vh', 'marginBottom': '0vh', 'paddingBottom': '0vh'}}>
                         <Grid container direction="row" justify="center">

@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/mettacap/static/css/main.279a079c.chunk.css",
-    "main.js": "/mettacap/static/js/main.6a4a6c61.chunk.js",
-    "main.js.map": "/mettacap/static/js/main.6a4a6c61.chunk.js.map",
+    "main.js": "/mettacap/static/js/main.eec25464.chunk.js",
+    "main.js.map": "/mettacap/static/js/main.eec25464.chunk.js.map",
     "runtime-main.js": "/mettacap/static/js/runtime-main.514bd07b.js",
     "runtime-main.js.map": "/mettacap/static/js/runtime-main.514bd07b.js.map",
-    "static/js/2.95ef0e9a.chunk.js": "/mettacap/static/js/2.95ef0e9a.chunk.js",
-    "static/js/2.95ef0e9a.chunk.js.map": "/mettacap/static/js/2.95ef0e9a.chunk.js.map",
+    "static/js/2.0c63d221.chunk.js": "/mettacap/static/js/2.0c63d221.chunk.js",
+    "static/js/2.0c63d221.chunk.js.map": "/mettacap/static/js/2.0c63d221.chunk.js.map",
     "index.html": "/mettacap/index.html",
-    "precache-manifest.52a5b3caa822a6635478fe5fd49396b0.js": "/mettacap/precache-manifest.52a5b3caa822a6635478fe5fd49396b0.js",
+    "precache-manifest.090f5a44ae6c5683d819cf7a04ff7be5.js": "/mettacap/precache-manifest.090f5a44ae6c5683d819cf7a04ff7be5.js",
     "service-worker.js": "/mettacap/service-worker.js",
     "static/css/main.279a079c.chunk.css.map": "/mettacap/static/css/main.279a079c.chunk.css.map",
-    "static/js/2.95ef0e9a.chunk.js.LICENSE.txt": "/mettacap/static/js/2.95ef0e9a.chunk.js.LICENSE.txt",
+    "static/js/2.0c63d221.chunk.js.LICENSE.txt": "/mettacap/static/js/2.0c63d221.chunk.js.LICENSE.txt",
     "static/media/amazon.jpg": "/mettacap/static/media/amazon.8ecb6cda.jpg",
     "static/media/arvind.png": "/mettacap/static/media/arvind.69b517ff.png",
     "static/media/arvindfashion.png": "/mettacap/static/media/arvindfashion.2e44aaa0.png",
@@ -24,7 +24,6 @@
     "static/media/fsc.png": "/mettacap/static/media/fsc.395eaf3b.png",
     "static/media/koovs.jpg": "/mettacap/static/media/koovs.370b202d.jpg",
     "static/media/logo.gif": "/mettacap/static/media/logo.ce44393f.gif",
-    "static/media/maps.jpg": "/mettacap/static/media/maps.53c4db59.jpg",
     "static/media/multiples.png": "/mettacap/static/media/multiples.acfd2e05.png",
     "static/media/nse.png": "/mettacap/static/media/nse.34bcfba7.png",
     "static/media/null.jpg": "/mettacap/static/media/null.41deb7e6.jpg",
@@ -39,8 +38,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.514bd07b.js",
-    "static/js/2.95ef0e9a.chunk.js",
+    "static/js/2.0c63d221.chunk.js",
     "static/css/main.279a079c.chunk.css",
-    "static/js/main.6a4a6c61.chunk.js"
+    "static/js/main.eec25464.chunk.js"
   ]
 }
