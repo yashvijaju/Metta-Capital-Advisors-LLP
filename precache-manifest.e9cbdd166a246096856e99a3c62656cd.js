@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cce98d78795430544e7fffe9649f6d3f",
+    "revision": "fcdab4c54a65a94df322946f85941182",
     "url": "/mettacap/index.html"
   },
   {
-    "revision": "abd274049f370e8da7a2",
+    "revision": "cbc53e2c50a9da4f243f",
     "url": "/mettacap/static/css/main.279a079c.chunk.css"
   },
   {
-    "revision": "d7eeb417524ee145ed0f",
-    "url": "/mettacap/static/js/2.95ef0e9a.chunk.js"
+    "revision": "99d44d8b7bd6b6d1c7a6",
+    "url": "/mettacap/static/js/2.0c63d221.chunk.js"
   },
   {
-    "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/mettacap/static/js/2.95ef0e9a.chunk.js.LICENSE.txt"
+    "revision": "d455b55662ec59e842e850740eeaf3d2",
+    "url": "/mettacap/static/js/2.0c63d221.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "abd274049f370e8da7a2",
-    "url": "/mettacap/static/js/main.6a4a6c61.chunk.js"
+    "revision": "cbc53e2c50a9da4f243f",
+    "url": "/mettacap/static/js/main.2d488f76.chunk.js"
   },
   {
     "revision": "58c8539005ecb0d74ee1",
@@ -70,10 +70,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ce44393f6454e817901d37f86018f5e3",
     "url": "/mettacap/static/media/logo.ce44393f.gif"
-  },
-  {
-    "revision": "53c4db5998e373358e0bc7e10d8ccaa4",
-    "url": "/mettacap/static/media/maps.53c4db59.jpg"
   },
   {
     "revision": "acfd2e05e344b5af452256492e6843d6",
