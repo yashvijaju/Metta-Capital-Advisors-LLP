@@ -10,7 +10,6 @@ import maps from './Media/maps.jpg';
 
 const font = 'Lato';
 const grey = '#808080';
-const styleMap = {width: '100vw', height: '70vh', 'lineHeight': '0', float: 'left'};
 const styleHeadline = {color:'#f8b04b', fontFamily: font}
   
 
@@ -40,7 +39,7 @@ export default function Contact() {
                     </div>
                 </Hidden>
                 <Grid container spacing={0} direction="row" justify="center" style={{'paddingTop': '10vh'}}>
-                    <Grid item xs={12} style={styleMap}>
+                    <Grid item xs={12}>
                         <a href="https://www.google.com/maps/place/Metta+Capital+Advisors+LLP/@19.0975382,72.8477836,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7c9498df952fb:0x9defdc99ff341c7e!8m2!3d19.0975382!4d72.8499723" target="_blank" rel="noopener noreferrer" >
                             <img src={maps} alt="Maps" style={{'width': '100vw'}}/>
                         </a>
