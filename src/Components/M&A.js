@@ -64,10 +64,10 @@ export default function Expertise() {
                             We have, in our short history, successfully delivered marquee transactions with both domestic and international counterparts to our clients. 
                             </Typography>
                     </Grid>
-                    <Grid item xs={10} sm={6} style={styleItem}>
+                    <Grid item xs={12} sm={6} style={styleItem}>
                         <Grid container direction="column">
                             <Grid container direction="row" justify="center" alignItems="center" style={{marginBottom: '5vh'}}>
-                                <Grid item xs={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
+                                <Grid item xs={6} md={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
                                     <img src={hypercity} alt="HyperCity" style={{width:'75%', height: 'auto'}}/>
                                     <img src={shopperstop} alt="Shoppers Stop" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
@@ -78,7 +78,7 @@ export default function Expertise() {
                                 </Grid>
                             </Grid>
                             <Grid container direction="row" justify="center" alignItems="center" style={{marginBottom: '5vh'}}>
-                                <Grid item xs={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
+                                <Grid item xs={6} md={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
                                     <img src={foodworld} alt="Food World" style={{width:'75%', height: 'auto'}}/>
                                     <img src={fretail} alt="Fashion Retail" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
@@ -89,7 +89,7 @@ export default function Expertise() {
                                 </Grid>
                             </Grid>
                             <Grid container direction="row" justify="center" alignItems="center" style={{marginBottom: '5vh'}}>
-                                <Grid item xs={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
+                                <Grid item xs={6} md={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
                                     <img src={vulcan} alt="Vulcan" style={{width:'75%', height: 'auto'}}/>
                                     <img src={fsc} alt="Future Supply Chain" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>

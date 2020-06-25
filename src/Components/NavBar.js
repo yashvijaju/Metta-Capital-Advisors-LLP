@@ -93,18 +93,18 @@ export default function NavBar() {
                                     >
                                         <div style={{backgroundColor: '#F9DDB7', marginTop: '-1vh', paddingTop: '2vh', marginBottom: '-1vh'}}>
                                             <NavLink to="/mergers-acquisitions" style={styleLink} activeStyle={activeLink}>
-                                                <MenuItem>
-                                                    M&A Advisory
+                                                <MenuItem style={{marginBottom: '-2vh'}}>
+                                                    <p style={{fontSize: '1.3vw'}}>M&A Advisory</p>
                                                 </MenuItem>
                                             </NavLink>
                                             <NavLink to="/strategic-advisory" style={styleLink} activeStyle={activeLink}>
-                                                <MenuItem>
-                                                Strategic Advisory
+                                                <MenuItem style={{marginBottom: '-2vh'}}>
+                                                <p style={{fontSize: '1.3vw'}}>Strategic Advisory</p>
                                                 </MenuItem>
                                             </NavLink>
                                             <NavLink to="/fund-raise" style={styleLink} activeStyle={activeLink}>
-                                                <MenuItem>
-                                                Fund Raising
+                                                <MenuItem >
+                                                <p style={{fontSize: '1.3vw'}}>Fund Raising</p>
                                                 </MenuItem>
                                             </NavLink>
                                         </div>
@@ -153,13 +153,9 @@ export default function NavBar() {
                                             id="simple-menu"
                                             anchorEl={anchorEl}
                                             keepMounted
-                                            open={anchorEl}
+                                            open={Boolean(anchorEl)}
                                             onClose={handleClose}
                                             elevation={0}
-                                            anchorOrigin={{
-                                                vertical: 'bottom',
-                                                horizontal: 'center',
-                                            }}
                                             transformOrigin={{
                                                 vertical: 'top',
                                                 horizontal: 'center',
@@ -167,18 +163,18 @@ export default function NavBar() {
                                         >
                                             <div style={{backgroundColor: '#F9DDB7', marginTop: '-1.25vh', paddingTop: '2vh', marginBottom: '-1.25vh'}}>
                                                 <NavLink to="/mergers-acquisitions" style={styleLinkSm} activeStyle={activeLinkSm}>
-                                                    <MenuItem onClick={()=>handleClose("selected")} color="white">
-                                                        M&A Advisory
+                                                    <MenuItem style={{marginBottom: '-2vh'}}>
+                                                        <p style={{fontSize: '2.5vw'}}>M&A Advisory</p>
                                                     </MenuItem>
                                                 </NavLink>
                                                 <NavLink to="/strategic-advisory" style={styleLinkSm} activeStyle={activeLinkSm}>
-                                                    <MenuItem onClick={()=>handleClose("selected")}>
-                                                    Strategic Advisory
+                                                    <MenuItem style={{marginBottom: '-2vh'}}>
+                                                    <p style={{fontSize: '2.5vw'}}>Strategic Advisory</p>
                                                     </MenuItem>
                                                 </NavLink>
                                                 <NavLink to="/fund-raise" style={styleLinkSm} activeStyle={activeLinkSm}>
-                                                    <MenuItem onClick={()=>handleClose("selected")}>
-                                                    Fund Raising
+                                                    <MenuItem>
+                                                    <p style={{fontSize: '2.5vw'}}>Fund Raising</p>
                                                     </MenuItem>
                                                 </NavLink>
                                             </div>

@@ -11,7 +11,7 @@ import './Scroll.css';
 const font = 'Lato';
 const grey = '#808080';
 
-const styleItem = {display: 'flex', 'flexDirection': 'column', 'paddingLeft': '5vw'}
+const styleItem = {display: 'flex', 'flexDirection': 'column', 'paddingLeft': '5vw', 'paddingTop': '2vh'}
 const styleHeadline = {color:'#f8b04b', fontFamily: font, fontWeight: '700'}
 
 export default function WhyUs() {
@@ -50,7 +50,7 @@ export default function WhyUs() {
                         </Typography>
                     </Grid>
                 </Grid>
-                <Grid container spacing={0} direction="row" justify="center" style={{'paddingTop': '2vh'}}>
+                <Grid container spacing={0} direction="row" justify="center">
                     <Grid item xs={10} sm={3} style={styleItem}>
                             <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
                             Early Beginnings

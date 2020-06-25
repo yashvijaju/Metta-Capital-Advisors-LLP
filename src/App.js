@@ -17,7 +17,7 @@ import FR from './Components/FundRaise';
 class App extends Component {
   render() {
     return (      
-       <BrowserRouter basename="mettacap">
+       <BrowserRouter>
         <div>
           
             <Switch>

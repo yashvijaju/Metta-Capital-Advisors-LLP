@@ -10,7 +10,7 @@ import maps from './Media/maps.jpg';
 
 const font = 'Lato';
 const grey = '#808080';
-const styleHeadline = {color:'#f8b04b', fontFamily: font}
+const styleHeadline = {color:'#f8b04b', fontFamily: font, paddingTop: '2vh'}
   
 
 export default function Contact() {
@@ -44,7 +44,7 @@ export default function Contact() {
                             <img src={maps} alt="Maps" style={{'width': '100vw'}}/>
                         </a>
                     </Grid>
-                    <Grid item xs={12}  style={{position: 'relative', 'paddingTop': '5vh', 'marginBottom': '0vh', 'paddingBottom': '0vh'}}>
+                    <Grid item xs={12}  style={{position: 'relative', 'paddingTop': '3vh', 'marginBottom': '0vh', 'paddingBottom': '0vh'}}>
                         <Grid container direction="row" justify="center">
                             <Grid item xs={10} sm={3}>
                                 <Grid container direction="column">
