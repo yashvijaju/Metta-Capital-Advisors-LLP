@@ -93,7 +93,7 @@ export default function Expertise() {
                                         <Typography variant="subtitle1" style={styleHeadline}>
                                             Pankaj Jaju
                                         </Typography>
-                                        <Typography variant="caption" style={{color: grey}}>
+                                        <Typography variant="caption" style={{color: grey, fontFamily: font}}>
                                             Founder & CEO
                                         </Typography>
                                     </Grid>
@@ -113,7 +113,7 @@ export default function Expertise() {
                                         Pankaj Jaju
                                     </Typography>
                                     <Grid item style={{'paddingTop': '5px', display: 'flex', flexDirection: 'row'}}>
-                                        <Typography variant="caption">
+                                        <Typography variant="caption" style={{fontFamily: font}}>
                                             Founder & CEO
                                         </Typography>
                                         <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: grey, 'paddingLeft': '5px', 'paddingTop': '5px'}}>
@@ -137,7 +137,7 @@ export default function Expertise() {
                                         <Typography variant="subtitle1" style={styleHeadline}>
                                         Saurabh Singhi
                                         </Typography>
-                                        <Typography variant="caption">
+                                        <Typography variant="caption" style={{fontFamily: font}}>
                                         
                                         </Typography>
                                     </Grid>
@@ -157,7 +157,7 @@ export default function Expertise() {
                                     Saurabh Singhi
                                     </Typography>
                                     <Grid item style={{'paddingTop': '5px', display: 'flex', flexDirection: 'row'}}>
-                                        <Typography variant="caption">
+                                        <Typography variant="caption" style={{fontFamily: font}}>
                                             
                                         </Typography>
                                         <a href="https://www.linkedin.com/in/saurabh-singhi-ba42b111/" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: grey, 'paddingLeft': '5px', 'paddingTop': '5px'}}>
@@ -181,7 +181,7 @@ export default function Expertise() {
                                         <Typography variant="subtitle1" style={styleHeadline}>
                                         Sonal Biyani
                                         </Typography>
-                                        <Typography variant="caption">
+                                        <Typography variant="caption" style={{fontFamily: font}}>
                                         
                                         </Typography>
                                     </Grid>
@@ -201,7 +201,7 @@ export default function Expertise() {
                                     Sonal Biyani
                                     </Typography>
                                     <Grid item style={{'paddingTop': '5px', display: 'flex', flexDirection: 'row'}}>
-                                        <Typography variant="caption">
+                                        <Typography variant="caption" style={{fontFamily: font}}>
                                             
                                         </Typography>
                                         <a href="https://www.linkedin.com/in/sonalbiyani/" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: grey, 'paddingLeft': '5px', 'paddingTop': '5px'}}>
@@ -239,7 +239,7 @@ export default function Expertise() {
                                                 Pankaj Jaju
                                             </Typography>
                                             <Grid item style={{'paddingTop': '5px', display: 'flex', flexDirection: 'row'}}>
-                                                <Typography variant="subtitle1" style={{color: grey}}>
+                                                <Typography variant="subtitle1" style={{color: grey, fontFamily: font}}>
                                                     Founder & CEO
                                                 </Typography>
                                                 <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: 'grey', 'paddingLeft': '5px', 'paddingTop': '5px'}}>
@@ -250,7 +250,7 @@ export default function Expertise() {
                                     </Grid>
                                 </Grid>
                                 <Grid item xs={12}  style={{'paddingTop': '10px'}}>
-                                    <Typography variant="body2" style={{color: grey}}>
+                                    <Typography variant="body2" style={{color: grey, fontFamily: font}}>
                                     Pankaj has over 26 years of Investment Banking experience, having worked at ENAM / Axis Capital before setting up Metta in 2016. He has delivered a host of marquee transactions across M&A, PE and Capital Markets. He led relationships with large business houses including the Aditya Birla Group, and IB practice for sectors such as retail, real estate, textiles, commodities amongst others. He was involved in most of the equity raising and strategic initiatives by major retail houses in India, including Arvind, Future Group, Landmark Group, and Rahejas.  He also headed Strategic Partnerships for Axis Bank as it built out its digital strategy. 
                                     </Typography>
                                 </Grid>
@@ -260,13 +260,13 @@ export default function Expertise() {
                                 <Grid item xs={5}>
                                     <img id="image-modal"src={pankajj} alt="Pankaj Jaju" style={{width: '90%', height: 'auto'}}></img>
                                 </Grid>
-                                <Grid item md={7} >
+                                <Grid item md={6} >
                                     <Grid container spacing={0} direction="column">
                                         <Typography variant="h6" style={styleHeadline}>
                                             Pankaj Jaju
                                         </Typography>
                                         <Grid item style={{'paddingTop': '5px', display: 'flex', flexDirection: 'row'}}>
-                                            <Typography variant="subtitle1" style={{color: grey}}>
+                                            <Typography variant="subtitle1" style={{color: grey,fontFamily: font}}>
                                                 Founder & CEO
                                             </Typography>
                                             <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: 'grey', 'paddingLeft': '5px', 'paddingTop': '5px'}}>
@@ -275,7 +275,7 @@ export default function Expertise() {
                                         </Grid>
                                     </Grid>
                                     <Grid item style={{'paddingTop': '10px'}}>
-                                        <Typography variant="body2" style={{color: grey}}>
+                                        <Typography variant="body2" style={{color: grey, fontFamily: font, textJustify: 'inter word', textAlign: 'justify'}}>
                                         Pankaj has over 26 years of Investment Banking experience, having worked at ENAM / Axis Capital before setting up Metta in 2016. He has delivered a host of marquee transactions across M&A, PE and Capital Markets. He led relationships with large business houses including the Aditya Birla Group, and IB practice for sectors such as retail, real estate, textiles, commodities amongst others. He was involved in most of the equity raising and strategic initiatives by major retail houses in India, including Arvind, Future Group, Landmark Group, and Rahejas.  He also headed Strategic Partnerships for Axis Bank as it built out its digital strategy. 
                                         </Typography>
                                     </Grid>
@@ -325,7 +325,7 @@ export default function Expertise() {
                                     </Grid>
                                 </Grid>
                                 <Grid item xs={12} style={{'paddingTop': '10px'}}>
-                                    <Typography variant="body2" style={{color: grey}}>
+                                    <Typography variant="body2" style={{color: grey, fontFamily: font}}>
                                     Saurabh has over 13 years of experience in financial markets across verticals like fund management, asset reconstruction, investment banking, and corporate banking. He has previously worked as an Investment Banker at Axis Capital (Mumbai) and Enam Securities (Mumbai). Saurabh is an MBA from ISB, Hyderabad and has a Degree in Commerce from Mumbai University. He is also a Chartered Accountant. 
                                     </Typography>
                                 </Grid>
@@ -335,7 +335,7 @@ export default function Expertise() {
                                 <Grid item xs={5}>
                                     <img id="image-modal"src={saurabhs} alt="Saurabh Singhi" style={{width: '90%', height: 'auto'}}></img>
                                 </Grid>
-                                <Grid item md={7} >
+                                <Grid item md={6} >
                                     <Grid container direction="column">
                                         <Grid container spacing={0} direction="row">
                                             <Grid item width="90%">
@@ -355,7 +355,7 @@ export default function Expertise() {
                                             </Grid>
                                         </Grid>
                                         <Grid item style={{'paddingTop': '10px'}}>
-                                            <Typography variant="body2" style={{color: grey}}>
+                                            <Typography variant="body2" style={{color: grey, fontFamily: font, textJustify: 'inter word', textAlign: 'justify'}}>
                                             Saurabh has over 13 years of experience in financial markets across verticals like fund management, asset reconstruction, investment banking, and corporate banking. He has previously worked as an Investment Banker at Axis Capital (Mumbai) and Enam Securities (Mumbai). Saurabh is an MBA from ISB, Hyderabad and has a Degree in Commerce from Mumbai University. He is also a Chartered Accountant.
                                             </Typography>
                                         </Grid>
@@ -406,7 +406,7 @@ export default function Expertise() {
                                     </Grid>
                                 </Grid>
                                 <Grid item xs={12} style={{'paddingTop': '10px'}}>
-                                    <Typography variant="body2" style={{color: grey}}>
+                                    <Typography variant="body2" style={{color: grey, fontFamily: font}}>
                                     Sonal has over 13 years of experience in capital markets, fund raising (IPO, PE) and Mergers & Acquisitions. She has previously worked as an Investment Banker at Axis Capital (Mumbai), Enam Securities (Mumbai), and Lehman Brothers (Mumbai). Sonal is an MBA from IIFT, Delhi and has a Degree in Engineering from Jodhpur University. She is also a CFA (US) charter holder.
                                     </Typography>
                                 </Grid>
@@ -416,7 +416,7 @@ export default function Expertise() {
                                 <Grid item xs={5}>
                                     <img id="image-modal"src={sonalb} alt="Sonal Biyani" style={{width: '90%', height: 'auto'}}></img>
                                 </Grid>
-                                <Grid item md={7}>
+                                <Grid item md={6}>
                                     <Grid container direction="column">
                                         <Grid container spacing={0} direction="row">
                                             <Grid item width="90%">
@@ -436,7 +436,7 @@ export default function Expertise() {
                                             </Grid>
                                         </Grid>
                                         <Grid item style={{'paddingTop': '10px'}}>
-                                            <Typography variant="body2" style={{color: grey}}>
+                                            <Typography variant="body2" style={{color: grey, fontFamily: font, textJustify: 'inter word', textAlign: 'justify'}}>
                                             Sonal has over 13 years of experience in capital markets, fund raising (IPO, PE) and Mergers & Acquisitions. She has previously worked as an Investment Banker at Axis Capital (Mumbai), Enam Securities (Mumbai), and Lehman Brothers (Mumbai). Sonal is an MBA from IIFT, Delhi and has a Degree in Engineering from Jodhpur University. She is also a CFA (US) charter holder.
                                             </Typography>
                                         </Grid>
