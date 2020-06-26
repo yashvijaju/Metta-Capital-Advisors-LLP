@@ -31,6 +31,7 @@ class App extends Component {
              <Route path="/mergers-acquisitions" component={MA}/>
              <Route path="/strategic-advisory" component={SA}/>
              <Route path="/fund-raise" component={FR}/>
+             <Route component={Home} />
              
 
             <Route component={Error}/>
