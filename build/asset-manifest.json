@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.279a079c.chunk.css",
-    "main.js": "/static/js/main.c285751e.chunk.js",
-    "main.js.map": "/static/js/main.c285751e.chunk.js.map",
+    "main.js": "/static/js/main.7a30a714.chunk.js",
+    "main.js.map": "/static/js/main.7a30a714.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d143fdba.js",
     "runtime-main.js.map": "/static/js/runtime-main.d143fdba.js.map",
-    "static/js/2.20d14363.chunk.js": "/static/js/2.20d14363.chunk.js",
-    "static/js/2.20d14363.chunk.js.map": "/static/js/2.20d14363.chunk.js.map",
+    "static/js/2.abeab211.chunk.js": "/static/js/2.abeab211.chunk.js",
+    "static/js/2.abeab211.chunk.js.map": "/static/js/2.abeab211.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.58c72d1ae725255019c9f918ef1d27f5.js": "/precache-manifest.58c72d1ae725255019c9f918ef1d27f5.js",
+    "precache-manifest.09b3f5bca0ebcedc3a339cf8a59494b9.js": "/precache-manifest.09b3f5bca0ebcedc3a339cf8a59494b9.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.279a079c.chunk.css.map": "/static/css/main.279a079c.chunk.css.map",
-    "static/js/2.20d14363.chunk.js.LICENSE.txt": "/static/js/2.20d14363.chunk.js.LICENSE.txt",
+    "static/js/2.abeab211.chunk.js.LICENSE.txt": "/static/js/2.abeab211.chunk.js.LICENSE.txt",
     "static/media/amazon.jpg": "/static/media/amazon.8ecb6cda.jpg",
     "static/media/arvind.png": "/static/media/arvind.69b517ff.png",
     "static/media/arvindfashion.png": "/static/media/arvindfashion.2e44aaa0.png",
@@ -29,8 +29,8 @@
     "static/media/multiples.png": "/static/media/multiples.acfd2e05.png",
     "static/media/nse.png": "/static/media/nse.34bcfba7.png",
     "static/media/null.jpg": "/static/media/null.41deb7e6.jpg",
-    "static/media/pankajj.png": "/static/media/pankajj.006a30d8.png",
-    "static/media/pankajjaju.png": "/static/media/pankajjaju.5c3a6b7d.png",
+    "static/media/pankajj.png": "/static/media/pankajj.e53399b1.png",
+    "static/media/pankajjaju.png": "/static/media/pankajjaju.b4b44b36.png",
     "static/media/saurabhs.png": "/static/media/saurabhs.a1baa56c.png",
     "static/media/saurabhsinghi.png": "/static/media/saurabhsinghi.31591f74.png",
     "static/media/shopperstop.png": "/static/media/shopperstop.d66c72d0.png",
@@ -40,8 +40,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d143fdba.js",
-    "static/js/2.20d14363.chunk.js",
+    "static/js/2.abeab211.chunk.js",
     "static/css/main.279a079c.chunk.css",
-    "static/js/main.c285751e.chunk.js"
+    "static/js/main.7a30a714.chunk.js"
   ]
 }
