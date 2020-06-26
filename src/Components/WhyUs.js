@@ -57,7 +57,7 @@ export default function WhyUs() {
                             </Typography>
                             <Typography variant="body2" gutterBottom style={{fontFamily: font, color: grey}}>
                             Founded in 2016, Metta Capital has quickly emerged as a knowledge driven investment bank that has added value to its clients in their strategic initiatives. We have already attained leadership position in Fashion & Retail with transactions across Private Equity, Mergers & Acquisitions and Restructuring for a number of clients. <br/><br/> 
-                            We also bring in invaulable expertise in a multitude of other sectors such as Auto, Consumer, Industrials and Real Estate, and offer strategic advisory services including Mergers & Acquisitions, Capital Raise, and Strategic Advisory.
+                            We also bring in invaulable expertise in a multitude of other sectors such as Auto, Consumer, Industrials and Real Estate, and offer advisory services including Mergers & Acquisitions, Capital Raise, and Strategic Advisory.
                             </Typography>
                     </Grid>
                     <Grid item xs={10} sm={3} style={styleItem}>

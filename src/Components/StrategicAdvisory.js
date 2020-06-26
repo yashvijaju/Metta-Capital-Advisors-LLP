@@ -63,6 +63,19 @@ export default function Expertise() {
                     <Grid item xs={12} sm={6} style={styleItem}>
                         <Grid container direction="column">
                             <Grid container direction="row" justify="center" alignItems="center" style={{marginBottom: '5vh'}}>
+                                <Hidden smUp>
+                                    <Grid item xs={10} style={{paddingTop: '5vh'}}>
+                                        <Typography variant="body1" style={{fontFamily: font, color: grey, fontWeight:'bold'}}>Our Transactions:</Typography>
+                                    </Grid>
+                                </Hidden>
+                                <Hidden xsDown>
+                                    <Grid item xs={6} md={4} style={{textAlign: 'right', paddingRight: '2vw'}}/>
+                                    <Grid item xs={6}> 
+                                        <Typography variant="body1" style={{fontFamily: font, color: grey, fontWeight:'bold'}}>Our Transactions:</Typography>
+                                    </Grid>
+                                </Hidden>
+                            </Grid>
+                            <Grid container direction="row" justify="center" alignItems="center" style={{marginBottom: '5vh'}}>
                                 <Grid item xs={6} md={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
                                     <img src={landmark} alt="Landmark Auto" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>

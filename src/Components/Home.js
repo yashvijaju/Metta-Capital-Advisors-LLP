@@ -91,11 +91,11 @@ function App() {
                 <NavLink to="/mergers-acquisitions" style={{textDecoration: 'none', cursor: 'pointer'}}>
                     <Grid container direction="row">
                       <Grid item xs={2} sm={3} md={2}>
-                        <Typography gutterBottom variant="h5" style={styleHeadline}>
+                        <Typography gutterBottom variant="h4" style={styleHeadline}>
                         1
                         </Typography>
                       </Grid>
-                      <Grid item xs={10} sm={9} md={10}>
+                      <Grid item xs={10} sm={9} md={10} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                         <Typography variant="body2" gutterBottom style={{color: grey, fontFamily: font}}>
                         Ranked #1 for P/E and M&A transactions in Fashion and Retail in India for most of 2016-2020
                         </Typography>
@@ -107,11 +107,11 @@ function App() {
                 <NavLink to="/about-us" style={{textDecoration: 'none', cursor: 'pointer'}}>
                     <Grid container direction="row">
                       <Grid item xs={2} sm={3} md={2}>
-                        <Typography gutterBottom variant="h5" style={styleHeadline}>
+                        <Typography gutterBottom variant="h4" style={styleHeadline}>
                         4
                         </Typography>
                       </Grid>
-                      <Grid item xs={10} sm={9} md={10}>
+                      <Grid item xs={10} sm={9} md={10} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                         <Typography variant="body2" gutterBottom style={{color: grey, fontFamily: font}}>
                         Founded in 2016, we are now 4 years old
                         </Typography>
@@ -123,11 +123,11 @@ function App() {
                 <NavLink to="/team" style={{textDecoration: 'none', cursor: 'pointer'}}>
                     <Grid container direction="row">
                       <Grid item xs={2} sm={3} md={2}>
-                        <Typography gutterBottom variant="h5" style={styleHeadline}>
+                        <Typography gutterBottom variant="h4" style={styleHeadline}>
                         17
                         </Typography>
                       </Grid>
-                      <Grid item xs={10} sm={9} md={10}>
+                      <Grid item xs={10} sm={9} md={10} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                         <Typography variant="body2" gutterBottom style={{color: grey, fontFamily: font}}>
                         Our Leadership Team has an average of 17 years of experience in Investment Banking.
                         </Typography>

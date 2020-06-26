@@ -10,7 +10,7 @@ import { Menu, MenuItem } from '@material-ui/core';
 
 const grey = '#808080';
 const font = 'Lato';
-const styleItem = {display: 'flex', 'flexDirection': 'column', 'justifyContent': 'center'}
+const styleItem = {display: 'flex', 'flexDirection': 'row', 'justifyContent': 'space-around', alignItems: 'center'}
 const styleLink = {fontSize: '1.3vw', textDecoration: 'none', color: grey, textAlign: 'center', fontFamily: font}
 const styleLinkSm = {fontSize: '2.5vw', textDecoration: 'none', color: grey, textAlign: 'center', fontFamily: font}
 const activeLink = {fontSize: '1.3vw', color: "#F8B04B", fontWeight: 'bolder',textAlign: 'center', fontFamily: font}
@@ -88,12 +88,10 @@ export default function NavBarHome() {
                                 <Grid item xs={1}></Grid>
                                 <Grid item xs={1}></Grid>
                                 <Grid item xs={1}></Grid>
-                                <Grid item xs={1} style={styleItem}>
+                                <Grid item xs={5} style={styleItem}>
                                     <NavLink to="/about-us" style={styleLink} activeStyle={activeLink}>
                                         <p>About Us</p>
                                     </NavLink>
-                                </Grid>
-                                <Grid item xs={1} style={styleItem}>
                                     <div style={{cursor: 'pointer'}} onClick={(e)=>handleClick(e)} aria-controls="simple-menu" aria-haspopup="true">
                                             <p id="Expertise Dropdown" style={{fontSize: '1.3vw', color:customStyle, textAlign: 'center', fontFamily: font}}>Expertise</p>
                                     </div>
@@ -124,18 +122,12 @@ export default function NavBarHome() {
                                             </NavLink>
                                         </div>
                                     </Menu>
-                                </Grid>
-                                <Grid item xs={1} style={styleItem}>
                                     <NavLink to="/team" style={styleLink} activeStyle={activeLink}>
                                         <p>Team</p>
                                     </NavLink>
-                                </Grid>
-                                <Grid item xs={1} style={styleItem}>
                                     <NavLink to="/transactions" style={styleLink} activeStyle={activeLink}>
                                         <p>Transactions</p>
                                     </NavLink>
-                                </Grid>
-                                <Grid item xs={1} style={styleItem}>
                                     <NavLink to="/contact" style={styleLink} activeStyle={activeLink}>
                                         <p>Contact</p>
                                     </NavLink>

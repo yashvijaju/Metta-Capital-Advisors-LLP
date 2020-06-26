@@ -7,7 +7,6 @@ import './Scroll.css';
 import bg3 from './Media/bg3.jpg';
 import bg2 from './Media/bg2.jpg';
 import fgroup from './Media/fgroup.png'
-import arvind from './Media/arvind.png'
 import multiples from './Media/multiples.png'
 import amazon from './Media/amazon.jpg'
 import nse from './Media/nse.png'
@@ -66,8 +65,21 @@ export default function Expertise() {
                     <Grid item xs={12} sm={6} style={styleItem}>
                     <Grid container direction="column">
                             <Grid container direction="row" justify="center" alignItems="center" style={{marginBottom: '5vh'}}>
+                                <Hidden smUp>
+                                    <Grid item xs={10} style={{paddingTop: '5vh'}}>
+                                        <Typography variant="body1" style={{fontFamily: font, color: grey, fontWeight:'bold'}}>Our Transactions:</Typography>
+                                    </Grid>
+                                </Hidden>
+                                <Hidden xsDown>
+                                    <Grid item xs={6} md={4} style={{textAlign: 'right', paddingRight: '2vw'}}/>
+                                    <Grid item xs={6}> 
+                                        <Typography variant="body1" style={{fontFamily: font, color: grey, fontWeight:'bold'}}>Our Transactions:</Typography>
+                                    </Grid>
+                                </Hidden>
+                            </Grid>
+                            <Grid container direction="row" justify="center" alignItems="center" style={{marginBottom: '5vh'}}>
                                 <Grid item xs={6} md={4} style={{textAlign: 'right', paddingRight: '2vw'}}>
-                                    <img src={arvind} alt="Arvind" style={{width:'75%', height: 'auto'}}/>
+                                    <img src={arvindfashion} alt="Arvind" style={{width:'75%', height: 'auto'}}/>
                                     <img src={multiples} alt="Multiples" style={{width:'75%', height: 'auto'}}/>
                                 </Grid>
                                 <Grid item xs={6}>

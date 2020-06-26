@@ -66,7 +66,7 @@ export default function Transactions() {
         setArrayIndex(value-1);
     }
 
-    let arrayImg = [fgroup,shopperstop,arvind,arvind,koovs,foodworld,vulcan,nse,landmark,arvindfashion];
+    let arrayImg = [fgroup,shopperstop,arvindfashion,arvind,koovs,foodworld,vulcan,nse,landmark,arvindfashion];
     let arrayImg2 = [amazon,hypercity,multiples,nulll,flf,fretail,fsc,nulll,nulll,nulll];
     let arrayTitles = ['Investment in Future Coupons by Amazon','Sale of HyperCity by Shoppers Stop to Future Retail','Private Equity Investment in Arvind Fashions by Multiples','Demerger & Listing of Branded Apparel & Engineering Businesses','Acquisition of 29.9% Stake in Koovs PLC by Future Lifestyle','Acquisition of Foodworld Supermarkets by Future Retail','Acquisition of Vulcan Express by Future Supply Chain Solutions from Snapdeal','Block Deal','Consolidation of Landmark Auto companies','Advisor to Rights Issue'];
     let arrayDesc = ['','Represented both - Buyer and Seller (Rs 910 Cr)','(Rs 740 Cr)','(Rs 6,600 Cr)','(Rs 140 Cr)','(Rs 40.8 Cr)','','','','(Rs 400 Cr)'];
