@@ -21,8 +21,8 @@ import fgroup from './Media/fgroup.png'
 import nulll from './Media/null.jpg'
 import Footer from './Footer';
 import './Scroll.css';
-import bg3 from './Media/bg3.png';
-import bg2 from './Media/bg2.png';
+import bg3 from './Media/bg3.jpg';
+import bg2 from './Media/bg2.jpg';
 
 import { KeyboardArrowLeftOutlined, KeyboardArrowRightOutlined } from '@material-ui/icons';
 

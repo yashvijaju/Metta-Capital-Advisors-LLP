@@ -2,8 +2,8 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import NavBar from './NavBar';
 import {Typography, Hidden} from '@material-ui/core'
-import bg2 from './Media/bg2.png';
-import bg3 from './Media/bg3.png';
+import bg2 from './Media/bg2.jpg';
+import bg3 from './Media/bg3.jpg';
 
 import Footer from './Footer';
 import './Scroll.css';

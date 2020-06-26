@@ -15,8 +15,8 @@ import Fade from '@material-ui/core/Fade';
 import { LinkedIn } from '@material-ui/icons';
 import Hidden from '@material-ui/core/Hidden';
 import './Scroll.css';
-import bg3 from './Media/bg3.png';
-import bg2 from './Media/bg2.png';
+import bg3 from './Media/bg3.jpg';
+import bg2 from './Media/bg2.jpg';
 
 
 

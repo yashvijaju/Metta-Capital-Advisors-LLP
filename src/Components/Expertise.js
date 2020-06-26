@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom';
 import {Typography, Hidden} from '@material-ui/core'
 import Footer from './Footer';
 import './Scroll.css';
-import bg3 from './Media/bg3.png';
-import bg2 from './Media/bg2.png';
+import bg3 from './Media/bg3.jpg';
+import bg2 from './Media/bg2.jpg';
 
 const font = 'Lato';
 const grey = '#808080';
