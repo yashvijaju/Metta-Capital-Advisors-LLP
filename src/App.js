@@ -1,3 +1,4 @@
+import ReactGA from 'react-ga';
 import React, { Component }  from 'react';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -12,6 +13,7 @@ import Team from './Components/Team';
 import MA from './Components/M&A';
 import SA from './Components/StrategicAdvisory';
 import FR from './Components/FundRaise';
+
 
 
 class App extends Component {
