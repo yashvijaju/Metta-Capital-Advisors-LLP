@@ -19,22 +19,19 @@ class App extends Component {
     return (      
        <BrowserRouter>
         <div>
-          
             <Switch>
-             <Route path="/" component={Home} exact/>
-             <Route path="/transactions" component={Transactions}/>
-             <Route path="/contact" component={Contact}/>
-             <Route path="/about-us" component={WhyUs}/>
-             <Route path="/expertise" component={Expertise}/>
-             <Route path="/team" component={Team}/>
-
-             <Route path="/mergers-acquisitions" component={MA}/>
-             <Route path="/strategic-advisory" component={SA}/>
-             <Route path="/fund-raise" component={FR}/>
-             <Route component={Home} />
-             
-
-            <Route component={Error}/>
+              <Route exact path="/" component={Home} />
+              <Route path="/transactions" component={Transactions}/>
+              <Route path="/contact" component={Contact}/>
+              <Route path="/about-us" component={WhyUs}/>
+              <Route path="/expertise" component={Expertise}/>
+              <Route path="/team" component={Team}/>
+              <Route path="/mergers-acquisitions" component={MA}/>
+              <Route path="/strategic-advisory" component={SA}/>
+              <Route path="/fund-raise" component={FR}/>
+              <Route path="" component={Home} />
+              <Route path="/*" component={Home} />
+              <Route component={Home} />
            </Switch>
            
         </div> 
