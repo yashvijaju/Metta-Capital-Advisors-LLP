@@ -33,7 +33,7 @@ export default function Expertise() {
                     <div className="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
                         <img src={bg2} alt="Worli Sea Link" style={{'objectFit': 'fill', 'maxHeight': '50vh', 'width': '100vw', opacity: '0.9'}}/>
                     </div>
-                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '12vw'}}>
+                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '10vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
                             M&A Advisory
                         </Typography>
@@ -43,7 +43,7 @@ export default function Expertise() {
                     <div className="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
                         <img src={bg3} alt="Worli Sea Link" style={{'objectFit': 'fill', 'maxHeight': '50vh', 'width': '100vw', opacity: '0.9'}}/>
                     </div>
-                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '12vw'}}>
+                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '10vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
                             M&A Advisory
                         </Typography>
@@ -51,7 +51,7 @@ export default function Expertise() {
                 </Hidden>
 
 
-                <Grid container spacing={0} direction="row" justify="center" style={{'paddingTop': '8vh', 'paddingLeft': '12vw', 'paddingRight': '3vw'}}>
+                <Grid container spacing={0} direction="row" style={{'paddingTop': '8vh', 'paddingLeft': '10vw', 'paddingRight': '3vw'}}>
                     <Grid item xs={10} sm={6} style={styleItem}>
                             <Typography variant="body1" gutterBottom id="MA" style={{color: grey, fontFamily: font}}>
                             <span style={{fontWeight:'bold'}}>We provide advisory services on mergers, acquisitions, divestures and strategic partnerships to corporates across the growth spectrum.</span>

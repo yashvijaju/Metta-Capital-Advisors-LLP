@@ -54,7 +54,7 @@ export default function Expertise() {
                     <div class="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
                         <img src={bg2} alt="Worli Sea Link" style={{'objectFit': 'fill', 'maxHeight': '50vh', 'width': '100vw', opacity: '0.9'}}/>
                     </div>
-                    <div class="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '12vw'}}>
+                    <div class="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '10vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
                             Expertise
                         </Typography>
@@ -64,7 +64,7 @@ export default function Expertise() {
                     <div class="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
                         <img src={bg3} alt="Worli Sea Link" style={{'objectFit': 'fill', 'maxHeight': '50vh', 'width': '100vw', opacity: '0.9'}}/>
                     </div>
-                    <div class="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '12vw'}}>
+                    <div class="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '10vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
                             Expertise
                         </Typography>

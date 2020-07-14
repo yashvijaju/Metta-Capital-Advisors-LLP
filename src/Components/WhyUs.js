@@ -11,7 +11,7 @@ import './Scroll.css';
 const font = 'Lato';
 const grey = '#808080';
 
-const styleItem = {display: 'flex', 'flexDirection': 'column', 'paddingLeft': '5vw', 'paddingTop': '2vh'}
+const styleItem = {display: 'flex', 'flexDirection': 'column', 'paddingLeft': '0vw', 'paddingTop': '2vh'}
 const styleHeadline = {color:'#f8b04b', fontFamily: font, fontWeight: '700'}
 
 export default function WhyUs() {
@@ -23,7 +23,7 @@ export default function WhyUs() {
                     <div className="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
                         <img src={bg2} alt="Worli Sea Link" style={{'objectFit': 'fill', 'maxHeight': '50vh', 'width': '100vw', opacity: '0.9'}}/>
                     </div>
-                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '12vw'}}>
+                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '10vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
                             About Us
                         </Typography>
@@ -33,15 +33,18 @@ export default function WhyUs() {
                     <div className="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
                         <img src={bg3} alt="Worli Sea Link" style={{'objectFit': 'fill', 'maxHeight': '50vh', 'width': '100vw', opacity: '0.9'}}/>
                     </div>
-                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '12vw'}}>
+                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '10vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
                             About Us
                         </Typography>
                     </div>
                 </Hidden>
-                <Grid container spacing={0} justify="center" style={{'paddingTop': '10vh'}}>
-                    <Grid item xs={1} sm={7}/>
-                    <Grid item xs={11} sm={3} style={{display: 'flex', 'flexDirection': 'column', 'justifyContent': 'center', 'marginLeft': '2vw'}}>
+                <Grid container spacing={0} justify="space-between" style={{'paddingTop': '10vh',paddingLeft:'10vw',paddingRight:'10vw'}}>
+                    <Hidden smDown>
+                        <Grid item md={3}/>
+                        <Grid item md={3}/>
+                    </Hidden>
+                    <Grid item xs={11} sm={3} style={{display: 'flex', 'flexDirection': 'column', 'justifyContent': 'center'}}>
                         <Typography variant="h6" gutterBottom style={{fontFamily: font, color: grey, fontWeight: '700'}}>
                         We Are
                         </Typography>
@@ -50,7 +53,7 @@ export default function WhyUs() {
                         </Typography>
                     </Grid>
                 </Grid>
-                <Grid container spacing={0} direction="row" justify="center">
+                <Grid container spacing={0} direction="row" justify="space-between" style={{paddingLeft:'10vw',paddingRight:'10vw'}}>
                     <Grid item xs={10} sm={3} style={styleItem}>
                             <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
                             Early Beginnings

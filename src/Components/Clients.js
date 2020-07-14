@@ -19,6 +19,10 @@ import fretail from './Media/fretail.jpg'
 import foodworld from './Media/foodworld.png'
 import fgroup from './Media/fgroup.png'
 import nulll from './Media/null.jpg'
+import flyingmachine from './Media/flyingmachine.jpg'
+import flipkart from './Media/flipkart.png'
+import beinghuman from './Media/beinghuman.png'
+import mrvl from './Media/mrvl.png'
 import Footer from './Footer';
 import './Scroll.css';
 import bg3 from './Media/bg3.jpg';
@@ -34,7 +38,7 @@ const styleDesc = {color: grey, fontFamily: font, marginTop: '2vh'}
 const styleHeadline = {color:'#f8b04b', fontfamily: font}
 
 
-const intMax = 9;
+const intMax = 11;
 
 export default function Transactions() {
 
@@ -66,11 +70,11 @@ export default function Transactions() {
         setArrayIndex(value-1);
     }
 
-    let arrayImg = [fgroup,shopperstop,arvindfashion,arvind,koovs,foodworld,vulcan,nse,landmark,arvindfashion];
-    let arrayImg2 = [amazon,hypercity,multiples,nulll,flf,fretail,fsc,nulll,nulll,nulll];
-    let arrayTitles = ['Investment in Future Coupons by Amazon','Sale of HyperCity by Shoppers Stop to Future Retail','Private Equity Investment in Arvind Fashions by Multiples','Demerger & Listing of Branded Apparel & Engineering Businesses','Acquisition of 29.9% Stake in Koovs PLC by Future Lifestyle','Acquisition of Foodworld Supermarkets by Future Retail','Acquisition of Vulcan Express by Future Supply Chain Solutions from Snapdeal','Block Deal','Consolidation of Landmark Auto companies','Advisor to Rights Issue'];
-    let arrayDesc = ['','Represented both - Buyer and Seller (Rs 910 Cr)','(Rs 740 Cr)','(Rs 6,600 Cr)','(Rs 140 Cr)','(Rs 40.8 Cr)','','','','(Rs 400 Cr)'];
-    let arrayMedia = ['','','','','','','','','',''];
+    let arrayImg = [flipkart,fgroup,shopperstop,arvindfashion,arvind,koovs,foodworld,vulcan,nse,landmark,arvindfashion,beinghuman];
+    let arrayImg2 = [flyingmachine,amazon,hypercity,multiples,nulll,flf,fretail,fsc,nulll,nulll,nulll,mrvl];
+    let arrayTitles = ['Sale of significant minority stake in Flying Machine Business to Flipkart','Investment in Future Coupons by Amazon','Sale of HyperCity by Shoppers Stop to Future Retail','Private Equity Investment in Arvind Fashions by Multiples','Demerger & Listing of Branded Apparel & Engineering Businesses','Acquisition of 29.9% Stake in Koovs PLC by Future Lifestyle','Acquisition of Foodworld Supermarkets by Future Retail','Acquisition of Vulcan Express by Future Supply Chain Solutions from Snapdeal','Block Deal','Consolidation of Landmark Auto companies','Advisor to Rights Issue','Sale of Assets'];
+    let arrayDesc = ['(Rs 260 Cr)','','Represented both - Buyer and Seller (Rs 910 Cr)','(Rs 740 Cr)','(Rs 6,600 Cr)','(Rs 140 Cr)','(Rs 41 Cr)','','','','(Rs 400 Cr)',''];
+    let arrayMedia = ['','','','','','','','','','','',''];
 
 
     return(
@@ -81,7 +85,7 @@ export default function Transactions() {
                     <div className="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
                         <img src={bg2} alt="Worli Sea Link" style={{'objectFit': 'fill', 'maxHeight': '50vh', 'width': '100vw', opacity: '0.9'}}/>
                     </div>
-                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '12vw'}}>
+                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '10vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
                             Recent Transactions
                         </Typography>
@@ -91,7 +95,7 @@ export default function Transactions() {
                     <div className="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
                         <img src={bg3} alt="Worli Sea Link" style={{'objectFit': 'fill', 'maxHeight': '50vh', 'width': '100vw', opacity: '0.9'}}/>
                     </div>
-                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '12vw'}}>
+                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '10vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
                             Recent Transactions
                         </Typography>
@@ -134,11 +138,11 @@ export default function Transactions() {
                     </Grid>
                 </Hidden>
                 <Hidden xsDown>
-                    <Grid container spacing={0} direction="row" justify="center" style={{'paddingTop': '20vh'}}>
-                        <Grid item xs={1} style={{display: 'flex', justifyContent: 'center'}} onClick={()=>{handleClick("prev")}}>
+                    <Grid container spacing={0} direction="row" style={{'paddingTop': '20vh','paddingLeft': '10vw'}}>
+                        <Grid item xs={1} style={{display: 'flex', justifyContent: 'left'}} onClick={()=>{handleClick("prev")}}>
                             <KeyboardArrowLeftOutlined id="leftPtr"  fontSize="large" style={{cursor: 'pointer', paddingTop: '5vh'}}/>
                         </Grid>
-                        <Grid item xs={8} style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+                        <Grid item xs={9} style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
                             <Grid item xs={5} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                                 <img src={arrayImg[arrayIndex]} alt="Logo" width="50%" style={{marginBottom: '1vh'}}/>
                                 <img src={arrayImg2[arrayIndex]} alt="Logo" width="50%"/>
@@ -163,7 +167,7 @@ export default function Transactions() {
                                 </Grid>
                             </Grid>
                         </Grid>
-                        <Grid item xs={1} style={{display: 'flex', justifyContent: 'center'}} onClick={()=>{handleClick("next")}}>
+                        <Grid item xs={1} style={{display: 'flex', justifyContent: 'right'}} onClick={()=>{handleClick("next")}}>
                             <KeyboardArrowRightOutlined id="rightPtr"  fontSize="large" style={{cursor: 'pointer', paddingTop: '5vh'}}/>
                         </Grid>
                     </Grid>

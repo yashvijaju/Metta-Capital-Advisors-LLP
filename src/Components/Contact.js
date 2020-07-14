@@ -22,7 +22,7 @@ export default function Contact() {
                     <div className="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
                         <img src={bg2} alt="Worli Sea Link" style={{'objectFit': 'fill', 'maxHeight': '50vh', 'width': '100vw', opacity: '0.9'}}/>
                     </div>
-                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '12vw'}}>
+                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '10vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
                             Contact
                         </Typography>
@@ -32,7 +32,7 @@ export default function Contact() {
                     <div className="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
                         <img src={bg3} alt="Worli Sea Link" style={{'objectFit': 'fill', 'maxHeight': '50vh', 'width': '100vw', opacity: '0.9'}}/>
                     </div>
-                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '12vw'}}>
+                    <div className="row" style={{position: 'relative', 'marginTop': '-10vh', 'paddingLeft': '10vw'}}>
                         <Typography variant="h4" style={{color: 'white', fontFamily: font, fontWeight: 'bolder'}}>
                             Contact
                         </Typography>
@@ -44,8 +44,8 @@ export default function Contact() {
                             <img src={maps} alt="Maps" style={{'width': '100vw'}}/>
                         </a>
                     </Grid>
-                    <Grid item xs={12}  style={{position: 'relative', 'paddingTop': '3vh', 'marginBottom': '0vh', 'paddingBottom': '0vh'}}>
-                        <Grid container direction="row" justify="center">
+                    <Grid item xs={12} style={{position: 'relative', 'paddingTop': '3vh', paddingLeft:'10vw', paddingRight:'10vw', 'marginBottom': '0vh', 'paddingBottom': '0vh'}}>
+                        <Grid container direction="row" justify="space-between">
                             <Grid item xs={10} sm={3}>
                                 <Grid container direction="column">
                                     <Typography gutterBottom variant="subtitle1" style={styleHeadline}>
