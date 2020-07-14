@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "875021c0630a155d5d79625363108370",
+    "revision": "89930cd8989d88e24ce8204cf9f3755c",
     "url": "/index.html"
   },
   {
-    "revision": "1e6813ec8fbeba3a30fe",
+    "revision": "e2bceaf46f222c73dc50",
     "url": "/static/css/main.279a079c.chunk.css"
   },
   {
-    "revision": "5691114cf5dfc646ee57",
-    "url": "/static/js/2.f6ec826c.chunk.js"
+    "revision": "d8eab49445325ac93a7d",
+    "url": "/static/js/2.ab15651d.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/static/js/2.f6ec826c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.ab15651d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1e6813ec8fbeba3a30fe",
-    "url": "/static/js/main.b31d6416.chunk.js"
+    "revision": "e2bceaf46f222c73dc50",
+    "url": "/static/js/main.9ef46b3f.chunk.js"
   },
   {
     "revision": "bbdde4d82fa8f0ae5c66",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2e44aaa092b5b3298d57d2c6c9139253",
     "url": "/static/media/arvindfashion.2e44aaa0.png"
+  },
+  {
+    "revision": "62f4025fde4be8f156b1744e79871e94",
+    "url": "/static/media/beinghuman.62f4025f.png"
   },
   {
     "revision": "920dcf529a783e55927fda39423d4ab1",
@@ -54,6 +58,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9858000fa0d4f0666d9c23fc240f15b4",
     "url": "/static/media/flf.9858000f.jpg"
+  },
+  {
+    "revision": "727acb15283ad9d7fe83e4bd186ff522",
+    "url": "/static/media/flipkart.727acb15.png"
+  },
+  {
+    "revision": "176bbdf5cd67c72f340538a5a649b383",
+    "url": "/static/media/flyingmachine.176bbdf5.jpg"
   },
   {
     "revision": "8094d1b82801c8d1c8837a437941ab2d",
@@ -78,6 +90,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ceea49811e5b25c3548a2b86c5465cdc",
     "url": "/static/media/maps.ceea4981.jpg"
+  },
+  {
+    "revision": "215f72cf7c2001bd94a84340984297c2",
+    "url": "/static/media/mrvl.215f72cf.png"
   },
   {
     "revision": "acfd2e05e344b5af452256492e6843d6",
