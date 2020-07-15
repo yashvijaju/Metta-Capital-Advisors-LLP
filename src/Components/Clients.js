@@ -72,7 +72,7 @@ export default function Transactions() {
 
     let arrayImg = [flipkart,fgroup,shopperstop,arvindfashion,arvind,koovs,foodworld,vulcan,nse,landmark,arvindfashion,beinghuman];
     let arrayImg2 = [flyingmachine,amazon,hypercity,multiples,nulll,flf,fretail,fsc,nulll,nulll,nulll,mrvl];
-    let arrayTitles = ['Sale of significant minority stake in Flying Machine Business to Flipkart','Investment in Future Coupons by Amazon','Sale of HyperCity by Shoppers Stop to Future Retail','Private Equity Investment in Arvind Fashions by Multiples','Demerger & Listing of Branded Apparel & Engineering Businesses','Acquisition of 29.9% Stake in Koovs PLC by Future Lifestyle','Acquisition of Foodworld Supermarkets by Future Retail','Acquisition of Vulcan Express by Future Supply Chain Solutions from Snapdeal','Block Deal','Consolidation of Landmark Auto companies','Advisor to Rights Issue','Sale of Assets'];
+    let arrayTitles = ['Sale of significant minority stake by AFL in Arvind Youth Brands to Flipkart','Investment in Future Coupons by Amazon','Sale of HyperCity by Shoppers Stop to Future Retail','Private Equity Investment in Arvind Fashions by Multiples','Demerger & Listing of Branded Apparel & Engineering Businesses','Acquisition of 29.9% Stake in Koovs PLC by Future Lifestyle','Acquisition of Foodworld Supermarkets by Future Retail','Acquisition of Vulcan Express by Future Supply Chain Solutions from Snapdeal','Block Deal','Consolidation of Landmark Auto companies','Advisor to Rights Issue','Sale of Assets'];
     let arrayDesc = ['(Rs 260 Cr)','','Represented both - Buyer and Seller (Rs 910 Cr)','(Rs 740 Cr)','(Rs 6,600 Cr)','(Rs 140 Cr)','(Rs 41 Cr)','','','','(Rs 400 Cr)',''];
     let arrayMedia = ['','','','','','','','','','','',''];
 
