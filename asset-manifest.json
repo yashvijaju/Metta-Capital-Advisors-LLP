@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.279a079c.chunk.css",
-    "main.js": "/static/js/main.a5436334.chunk.js",
-    "main.js.map": "/static/js/main.a5436334.chunk.js.map",
+    "main.js": "/static/js/main.17cd673a.chunk.js",
+    "main.js.map": "/static/js/main.17cd673a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d143fdba.js",
     "runtime-main.js.map": "/static/js/runtime-main.d143fdba.js.map",
-    "static/js/2.f7c8cce8.chunk.js": "/static/js/2.f7c8cce8.chunk.js",
-    "static/js/2.f7c8cce8.chunk.js.map": "/static/js/2.f7c8cce8.chunk.js.map",
+    "static/js/2.415322ab.chunk.js": "/static/js/2.415322ab.chunk.js",
+    "static/js/2.415322ab.chunk.js.map": "/static/js/2.415322ab.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b78b26847ab71900d7dcb3a15f3b484c.js": "/precache-manifest.b78b26847ab71900d7dcb3a15f3b484c.js",
+    "precache-manifest.b2d5271023199bb11dbb0424be45fcfe.js": "/precache-manifest.b2d5271023199bb11dbb0424be45fcfe.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.279a079c.chunk.css.map": "/static/css/main.279a079c.chunk.css.map",
-    "static/js/2.f7c8cce8.chunk.js.LICENSE.txt": "/static/js/2.f7c8cce8.chunk.js.LICENSE.txt",
+    "static/js/2.415322ab.chunk.js.LICENSE.txt": "/static/js/2.415322ab.chunk.js.LICENSE.txt",
     "static/media/amazon.jpg": "/static/media/amazon.8ecb6cda.jpg",
     "static/media/arvind.png": "/static/media/arvind.69b517ff.png",
     "static/media/arvindfashion.png": "/static/media/arvindfashion.2e44aaa0.png",
@@ -35,6 +35,7 @@
     "static/media/null.jpg": "/static/media/null.41deb7e6.jpg",
     "static/media/pankajj.png": "/static/media/pankajj.e53399b1.png",
     "static/media/pankajjaju.png": "/static/media/pankajjaju.b4b44b36.png",
+    "static/media/reliance.jpg": "/static/media/reliance.98f132a5.jpg",
     "static/media/saurabhs.png": "/static/media/saurabhs.a1baa56c.png",
     "static/media/saurabhsinghi.png": "/static/media/saurabhsinghi.31591f74.png",
     "static/media/shopperstop.png": "/static/media/shopperstop.d66c72d0.png",
@@ -44,8 +45,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d143fdba.js",
-    "static/js/2.f7c8cce8.chunk.js",
+    "static/js/2.415322ab.chunk.js",
     "static/css/main.279a079c.chunk.css",
-    "static/js/main.a5436334.chunk.js"
+    "static/js/main.17cd673a.chunk.js"
   ]
 }
