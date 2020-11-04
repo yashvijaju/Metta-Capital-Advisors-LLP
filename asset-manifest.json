@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.279a079c.chunk.css",
-    "main.js": "/static/js/main.17cd673a.chunk.js",
-    "main.js.map": "/static/js/main.17cd673a.chunk.js.map",
+    "main.js": "/static/js/main.55c25d9a.chunk.js",
+    "main.js.map": "/static/js/main.55c25d9a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d143fdba.js",
     "runtime-main.js.map": "/static/js/runtime-main.d143fdba.js.map",
-    "static/js/2.415322ab.chunk.js": "/static/js/2.415322ab.chunk.js",
-    "static/js/2.415322ab.chunk.js.map": "/static/js/2.415322ab.chunk.js.map",
+    "static/js/2.98751b82.chunk.js": "/static/js/2.98751b82.chunk.js",
+    "static/js/2.98751b82.chunk.js.map": "/static/js/2.98751b82.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b2d5271023199bb11dbb0424be45fcfe.js": "/precache-manifest.b2d5271023199bb11dbb0424be45fcfe.js",
+    "precache-manifest.f66843951a1ddba9ec03ad1746711ab3.js": "/precache-manifest.f66843951a1ddba9ec03ad1746711ab3.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.279a079c.chunk.css.map": "/static/css/main.279a079c.chunk.css.map",
-    "static/js/2.415322ab.chunk.js.LICENSE.txt": "/static/js/2.415322ab.chunk.js.LICENSE.txt",
+    "static/js/2.98751b82.chunk.js.LICENSE.txt": "/static/js/2.98751b82.chunk.js.LICENSE.txt",
     "static/media/amazon.jpg": "/static/media/amazon.8ecb6cda.jpg",
     "static/media/arvind.png": "/static/media/arvind.69b517ff.png",
     "static/media/arvindfashion.png": "/static/media/arvindfashion.2e44aaa0.png",
@@ -45,8 +45,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d143fdba.js",
-    "static/js/2.415322ab.chunk.js",
+    "static/js/2.98751b82.chunk.js",
     "static/css/main.279a079c.chunk.css",
-    "static/js/main.17cd673a.chunk.js"
+    "static/js/main.55c25d9a.chunk.js"
   ]
 }
