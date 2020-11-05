@@ -87,7 +87,7 @@ function App() {
         </Hidden>
 
         <Grid container spacing={0} direction="row" style={{padding: '5vh 0vw 5vh 0vw'}}>
-            <Grid item xs={10} sm={5} style={styleItem}>
+            <Grid item xs={10} sm={3} style={styleItem}>
                 <NavLink to="/mergers-acquisitions" style={{textDecoration: 'none', cursor: 'pointer'}}>
                     <Grid container direction="row">
                       <Grid item xs={2} sm={3} md={2}>
@@ -97,39 +97,38 @@ function App() {
                       </Grid>
                       <Grid item xs={10} sm={9} md={10} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                         <Typography variant="body2" gutterBottom style={{color: grey, fontFamily: font}}>
-                        Ranked #1 for P/E and M&A transactions in Fashion and Retail in India for most of 2016-2020
+                        M&A Advisor in India by total deal value in Q3 2020 - VCC Edge League Tables
                         </Typography>
                       </Grid>
                     </Grid>
                 </NavLink>
             </Grid>
-            <Grid item xs={10} sm={3} style={{display:'none'}} >
+            <Grid item xs={10} sm={3} style={styleItem}>
+                <NavLink to="/mergers-acquisitions" style={{textDecoration: 'none', cursor: 'pointer'}}>
+                    <Grid container direction="row">
+                      <Grid item xs={2} sm={3} md={2}>
+                        <Typography gutterBottom variant="h4" style={styleHeadline}>
+                        3
+                        </Typography>
+                      </Grid>
+                      <Grid item xs={10} sm={9} md={10} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                        <Typography variant="body2" gutterBottom style={{color: grey, fontFamily: font}}>
+                        M&A Advisor in India by total deal value in 9m 2020  -  Venture Intelligence League Tables                        </Typography>
+                      </Grid>
+                    </Grid>
+                </NavLink>
+            </Grid>
+            <Grid item xs={10} sm={3} style={styleItem}>
                 <NavLink to="/about-us" style={{textDecoration: 'none', cursor: 'pointer'}}>
                     <Grid container direction="row">
                       <Grid item xs={2} sm={3} md={2}>
                         <Typography gutterBottom variant="h4" style={styleHeadline}>
-                        4
+                        1
                         </Typography>
                       </Grid>
                       <Grid item xs={10} sm={9} md={10} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                         <Typography variant="body2" gutterBottom style={{color: grey, fontFamily: font}}>
-                        Founded in 2016, we are now 4 years old
-                        </Typography>
-                      </Grid>
-                    </Grid>
-                </NavLink>
-            </Grid>
-            <Grid item xs={10} sm={5} style={styleItem}>
-                <NavLink to="/team" style={{textDecoration: 'none', cursor: 'pointer'}}>
-                    <Grid container direction="row">
-                      <Grid item xs={2} sm={3} md={2}>
-                        <Typography gutterBottom variant="h4" style={styleHeadline}>
-                        17
-                        </Typography>
-                      </Grid>
-                      <Grid item xs={10} sm={9} md={10} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-                        <Typography variant="body2" gutterBottom style={{color: grey, fontFamily: font}}>
-                        Our Leadership Team has an average of 17 years of experience in Investment Banking.
+                        Ranked #1 for P/E and M&A transactions in Fashion and Retail in India for most of 2016-2020
                         </Typography>
                       </Grid>
                     </Grid>

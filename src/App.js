@@ -1,6 +1,6 @@
 import React, { Component }  from 'react';
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Home from './Components/Home';
 import Transactions from './Components/Clients';
@@ -18,25 +18,40 @@ import FR from './Components/FundRaise';
 class App extends Component {
   render() {
     return (      
-       <BrowserRouter>
-        <div>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/transactions" component={Transactions}/>
-              <Route path="/contact" component={Contact}/>
-              <Route path="/about-us" component={WhyUs}/>
-              <Route path="/expertise" component={Expertise}/>
-              <Route path="/team" component={Team}/>
-              <Route path="/mergers-acquisitions" component={MA}/>
-              <Route path="/strategic-advisory" component={SA}/>
-              <Route path="/fund-raise" component={FR}/>
-              <Route path="" component={Home} />
-              <Route path="/*" component={Home} />
-              <Route component={Home} />
-           </Switch>
-           
-        </div> 
-      </BrowserRouter>
+      <HashRouter>
+        <Switch>
+          <Route path="/transactions" >
+            <Transactions/>
+          </Route>
+          <Route path="/contact">
+            <Contact/>
+          </Route>
+          <Route path="/about-us">
+            <WhyUs/>
+          </Route>
+          <Route path="/expertise">
+            <Expertise/>
+          </Route>
+          <Route path="/team">
+            <Team/>
+          </Route>
+          <Route path="/mergers-acquisitions">
+            <MA/>
+          </Route>
+          <Route path="/strategic-advisory">
+            <SA/>
+          </Route>
+          <Route path="/fund-raise">
+            <FR/>
+          </Route>
+          <Route path="/">
+            <Home/>
+          </Route>
+          <Route>
+            <Home/>
+          </Route>
+        </Switch>
+      </HashRouter>
     );
   }
 }

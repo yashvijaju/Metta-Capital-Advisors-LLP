@@ -27,6 +27,7 @@ import Footer from './Footer';
 import './Scroll.css';
 import bg3 from './Media/bg3.jpg';
 import bg2 from './Media/bg2.jpg';
+import reliance from './Media/reliance.jpg'
 
 import { KeyboardArrowLeftOutlined, KeyboardArrowRightOutlined } from '@material-ui/icons';
 
@@ -70,10 +71,11 @@ export default function Transactions() {
         setArrayIndex(value-1);
     }
 
-    let arrayImg = [flipkart,fgroup,shopperstop,arvindfashion,arvind,koovs,foodworld,vulcan,nse,landmark,arvindfashion,beinghuman];
-    let arrayImg2 = [flyingmachine,amazon,hypercity,multiples,nulll,flf,fretail,fsc,nulll,nulll,nulll,mrvl];
-    let arrayTitles = ['Sale of significant minority stake by AFL in Arvind Youth Brands to Flipkart','Investment in Future Coupons by Amazon','Sale of HyperCity by Shoppers Stop to Future Retail','Private Equity Investment in Arvind Fashions by Multiples','Demerger & Listing of Branded Apparel & Engineering Businesses','Acquisition of 29.9% Stake in Koovs PLC by Future Lifestyle','Acquisition of Foodworld Supermarkets by Future Retail','Acquisition of Vulcan Express by Future Supply Chain Solutions from Snapdeal','Block Deal','Consolidation of Landmark Auto companies','Advisor to Rights Issue','Sale of Assets'];
-    let arrayDesc = ['(Rs 260 Cr)','','Represented both - Buyer and Seller (Rs 910 Cr)','(Rs 740 Cr)','(Rs 6,600 Cr)','(Rs 140 Cr)','(Rs 41 Cr)','','','','(Rs 400 Cr)',''];
+    let arrayImg = [fgroup,flipkart,fgroup,shopperstop,arvindfashion,arvind,koovs,foodworld,vulcan,nse,landmark,arvindfashion,beinghuman];
+    let arrayImg2 = [reliance,flyingmachine,amazon,hypercity,multiples,nulll,flf,fretail,fsc,nulll,nulll,nulll,mrvl];
+    let arrayTitles = [`Merger of FRL, FLFL, FCL, FSCL and FMNL into FEL.`,'Sale of significant minority stake by AFL in Arvind Youth Brands to Flipkart','Investment in Future Coupons by Amazon','Sale of HyperCity by Shoppers Stop to Future Retail','Private Equity Investment in Arvind Fashions by Multiples','Demerger & Listing of Branded Apparel & Engineering Businesses','Acquisition of 29.9% Stake in Koovs PLC by Future Lifestyle','Acquisition of Foodworld Supermarkets by Future Retail','Acquisition of Vulcan Express by Future Supply Chain Solutions from Snapdeal','Block Deal','Consolidation of Landmark Auto companies','Advisor to Rights Issue','Sale of Assets'];
+    let arraySubTitles = [`Sale by FEL of the retail, wholesale, logistics and warehouse businesses to Reliance Retail`];
+    let arrayDesc = ['(Rs 24,713 Cr)','(Rs 260 Cr)','','Represented both - Buyer and Seller (Rs 910 Cr)','(Rs 740 Cr)','(Rs 6,600 Cr)','(Rs 140 Cr)','(Rs 41 Cr)','','','','(Rs 400 Cr)',''];
     let arrayMedia = ['','','','','','','','','','','',''];
 
 
@@ -117,6 +119,8 @@ export default function Transactions() {
                                     <Grid item>
                                         <Typography gutterBottom variant="subtitle1" align="center" style={styleHeadline}>
                                         {arrayTitles[arrayIndex]}
+                                        <br/>
+                                        {arraySubTitles[arrayIndex]}
                                         </Typography>
                                     </Grid>
                                     <Grid item>
@@ -152,6 +156,12 @@ export default function Transactions() {
                                     <Grid item>
                                         <Typography gutterBottom variant="h6" style={styleHeadline}>
                                         {arrayTitles[arrayIndex]}
+                                        {(arraySubTitles[arrayIndex]) && 
+                                            <>
+                                                <br/> <br/>
+                                                {arraySubTitles[arrayIndex]}
+                                            </>
+                                        }
                                         </Typography>
                                     </Grid>
                                     <Grid item>
