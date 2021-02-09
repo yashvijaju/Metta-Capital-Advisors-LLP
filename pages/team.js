@@ -71,7 +71,7 @@ export default function Team() {
                         </Typography>
                     </div>
                 </Hidden>
-                <Grid container direction="row" style={{'paddingTop': '7vh', 'paddingBottom': '5vh'}}>
+                <Grid container direction="row" style={{'paddingTop': '7vh', 'paddingBottom': '5vh', 'paddingLeft': '10vw'}}>
                     <Hidden only="xs">
                         <Grid item xs={9} sm={5} md={3} onClick={handleOpenPJ} style={styleItemwCursor}>
                             <img src="/assets/pankajj.png" alt="Pankaj Jaju" style={{width: '100%', height: 'auto'}}/>
