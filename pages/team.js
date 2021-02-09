@@ -71,7 +71,7 @@ export default function Team() {
                         </Typography>
                     </div>
                 </Hidden>
-                <Grid container spacing={0} direction="row" justify="center" style={{'paddingTop': '7vh', 'paddingBottom': '5vh'}}>
+                <Grid container spacing={0} direction="row" style={{'paddingTop': '7vh', 'paddingBottom': '5vh'}}>
                     <Grid item xs={1} sm={1} md={1}/>
                     <Hidden only="xs">
                         <Grid item xs={9} sm={5} md={3} onClick={handleOpenPJ} style={styleItemwCursor}>
