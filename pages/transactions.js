@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { KeyboardArrowLeftOutlined, KeyboardArrowRightOutlined } from '@material-ui/icons';
 
 
-const font = 'Lato';
+const font = 'Lato'
 const grey = '#808080';
 
 const styleDesc = {color: grey, fontFamily: font, marginTop: '2vh'}
