@@ -19,6 +19,11 @@ export default function Home() {
     <div>
       <Head>
         <title>Metta Capital Advisors LLP</title>
+        <meta name="description" content="Metta Capital Advisors LLP is a boutique investment bank in Mumbai" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Metta Capital Advisors LLP" />
+        <meta property="og:description" content="Metta Capital Advisors LLP is a boutique investment bank in Mumbai" />
+        <meta property="og:site_name" content="Metta Capital Advisors LLP" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
