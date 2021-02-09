@@ -13,8 +13,8 @@ const orange = '#f8b04b';
 const font = 'Lato';
 const grey = '#808080';
 
-const styleItem = {'paddingTop': '3vh', display: 'flex', flexDirection: 'column'}
-const styleItemwCursor = {'paddingTop': '3vh', 'cursor': 'pointer', display: 'flex', flexDirection: 'column'}
+const styleItem = {'paddingLeft': '5vw', 'paddingTop': '3vh', display: 'flex', flexDirection: 'column'}
+const styleItemwCursor = {'paddingLeft': '5vw', 'paddingTop': '3vh', 'cursor': 'pointer', display: 'flex', flexDirection: 'column'}
 const styleHeadline = {color: orange, fontFamily: font}
 
 export default function Team() {
@@ -71,7 +71,7 @@ export default function Team() {
                         </Typography>
                     </div>
                 </Hidden>
-                <Grid container direction="row" style={{'paddingTop': '7vh', 'paddingBottom': '5vh', 'paddingLeft': '10vw', }}>
+                <Grid container direction="row" style={{'paddingTop': '7vh', 'paddingBottom': '5vh'}}>
                     <Hidden only="xs">
                         <Grid item xs={9} sm={5} md={3} onClick={handleOpenPJ} style={styleItemwCursor}>
                             <img src="/assets/pankajj.png" alt="Pankaj Jaju" style={{width: '100%', height: 'auto'}}/>
