@@ -1,10 +1,10 @@
 import Grid from '@material-ui/core/Grid'
 import NavBar from '../Components/NavBar'
 import {Typography, Hidden} from '@material-ui/core'
-import {Pagination} from '@material-ui/lab'
+// import {Pagination} from '@material-ui/lab'
 import Footer from '../Components/Footer';
 import { useState } from 'react';
-import { KeyboardArrowLeftOutlined, KeyboardArrowRightOutlined } from '@material-ui/icons';
+import { KeyboardArrowLeftOutlined, KeyboardArrowRightOutlined, ExpandLessOutlined, ExpandMoreOutlined } from '@material-ui/icons';
 
 
 const font = 'Lato'
@@ -82,7 +82,7 @@ export default function Transactions() {
                 <Hidden smUp>
                     <Grid container spacing={0} direction="row" justify="center" style={{'paddingTop': '10vh'}}>
                         <Grid item xs={1} style={{display: 'flex', justifyContent: 'center'}} onClick={()=>{handleClick("prev")}}>
-                            <KeyboardArrowLeftOutlined id="leftPtr"  fontSize="large" style={{cursor: 'pointer', paddingTop: '10vh'}}/>
+                            <KeyboardArrowLeftOutlined id="leftPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
                         </Grid>
                         <Grid item xs={8} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', paddingLeft: '5vw'}}>
                             <Grid item xs={12} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -112,16 +112,16 @@ export default function Transactions() {
                             </Grid>
                         </Grid>
                         <Grid item xs={1} style={{display: 'flex', justifyContent: 'center'}} onClick={()=>{handleClick("next")}}>
-                            <KeyboardArrowRightOutlined id="rightPtr"  fontSize="large" style={{cursor: 'pointer', paddingTop: '10vh'}}/>
+                            <KeyboardArrowRightOutlined id="rightPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
                         </Grid>
                     </Grid>
                 </Hidden>
                 <Hidden xsDown>
                     <Grid container direction="row" style={{'paddingTop': '20vh','paddingLeft': '10vw'}}>
-                        <Grid item xs={1} style={{display: 'flex', justifyContent: 'left'}} onClick={()=>{handleClick("prev")}}>
-                            <KeyboardArrowLeftOutlined id="leftPtr"  fontSize="large" style={{cursor: 'pointer', paddingTop: '5vh'}}/>
+                        <Grid item xs={12} style={{display: 'flex', justifyContent: 'left'}} onClick={()=>{handleClick("prev")}}>
+                            <ExpandLessOutlined id="leftPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
                         </Grid>
-                        <Grid item xs={9} style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+                        <Grid item xs={12} style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
                             <Grid item xs={5} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                                 <img src={arrayImg[arrayIndex]} alt="Logo" width="50%" style={{marginBottom: '1vh'}}/>
                                 <img src={arrayImg2[arrayIndex]} alt="Logo" width="50%"/>
@@ -152,15 +152,15 @@ export default function Transactions() {
                                 </Grid>
                             </Grid>
                         </Grid>
-                        <Grid item xs={1} style={{display: 'flex', justifyContent: 'right'}} onClick={()=>{handleClick("next")}}>
-                            <KeyboardArrowRightOutlined id="rightPtr"  fontSize="large" style={{cursor: 'pointer', paddingTop: '5vh'}}/>
+                        <Grid item xs={12} style={{display: 'flex', justifyContent: 'right'}} onClick={()=>{handleClick("next")}}>
+                            <ExpandMoreOutlined id="rightPtr" fontSize="large" style={{cursor: 'pointer'}}/>
                         </Grid>
                     </Grid>
                 </Hidden>
 
-                <Grid item style={{display: 'none', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '5vh'}}>
+                {/* <Grid item style={{display: 'none', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '5vh'}}>
                     <Pagination count={intMax+1} page={arrayIndex+1} onChange={handleChange} shape="rounded" size="small"/>
-                </Grid>
+                </Grid> */}
             </div>
             <Footer/>
         </div>

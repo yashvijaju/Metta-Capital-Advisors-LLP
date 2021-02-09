@@ -5,7 +5,7 @@ import NavBarHome from '../Components/NavBarHome';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Footer from '../Components/Footer';
-import withWidth from '@material-ui/core/withWidth';
+// import withWidth from '@material-ui/core/withWidth';
 import Hidden from '@material-ui/core/Hidden';
 
 const grey = '#808080';

@@ -21,7 +21,7 @@ export default function NavBarHome() {
     const changePosition = 5;
 
     let position;
-    if (process.browser) {
+    if (typeof window !== 'undefined') {
         position = useWindowScrollPosition();
 
         // position == { x: 0, y: 0 }
@@ -95,12 +95,12 @@ export default function NavBarHome() {
                                 <Grid item xs={1}></Grid>
                                 <Grid item xs={5} style={styleItem}>
                                     <Link href="/about-us" activeStyle={activeLink}>
-                                        <div className="style_link_sm">
+                                        <div className="style_link">
                                             <p>About Us</p>
                                         </div>
                                     </Link>
-                                    <div style={{cursor: 'pointer'}} onClick={(e)=>handleClick(e)} aria-controls="simple-menu" aria-haspopup="true">
-                                            <p id="Expertise Dropdown" style={{fontSize: '1vw', color:customStyle, textAlign: 'center', fontFamily: font}}>Expertise</p>
+                                    <div className="style_link" onClick={(e)=>handleClick(e)} aria-controls="simple-menu" aria-haspopup="true">
+                                            <p id="Expertise Dropdown">Expertise</p>
                                     </div>
                                     <Menu
                                         id="simple-menu"
@@ -114,39 +114,39 @@ export default function NavBarHome() {
                                         <div style={{backgroundColor:colorBG, marginTop: '-1vh', paddingTop: '2vh', marginBottom: '-1.25vh'}}>
                                             <Link href="/mergers-acquisitions" activeStyle={activeLink}>
                                                 <MenuItem onClick={()=>handleClose("selected")} style={{marginBottom: '-2vh'}}>
-                                                    <div className="style_link_sm">
-                                                        <p style={{fontSize: '1vw'}}>M&A Advisory</p>
+                                                    <div className="style_link">
+                                                        <p>M&A Advisory</p>
                                                     </div>
                                                 </MenuItem>
                                             </Link>
                                             <Link href="/strategic-advisory" activeStyle={activeLink}>
                                                 <MenuItem onClick={()=>handleClose("selected")} style={{marginBottom: '-2vh'}}>
-                                                    <div className="style_link_sm">
-                                                        <p style={{fontSize: '1vw'}}>Strategic Advisory</p>
+                                                    <div className="style_link">
+                                                        <p>Strategic Advisory</p>
                                                     </div>
                                                 </MenuItem>
                                             </Link>
                                             <Link href="/fund-raise" activeStyle={activeLink}>
                                                 <MenuItem onClick={()=>handleClose("selected")}>
-                                                    <div className="style_link_sm">
-                                                        <p style={{fontSize: '1vw'}}>Fund Raising</p>
+                                                    <div className="style_link">
+                                                        <p>Fund Raising</p>
                                                     </div>
                                                 </MenuItem>
                                             </Link>
                                         </div>
                                     </Menu>
                                     <Link href="/team" activeStyle={activeLink}>
-                                        <div className="style_link_sm">
+                                        <div className="style_link">
                                             <p>Team</p>
                                         </div>
                                     </Link>
                                     <Link href="/transactions" activeStyle={activeLink}>
-                                        <div className="style_link_sm">
+                                        <div className="style_link">
                                             <p>Transactions</p>
                                         </div>
                                     </Link>
                                     <Link href="/contact" activeStyle={activeLink}>
-                                        <div className="style_link_sm">
+                                        <div className="style_link">
                                             <p>Contact</p>
                                         </div>
                                     </Link>
@@ -174,8 +174,8 @@ export default function NavBarHome() {
                                             </div>
                                         </Link>
                                     
-                                        <div style={{cursor: 'pointer'}} onClick={(e)=>handleClick(e)} aria-controls="simple-menu" aria-haspopup="true">
-                                            <p id="Expertise Dropdown" style={{fontSize: '2.5vw', color:customStyle, textAlign: 'center', fontFamily: font}}>Expertise</p>
+                                        <div className="style_link_sm" onClick={(e)=>handleClick(e)} aria-controls="simple-menu" aria-haspopup="true">
+                                            <p id="Expertise Dropdown">Expertise</p>
                                         </div>
                                         <Menu
                                             id="simple-menu"
@@ -235,19 +235,19 @@ export default function NavBarHome() {
             </div>
             <style jsx>{`
                 .style_link {
-                    fontSize: 1vw;
-                    textDecoration: none;
+                    font-size: 1vw;
+                    // text-decoration: none;
                     color: #808080;
-                    textAlign: center; 
-                    fontFamily: 'Lato';
+                    text-align: center; 
+                    font-family: 'Lato';
                     cursor: pointer;
                 }
                 .style_link_sm {
-                    fontSize: 2.5vw;
-                    textDecoration: none;
+                    font-size: 2.5vw;
+                    text-decoration: none;
                     color: #808080; 
-                    textAlign: center; 
-                    fontFamily: 'Lato';
+                    text-align: center; 
+                    font-family: 'Lato';
                     cursor: pointer;
                 }
             `}

@@ -17,7 +17,7 @@ const styleItem = {'paddingLeft': '5vw', 'paddingTop': '3vh', display: 'flex', f
 const styleItemwCursor = {'paddingLeft': '5vw', 'paddingTop': '3vh', 'cursor': 'pointer', display: 'flex', flexDirection: 'column'}
 const styleHeadline = {color: orange, fontFamily: font}
 
-export default function Expertise() {
+export default function Team() {
     const [openPJ, setOpenPJ] = useState(false);
     const [openSS, setOpenSS] = useState(false);
     const [openSB, setOpenSB] = useState(false);
@@ -71,7 +71,7 @@ export default function Expertise() {
                         </Typography>
                     </div>
                 </Hidden>
-                <Grid container spacing={0} direction="row" justifyContent="center" style={{'paddingTop': '7vh', 'paddingBottom': '5vh'}}>
+                <Grid container spacing={0} direction="row" justify="center" style={{'paddingTop': '7vh', 'paddingBottom': '5vh'}}>
                     <Grid item xs={1} sm={1} md={1}/>
                     <Hidden only="xs">
                         <Grid item xs={9} sm={5} md={3} onClick={handleOpenPJ} style={styleItemwCursor}>
@@ -157,53 +157,8 @@ export default function Expertise() {
                             </Grid>
                         </Grid>
                     </Hidden>
-                    {/* <Hidden mdUp>
-                        <Grid item xs={2} sm={1}/>
-                        <Grid item xs={1}/>
-                    </Hidden>
-                    <Hidden only="xs">
-                        <Grid item xs={9} sm={5} md={3} onClick={handleOpenSB} style={styleItemwCursor}>
-                            <img src="/assets/null.jpg" alt="Sonal Biyani" style={{width: '100%', height: 'auto'}}/>
-                            <Grid container spacing={0} direction="row">
-                                <Grid item width="90%">
-                                    <Grid container direction="column">
-                                        <Typography variant="subtitle1" style={styleHeadline}>
-                                        Sonal Biyani
-                                        </Typography>
-                                        <Typography variant="caption" style={{fontFamily: font}}>
-                                        
-                                        </Typography>
-                                    </Grid>
-                                </Grid>
-                                <Grid item width="10%" style={{'paddingTop': '5px', 'paddingLeft': '5px', color: grey}}>
-                                    <LinkedIn fontSize="small"/>
-                                </Grid>
-                            </Grid>
-                        </Grid>
-                    </Hidden>
-                    <Hidden smUp>
-                        <Grid item xs={9} sm={5} md={3}  style={styleItem} >
-                            <img src="/assets/null.jpg" alt="Sonal Biyani" style={{width: '100%', height: 'auto'}}/> 
-                            <Grid item width="100%">
-                                <Grid container direction="column">
-                                    <Typography variant="subtitle1" style={styleHeadline}>
-                                    Sonal Biyani
-                                    </Typography>
-                                    <Grid item style={{'paddingTop': '5px', display: 'flex', flexDirection: 'row'}}>
-                                        <Typography variant="caption" style={{fontFamily: font}}>
-                                            
-                                        </Typography>
-                                        <a href="https://www.linkedin.com/in/sonalbiyani/" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: grey, 'paddingLeft': '5px', 'paddingTop': '5px'}}>
-                                            <LinkedIn fontSize="small"/>
-                                        </a>
-                                    </Grid>
-                                </Grid>
-                            </Grid>
-                        </Grid>
-                    </Hidden> */}
                 </Grid>
                 
-
                 <Modal
                     style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}
                     aria-labelledby="image-modal"
@@ -358,85 +313,6 @@ export default function Expertise() {
                     </div>
                     </Fade>
                 </Modal>
-                {/* <Modal
-                    style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}
-                    aria-labelledby="image-modal"
-                    aria-describedby="story-modal"
-                    open={openSB}
-                    onClose={handleCloseSB}
-                    closeAfterTransition={true}
-                    BackdropComponent={Backdrop}
-                    BackdropProps={{
-                    timeout: 500,
-                    }}
-                >
-                    <Fade in={openSB}>
-                    <div style={{backgroundColor: 'white', border: '3px solid #f8b04b', boxShadow: 'shadows[5]', width: '60vw', 'maxHeight': '75vh', 'overflowY': 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', outline: 'none'}}>
-                        <Grid container style={{'padding': '10px'}}>
-                            
-                            <Hidden mdUp>
-                                <Grid item xs={12}>
-                                    <Grid container spacing={0} direction="row">
-                                        <Grid item width="90%">
-                                            <Grid container direction="column">
-                                                <Typography variant="h6" style={styleHeadline}>
-                                                Sonal Biyani
-                                                </Typography>
-                                                <Typography variant="subtitle1">
-                                                
-                                                </Typography>
-                                            </Grid>
-                                        </Grid>
-                                        <Grid item width="10%" style={{'paddingTop': '5px', 'paddingLeft': '5px'}}>
-                                            <a href="https://www.linkedin.com/in/sonalbiyani/" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: 'grey'}}>
-                                                <LinkedIn fontSize="small"/>
-                                            </a>
-                                        </Grid>
-                                    </Grid>
-                                </Grid>
-                                <Grid item xs={12} style={{'paddingTop': '10px'}}>
-                                    <Typography variant="body2" style={{color: grey, fontFamily: font}}>
-                                    Sonal has over 13 years of experience in capital markets, fund raising (IPO, PE) and Mergers & Acquisitions. She has previously worked as an Investment Banker at Axis Capital (Mumbai), Enam Securities (Mumbai), and Lehman Brothers (Mumbai). Sonal is an MBA from IIFT, Delhi and has a Degree in Engineering from Jodhpur University. She is also a CFA (US) charter holder.
-                                    </Typography>
-                                </Grid>
-                            </Hidden>
-
-                             <Hidden smDown>
-                                <Grid item xs={5}>
-                                    <img id="image-modal"src="/assets/null.jpg" alt="Sonal Biyani" style={{width: '90%', height: 'auto'}}></img>
-                                </Grid>
-                                <Grid item md={6}>
-                                    <Grid container direction="column">
-                                        <Grid container spacing={0} direction="row">
-                                            <Grid item width="90%">
-                                                <Grid container  direction="column">
-                                                    <Typography variant="h6" style={styleHeadline}>
-                                                    Sonal Biyani
-                                                    </Typography>
-                                                    <Typography variant="subtitle1">
-                                                    
-                                                    </Typography>
-                                                </Grid>
-                                            </Grid>
-                                            <Grid item width="10%" style={{'paddingTop': '5px', 'paddingLeft': '5px'}}>
-                                                <a href="https://www.linkedin.com/in/sonalbiyani/" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: 'grey'}}>
-                                                    <LinkedIn fontSize="small"/>
-                                                </a>
-                                            </Grid>
-                                        </Grid>
-                                        <Grid item style={{'paddingTop': '10px'}}>
-                                            <Typography variant="body2" style={{color: grey, fontFamily: font, textJustify: 'inter word', textAlign: 'justify'}}>
-                                            Sonal has over 13 years of experience in capital markets, fund raising (IPO, PE) and Mergers & Acquisitions. She has previously worked as an Investment Banker at Axis Capital (Mumbai), Enam Securities (Mumbai), and Lehman Brothers (Mumbai). Sonal is an MBA from IIFT, Delhi and has a Degree in Engineering from Jodhpur University. She is also a CFA (US) charter holder.
-                                            </Typography>
-                                        </Grid>
-                                    </Grid>
-                                </Grid>
-                            </Hidden>
-                            <Grid item xs={1}/>
-                        </Grid>
-                    </div>
-                    </Fade>
-                </Modal> */}
             </div>
             <Footer/>
         </div>

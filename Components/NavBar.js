@@ -72,8 +72,8 @@ export default function NavBar() {
                                             <p>About Us</p>
                                         </div>
                                     </Link>
-                                    <div style={{cursor: 'pointer'}} onClick={(e)=>handleClick(e)} aria-controls="simple-menu" aria-haspopup="true">
-                                        <p id="Expertise Dropdown" style={{fontSize: '1vw', color:customStyle, textAlign: 'center', fontFamily: font}}>Expertise</p>
+                                    <div className="style_link" onClick={(e)=>handleClick(e)} aria-controls="simple-menu" aria-haspopup="true">
+                                        <p id="Expertise Dropdown">Expertise</p>
                                     </div>
                                     <Menu
                                         id="simple-menu"
@@ -88,21 +88,21 @@ export default function NavBar() {
                                             <Link href="/mergers-acquisitions">
                                                 <MenuItem style={{marginBottom: '-2vh'}}>
                                                 <div className="style_link">
-                                                    <p style={{fontSize: '1vw'}}>M&A Advisory</p>
+                                                    <p>M&A Advisory</p>
                                                 </div>
                                                 </MenuItem>
                                             </Link>
                                             <Link href="/strategic-advisory" activeStyle={activeLink}>
                                                 <MenuItem style={{marginBottom: '-2vh'}}>
                                                 <div className="style_link">
-                                                    <p style={{fontSize: '1vw'}}>Strategic Advisory</p>
+                                                    <p>Strategic Advisory</p>
                                                 </div>
                                                 </MenuItem>
                                             </Link>
                                             <Link href="/fund-raise" activeStyle={activeLink}>
                                                 <MenuItem>
                                                 <div className="style_link">
-                                                    <p style={{fontSize: '1vw'}}>Fund Raising</p>
+                                                    <p>Fund Raising</p>
                                                 </div>
                                                 </MenuItem>
                                             </Link>
@@ -207,19 +207,19 @@ export default function NavBar() {
             </div>
             <style jsx>{`
                 .style_link {
-                    fontSize: 1vw;
-                    textDecoration: none;
+                    font-size: 1vw;
+                    text-decoration: none;
                     color: #808080;
-                    textAlign: center; 
-                    fontFamily: 'Lato';
+                    text-align: center; 
+                    font-family: 'Lato';
                     cursor: pointer;
                 }
                 .style_link_sm {
-                    fontSize: 2.5vw;
-                    textDecoration: none;
+                    font-size: 2.5vw;
+                    text-decoration: none;
                     color: #808080; 
-                    textAlign: center; 
-                    fontFamily: 'Lato';
+                    text-align: center; 
+                    font-family: 'Lato';
                     cursor: pointer;
                 }
             `}
