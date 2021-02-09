@@ -6,7 +6,7 @@ import Hidden from '@material-ui/core/Hidden';
 import { Menu, MenuItem } from '@material-ui/core';
 import { useState } from 'react';
 
-const grey = '#808080';
+const grey = '#808080'
 const font = 'Lato';
 const styleItem = {display: 'flex', 'flexDirection': 'row', 'justifyContent': 'space-around', alignItems: 'center'}
 const activeLink = {fontSize: '1vw', color: "#F8B04B", fontWeight: 'bolder',textAlign: 'center', fontFamily: font}
