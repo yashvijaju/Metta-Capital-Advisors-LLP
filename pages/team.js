@@ -358,7 +358,7 @@ export default function Expertise() {
                     </div>
                     </Fade>
                 </Modal>
-                <Modal
+                {/* <Modal
                     style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}
                     aria-labelledby="image-modal"
                     aria-describedby="story-modal"
@@ -401,7 +401,7 @@ export default function Expertise() {
                                 </Grid>
                             </Hidden>
 
-                            {/* <Hidden smDown>
+                             <Hidden smDown>
                                 <Grid item xs={5}>
                                     <img id="image-modal"src="/assets/null.jpg" alt="Sonal Biyani" style={{width: '90%', height: 'auto'}}></img>
                                 </Grid>
@@ -431,12 +431,12 @@ export default function Expertise() {
                                         </Grid>
                                     </Grid>
                                 </Grid>
-                            </Hidden> */}
+                            </Hidden>
                             <Grid item xs={1}/>
                         </Grid>
                     </div>
                     </Fade>
-                </Modal>
+                </Modal> */}
             </div>
             <Footer/>
         </div>

@@ -4,8 +4,6 @@ import {Typography, Hidden} from '@material-ui/core'
 import {Pagination} from '@material-ui/lab'
 import Footer from '../components/Footer';
 import { useState } from 'react';
-
-
 import { KeyboardArrowLeftOutlined, KeyboardArrowRightOutlined } from '@material-ui/icons';
 
 
@@ -60,7 +58,7 @@ export default function Transactions() {
         <div>
             <div style={{'minHeight': '90vh', 'paddingBottom': '5vh'}}>
                 <NavBar></NavBar>
-               <Hidden xsDown>
+                <Hidden xsDown>
                     <div className="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', position: 'relative', top: '0'}}>
                         <img src="/assets/bg2.jpg" alt="Worli Sea Link" style={{'objectFit': 'fill', 'maxHeight': '50vh', 'width': '100vw', opacity: '0.9'}}/>
                     </div>
