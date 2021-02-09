@@ -13,7 +13,7 @@ const orange = '#f8b04b';
 const font = 'Lato';
 const grey = '#808080';
 
-const styleItem = {'paddingLeft': '5vw', 'paddingTop': '3vh', display: 'flex', flexDirection: 'column'}
+const styleItem = {'paddingTop': '3vh', display: 'flex', flexDirection: 'column'}
 const styleItemwCursor = {'paddingTop': '3vh', 'cursor': 'pointer', display: 'flex', flexDirection: 'column'}
 const styleHeadline = {color: orange, fontFamily: font}
 
