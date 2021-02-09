@@ -93,7 +93,7 @@ export default function Home() {
           <Grid container spacing={0} direction="row" style={{padding: '5vh 0vw 5vh 0vw'}}>
               <Grid item xs={10} sm={3} style={styleItem}>
                   <Link href="/mergers-acquisitions">
-                      <Grid container direction="row">
+                      <Grid container direction="row" style={{cursor: 'pointer'}}>
                         <Grid item xs={2} sm={3} md={2}>
                           <Typography gutterBottom variant="h4" style={styleHeadline}>
                           1
@@ -109,7 +109,7 @@ export default function Home() {
               </Grid>
               <Grid item xs={10} sm={3} style={styleItem}>
                   <Link href="/mergers-acquisitions">
-                      <Grid container direction="row">
+                      <Grid container direction="row" style={{cursor: 'pointer'}}>
                         <Grid item xs={2} sm={3} md={2}>
                           <Typography gutterBottom variant="h4" style={styleHeadline}>
                           3
@@ -124,7 +124,7 @@ export default function Home() {
               </Grid>
               <Grid item xs={10} sm={3} style={styleItem}>
                   <Link href="/about-us">
-                      <Grid container direction="row">
+                      <Grid container direction="row" style={{cursor: 'pointer'}}>
                         <Grid item xs={2} sm={3} md={2}>
                           <Typography gutterBottom variant="h4" style={styleHeadline}>
                           1

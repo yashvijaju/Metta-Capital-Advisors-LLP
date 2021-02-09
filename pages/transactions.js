@@ -117,7 +117,7 @@ export default function Transactions() {
                     </Grid>
                 </Hidden>
                 <Hidden xsDown>
-                    <Grid container spacing={0} direction="row" style={{'paddingTop': '20vh','paddingLeft': '10vw'}}>
+                    <Grid container direction="row" style={{'paddingTop': '20vh','paddingLeft': '10vw'}}>
                         <Grid item xs={1} style={{display: 'flex', justifyContent: 'left'}} onClick={()=>{handleClick("prev")}}>
                             <KeyboardArrowLeftOutlined id="leftPtr"  fontSize="large" style={{cursor: 'pointer', paddingTop: '5vh'}}/>
                         </Grid>
