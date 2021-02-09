@@ -1,8 +1,8 @@
 import Grid from '@material-ui/core/Grid'
-import NavBar from '../components/NavBar'
+import NavBar from '../Components/NavBar'
 import {Typography, Hidden} from '@material-ui/core'
 import {Pagination} from '@material-ui/lab'
-import Footer from '../components/Footer';
+import Footer from '../Components/Footer';
 import { useState } from 'react';
 import { KeyboardArrowLeftOutlined, KeyboardArrowRightOutlined } from '@material-ui/icons';
 

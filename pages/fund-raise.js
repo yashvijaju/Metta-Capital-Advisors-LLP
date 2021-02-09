@@ -1,7 +1,7 @@
 import Grid from '@material-ui/core/Grid'
-import NavBar from '../components/NavBar';
+import NavBar from '../Components/NavBar';
 import {Typography, Hidden} from '@material-ui/core'
-import Footer from '../components/Footer';
+import Footer from '../Components/Footer';
 
 const font = 'Lato';
 const grey = '#808080';
