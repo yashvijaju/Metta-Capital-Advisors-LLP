@@ -82,7 +82,7 @@ export default function Transactions() {
                 <Hidden smUp>
                     <Grid container spacing={0} direction="row" justify="center" style={{'paddingTop': '10vh'}}>
                         <Grid item xs={1} style={{display: 'flex', justifyContent: 'center'}} onClick={()=>{handleClick("prev")}}>
-                            <KeyboardArrowLeftOutlined id="leftPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
+                            <ExpandLessOutlined id="leftPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
                         </Grid>
                         <Grid item xs={8} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', paddingLeft: '5vw'}}>
                             <Grid item xs={12} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -112,14 +112,14 @@ export default function Transactions() {
                             </Grid>
                         </Grid>
                         <Grid item xs={1} style={{display: 'flex', justifyContent: 'center'}} onClick={()=>{handleClick("next")}}>
-                            <KeyboardArrowRightOutlined id="rightPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
+                            <ExpandMoreOutlined id="rightPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
                         </Grid>
                     </Grid>
                 </Hidden>
                 <Hidden xsDown>
                     <Grid container direction="row" style={{'paddingTop': '20vh','paddingLeft': '10vw'}}>
                         <Grid item xs={12} style={{display: 'flex', justifyContent: 'left'}} onClick={()=>{handleClick("prev")}}>
-                            <ExpandLessOutlined id="leftPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
+                            <KeyboardArrowLeftOutlined id="leftPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
                         </Grid>
                         <Grid item xs={12} style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
                             <Grid item xs={5} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
@@ -153,7 +153,7 @@ export default function Transactions() {
                             </Grid>
                         </Grid>
                         <Grid item xs={12} style={{display: 'flex', justifyContent: 'right'}} onClick={()=>{handleClick("next")}}>
-                            <ExpandMoreOutlined id="rightPtr" fontSize="large" style={{cursor: 'pointer'}}/>
+                            <KeyboardArrowRightOutlined id="rightPtr" fontSize="large" style={{cursor: 'pointer'}}/>
                         </Grid>
                     </Grid>
                 </Hidden>
