@@ -81,10 +81,10 @@ export default function Transactions() {
 
                 <Hidden smUp>
                     <Grid container spacing={0} direction="row" justify="center" style={{'paddingTop': '10vh'}}>
-                        <Grid item xs={1} style={{display: 'flex', justifyContent: 'center'}} onClick={()=>{handleClick("prev")}}>
+                        <Grid item xs={12} style={{display: 'flex', justifyContent: 'center'}} onClick={()=>{handleClick("prev")}}>
                             <ExpandLessOutlined id="leftPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
                         </Grid>
-                        <Grid item xs={8} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', paddingLeft: '5vw'}}>
+                        <Grid item xs={12} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', paddingLeft: '5vw'}}>
                             <Grid item xs={12} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                                 <img src={arrayImg2[arrayIndex]} alt="Logo" width="60%" style={{marginBottom: '1vh'}}/>
                                 <img src={arrayImg[arrayIndex]} alt="Logo" width="60%"/>
@@ -111,17 +111,17 @@ export default function Transactions() {
                                 </Grid>
                             </Grid>
                         </Grid>
-                        <Grid item xs={1} style={{display: 'flex', justifyContent: 'center'}} onClick={()=>{handleClick("next")}}>
+                        <Grid item xs={12} style={{display: 'flex', justifyContent: 'center'}} onClick={()=>{handleClick("next")}}>
                             <ExpandMoreOutlined id="rightPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
                         </Grid>
                     </Grid>
                 </Hidden>
                 <Hidden xsDown>
                     <Grid container direction="row" style={{'paddingTop': '20vh','paddingLeft': '10vw'}}>
-                        <Grid item xs={12} style={{display: 'flex', justifyContent: 'left'}} onClick={()=>{handleClick("prev")}}>
+                        <Grid item xs={1} style={{display: 'flex', justifyContent: 'left'}} onClick={()=>{handleClick("prev")}}>
                             <KeyboardArrowLeftOutlined id="leftPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
                         </Grid>
-                        <Grid item xs={12} style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+                        <Grid item xs={8} style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
                             <Grid item xs={5} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                                 <img src={arrayImg[arrayIndex]} alt="Logo" width="50%" style={{marginBottom: '1vh'}}/>
                                 <img src={arrayImg2[arrayIndex]} alt="Logo" width="50%"/>
@@ -152,7 +152,7 @@ export default function Transactions() {
                                 </Grid>
                             </Grid>
                         </Grid>
-                        <Grid item xs={12} style={{display: 'flex', justifyContent: 'right'}} onClick={()=>{handleClick("next")}}>
+                        <Grid item xs={1} style={{display: 'flex', justifyContent: 'right'}} onClick={()=>{handleClick("next")}}>
                             <KeyboardArrowRightOutlined id="rightPtr" fontSize="large" style={{cursor: 'pointer'}}/>
                         </Grid>
                     </Grid>
