@@ -121,7 +121,7 @@ export default function Transactions() {
                         <Grid item xs={1} style={{display: 'flex', justifyContent: 'left'}} onClick={()=>{handleClick("prev")}}>
                             <KeyboardArrowLeftOutlined id="leftPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
                         </Grid>
-                        <Grid item xs={8} style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+                        <Grid item xs={10} style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
                             <Grid item xs={5} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                                 <img src={arrayImg[arrayIndex]} alt="Logo" width="50%" style={{marginBottom: '1vh'}}/>
                                 <img src={arrayImg2[arrayIndex]} alt="Logo" width="50%"/>
