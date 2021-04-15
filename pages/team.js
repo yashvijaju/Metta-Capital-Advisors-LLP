@@ -368,7 +368,7 @@ export default function Team() {
                     timeout: 500,
                     }}
                 >
-                    <Fade in={openSS}>
+                    <Fade in={openAC}>
                     <div style={{backgroundColor: 'white', border: '3px solid #f8b04b', boxShadow: 'shadows[5]', width: '60vw', 'maxHeight': '75vh', 'overflowY': 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', outline: 'none'}}>
                         <Grid container style={{'padding': '10px'}}>
                             
@@ -401,7 +401,7 @@ export default function Team() {
 
                             <Hidden smDown>
                                 <Grid item xs={5}>
-                                    <img id="image-modal"src="/assets/saurabhs.png" alt="Saurabh Singhi" style={{width: '90%', height: 'auto'}}></img>
+                                    <img id="image-modal"src="/assets/ashish.png" alt="Saurabh Singhi" style={{width: '90%', height: 'auto'}}></img>
                                 </Grid>
                                 <Grid item md={6} >
                                     <Grid container direction="column">
