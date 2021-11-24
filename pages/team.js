@@ -5,7 +5,7 @@ import Footer from '../Components/Footer';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-import { LinkedIn } from '@material-ui/icons';
+// import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Hidden from '@material-ui/core/Hidden';
 import { useState } from 'react';
 
@@ -20,7 +20,7 @@ const styleHeadline = {color: orange, fontFamily: font}
 export default function Team() {
     const [openPJ, setOpenPJ] = useState(false);
     const [openSS, setOpenSS] = useState(false);
-    const [openAC, setOpenAC] = useState(false);
+    const [openDP, setOpenDP] = useState(false);
 
     const handleOpenPJ = () => {
         setOpenPJ(true);
@@ -38,12 +38,12 @@ export default function Team() {
         setOpenSS(false);
     };
 
-    const handleOpenAC = () => {
-        setOpenAC(true);
+    const handleopenDP = () => {
+        setOpenDP(true);
       };
     
-    const handleCloseAC = () => {
-        setOpenAC(false);
+    const handleCloseDP = () => {
+        setOpenDP(false);
     };
 
     
@@ -87,7 +87,7 @@ export default function Team() {
                                     </Grid>
                                 </Grid>
                                 <Grid item width="10%" style={{'paddingTop': '5px', color: grey}}>
-                                    <LinkedIn fontSize="small"/>
+                                    {/* <LinkedInIcon fontSize="small"/> */}
                                 </Grid>
                             </Grid>
                         </Grid>
@@ -105,7 +105,7 @@ export default function Team() {
                                             Founder & CEO
                                         </Typography>
                                         <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: grey, 'paddingLeft': '5px', 'paddingTop': '5px'}}>
-                                            <LinkedIn fontSize="small"/>
+                                            {/* <LinkedInIcon fontSize="small"/> */}
                                         </a>
                                     </Grid>
                                 </Grid>
@@ -118,7 +118,7 @@ export default function Team() {
                     </Hidden>
                     <Hidden only="xs">
                         <Grid item xs={9} sm={5} md={3} onClick={handleOpenSS} style={styleItemwCursor}>
-                            <img src="/assets/saurabhs.png" alt="Saurabh Singhi" style={{width: '100%', height: 'auto'}}/>
+                            <img src="/assets/saurabh.jfif" alt="Saurabh Singhi" style={{width: '100%', height: 'auto'}}/>
                             <Grid container spacing={0} direction="row">
                                 <Grid item width="90%">
                                     <Grid container direction="column">
@@ -131,14 +131,14 @@ export default function Team() {
                                     </Grid>
                                 </Grid>
                                 <Grid item width="10%" style={{'paddingTop': '5px', 'paddingLeft': '5px', color: grey}}>
-                                    <LinkedIn fontSize="small"/>
+                                    {/* <LinkedInIcon fontSize="small"/> */}
                                 </Grid>
                             </Grid>
                         </Grid>
                     </Hidden>
                     <Hidden smUp>
                         <Grid item xs={9} sm={5} md={3} style={styleItem}>
-                            <img src="/assets/saurabhs.png" alt="Saurabh Singhi" style={{width: '100%', height: 'auto'}}/> 
+                            <img src="/assets/saurabh.jfif" alt="Saurabh Singhi" style={{width: '100%', height: 'auto'}}/> 
                             <Grid item width="100%">
                                 <Grid container direction="column">
                                     <Typography variant="subtitle1" style={styleHeadline}>
@@ -149,7 +149,7 @@ export default function Team() {
                                             
                                         </Typography>
                                         <a href="https://www.linkedin.com/in/saurabh-singhi-ba42b111/" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: grey, 'paddingLeft': '5px', 'paddingTop': '5px'}}>
-                                            <LinkedIn fontSize="small"/>
+                                            {/* <LinkedInIcon fontSize="small"/> */}
                                         </a>
                                     </Grid>
                                 </Grid>
@@ -161,13 +161,13 @@ export default function Team() {
                         <Grid item xs={1}/>
                     </Hidden>
                     <Hidden only="xs">
-                        <Grid item xs={9} sm={5} md={3} onClick={handleOpenAC} style={styleItemwCursor}>
-                            <img src="/assets/ashish.png" alt="Ashish Chovatia" style={{width: '100%', height: 'auto'}}/>
+                        <Grid item xs={9} sm={5} md={3} onClick={handleopenDP} style={styleItemwCursor}>
+                            <img src="/assets/dhiraj.jfif" alt="Dhiraj Pariani" style={{width: '100%', height: 'auto'}}/>
                             <Grid container spacing={0} direction="row">
                                 <Grid item width="90%">
                                     <Grid container direction="column">
                                         <Typography variant="subtitle1" style={styleHeadline}>
-                                            Ashish Chovatia
+                                            Dhiraj Pariani
                                         </Typography>
                                         <Typography variant="caption" style={{color: grey, fontFamily: font}}>
                                             
@@ -175,25 +175,25 @@ export default function Team() {
                                     </Grid>
                                 </Grid>
                                 <Grid item width="10%" style={{'paddingTop': '5px', color: grey}}>
-                                    <LinkedIn fontSize="small"/>
+                                    {/* <LinkedInIcon fontSize="small"/> */}
                                 </Grid>
                             </Grid>
                         </Grid>
                     </Hidden>
                     <Hidden smUp>
                         <Grid item xs={9} sm={5} md={3} style={styleItem}>
-                            <img src="/assets/ashish.png" alt="Ashish Chovatia" style={{width: '100%', height: 'auto'}}/>
+                            <img src="/assets/dhiraj.jfif" alt="Dhiraj Pariani" style={{width: '100%', height: 'auto'}}/>
                             <Grid item width="100%">
                                 <Grid container direction="column">
                                     <Typography variant="subtitle1" style={styleHeadline}>
-                                        Ashish Chovatia
+                                        Dhiraj Pariani
                                     </Typography>
                                     <Grid item style={{'paddingTop': '5px', display: 'flex', flexDirection: 'row'}}>
                                         <Typography variant="caption" style={{fontFamily: font}}>
                                             
                                         </Typography>
-                                        <a href="https://www.linkedin.com/in/ashish-chovatia-2038772/" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: grey, 'paddingLeft': '5px', 'paddingTop': '5px'}}>
-                                            <LinkedIn fontSize="small"/>
+                                        <a href="https://www.linkedin.com/in/dhiraj-pariani-6b68a443/" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: grey, 'paddingLeft': '5px', 'paddingTop': '5px'}}>
+                                            {/* <LinkedInIcon fontSize="small"/> */}
                                         </a>
                                     </Grid>
                                 </Grid>
@@ -230,7 +230,7 @@ export default function Team() {
                                                     Founder & CEO
                                                 </Typography>
                                                 <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: 'grey', 'paddingLeft': '5px', 'paddingTop': '5px'}}>
-                                                    <LinkedIn fontSize="small"/>
+                                                    {/* <LinkedInIcon fontSize="small"/> */}
                                                 </a>
                                             </Grid>
                                         </Grid>
@@ -257,7 +257,7 @@ export default function Team() {
                                                 Founder & CEO
                                             </Typography>
                                             <a href="https://www.linkedin.com/in/pankaj-jaju-metta/?originalSubdomain=in" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: 'grey', 'paddingLeft': '5px', 'paddingTop': '5px'}}>
-                                                <LinkedIn fontSize="small"/>
+                                                {/* <LinkedInIcon fontSize="small"/> */}
                                             </a>
                                         </Grid>
                                     </Grid>
@@ -306,7 +306,7 @@ export default function Team() {
                                         </Grid>
                                         <Grid item width="10%" style={{'paddingTop': '5px', 'paddingLeft': '5px'}}>
                                             <a href="https://www.linkedin.com/in/saurabh-singhi-ba42b111/" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: 'grey'}}>
-                                                <LinkedIn fontSize="small"/>
+                                                {/* <LinkedInIcon fontSize="small"/> */}
                                             </a>
                                         </Grid>
                                     </Grid>
@@ -320,7 +320,7 @@ export default function Team() {
 
                             <Hidden smDown>
                                 <Grid item xs={5}>
-                                    <img id="image-modal"src="/assets/saurabhs.png" alt="Saurabh Singhi" style={{width: '90%', height: 'auto'}}></img>
+                                    <img id="image-modal"src="/assets/saurabh.jfif" alt="Saurabh Singhi" style={{width: '90%', height: 'auto'}}></img>
                                 </Grid>
                                 <Grid item md={6} >
                                     <Grid container direction="column">
@@ -337,7 +337,7 @@ export default function Team() {
                                             </Grid>
                                             <Grid item width="10%" style={{'paddingTop': '5px', 'paddingLeft': '5px'}}>
                                                 <a href="https://www.linkedin.com/in/saurabh-singhi-ba42b111/" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: 'grey'}}>
-                                                    <LinkedIn fontSize="small"/>
+                                                    {/* <LinkedInIcon fontSize="small"/> */}
                                                 </a>
                                             </Grid>
                                         </Grid>
@@ -360,15 +360,15 @@ export default function Team() {
                     style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}
                     aria-labelledby="image-modal"
                     aria-describedby="story-modal"
-                    open={openAC}
-                    onClose={handleCloseAC}
+                    open={openDP}
+                    onClose={handleCloseDP}
                     closeAfterTransition={true}
                     BackdropComponent={Backdrop}
                     BackdropProps={{
                     timeout: 500,
                     }}
                 >
-                    <Fade in={openAC}>
+                    <Fade in={openDP}>
                     <div style={{backgroundColor: 'white', border: '3px solid #f8b04b', boxShadow: 'shadows[5]', width: '60vw', 'maxHeight': '75vh', 'overflowY': 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', outline: 'none'}}>
                         <Grid container style={{'padding': '10px'}}>
                             
@@ -378,7 +378,7 @@ export default function Team() {
                                         <Grid item width="90%">
                                             <Grid container direction="column">
                                                 <Typography variant="h6" style={styleHeadline}>
-                                                Ashish Chovatia
+                                                Dhiraj Pariani
                                                 </Typography>
                                                 <Typography variant="subtitle1">
                                                 
@@ -386,8 +386,8 @@ export default function Team() {
                                             </Grid>
                                         </Grid>
                                         <Grid item width="10%" style={{'paddingTop': '5px', 'paddingLeft': '5px'}}>
-                                            <a href="https://www.linkedin.com/in/ashish-chovatia-2038772/" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: 'grey'}}>
-                                                <LinkedIn fontSize="small"/>
+                                            <a href="https://www.linkedin.com/in/dhiraj-pariani-6b68a443/" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: 'grey'}}>
+                                                {/* <LinkedInIcon fontSize="small"/> */}
                                             </a>
                                         </Grid>
                                     </Grid>
@@ -401,7 +401,7 @@ export default function Team() {
 
                             <Hidden smDown>
                                 <Grid item xs={5}>
-                                    <img id="image-modal"src="/assets/ashish.png" alt="Saurabh Singhi" style={{width: '90%', height: 'auto'}}></img>
+                                    <img id="image-modal"src="/assets/dhiraj.jfif" alt="Saurabh Singhi" style={{width: '90%', height: 'auto'}}></img>
                                 </Grid>
                                 <Grid item md={6} >
                                     <Grid container direction="column">
@@ -409,7 +409,7 @@ export default function Team() {
                                             <Grid item width="90%">
                                                 <Grid container direction="column">
                                                     <Typography variant="h6" style={styleHeadline}>
-                                                    Ashish Chovatia
+                                                    Dhiraj Pariani
                                                     </Typography>
                                                     <Typography variant="subtitle1">
                                                     
@@ -417,8 +417,8 @@ export default function Team() {
                                                 </Grid>
                                             </Grid>
                                             <Grid item width="10%" style={{'paddingTop': '5px', 'paddingLeft': '5px'}}>
-                                                <a href="https://www.linkedin.com/in/ashish-chovatia-2038772/" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: 'grey'}}>
-                                                    <LinkedIn fontSize="small"/>
+                                                <a href="https://www.linkedin.com/in/dhiraj-pariani-6b68a443/" target="_blank"  rel="noopener noreferrer" title="LinkedIn" style={{color: 'grey'}}>
+                                                    {/* <LinkedInIcon fontSize="small"/> */}
                                                 </a>
                                             </Grid>
                                         </Grid>
