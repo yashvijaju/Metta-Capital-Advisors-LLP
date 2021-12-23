@@ -5,7 +5,7 @@ import Footer from '../Components/Footer';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-// import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Hidden from '@material-ui/core/Hidden';
 import { useState } from 'react';
 
