@@ -4,11 +4,10 @@ import {Typography, Hidden} from '@material-ui/core'
 // import {Pagination} from '@material-ui/lab'
 import Footer from '../Components/Footer';
 import { useState } from 'react';
-import KeyboardArrowLeftOutlinedIcon from '@mui/icons-material/KeyboardArrowLeftOutlined';
-import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined';
-import ExpandLessOutlinedIcon from '@mui/icons-material/ExpandLessOutlined';
-import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined';
-
+import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const font = 'Lato'
 const grey = '#808080';
@@ -85,7 +84,7 @@ export default function Transactions() {
                 <Hidden smUp>
                     <Grid container spacing={0} direction="row" justify="center" style={{'paddingTop': '10vh'}}>
                         <Grid item xs={12} style={{display: 'flex', justifyContent: 'center'}} onClick={()=>{handleClick("prev")}}>
-                            <ExpandLessOutlinedIcon id="leftPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
+                            <ArrowDropUpIcon id="leftPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
                         </Grid>
                         <Grid item xs={12} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', paddingLeft: '5vw'}}>
                             <Grid item xs={12} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -115,14 +114,14 @@ export default function Transactions() {
                             </Grid>
                         </Grid>
                         <Grid item xs={12} style={{display: 'flex', justifyContent: 'center'}} onClick={()=>{handleClick("next")}}>
-                            <ExpandMoreOutlinedIcon id="rightPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
+                            <ArrowDropDownIcon id="rightPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
                         </Grid>
                     </Grid>
                 </Hidden>
                 <Hidden xsDown>
                     <Grid container direction="row" style={{'paddingTop': '20vh','paddingLeft': '10vw'}}>
                         <Grid item xs={1} style={{display: 'flex', justifyContent: 'left'}} onClick={()=>{handleClick("prev")}}>
-                            <KeyboardArrowLeftOutlinedIcon id="leftPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
+                            <ArrowLeftIcon id="leftPtr"  fontSize="large" style={{cursor: 'pointer'}}/>
                         </Grid>
                         <Grid item xs={10} style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
                             <Grid item xs={5} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
@@ -156,7 +155,7 @@ export default function Transactions() {
                             </Grid>
                         </Grid>
                         <Grid item xs={1} style={{display: 'flex', justifyContent: 'right'}} onClick={()=>{handleClick("next")}}>
-                            <KeyboardArrowRightOutlinedIcon id="rightPtr" fontSize="large" style={{cursor: 'pointer'}}/>
+                            <ArrowRightIcon id="rightPtr" fontSize="large" style={{cursor: 'pointer'}}/>
                         </Grid>
                     </Grid>
                 </Hidden>
