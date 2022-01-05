@@ -246,10 +246,10 @@ export default function Team() {
                             </Hidden>
 
                             <Hidden smDown>
-                                <Grid item xs={5}>
+                                <Grid item xs={4}>
                                     <img id="image-modal" src="/assets/pankajjaju.jpg" alt="Pankaj Jaju" style={styleImageModal}></img>
                                 </Grid>
-                                <Grid item md={6} >
+                                <Grid item md={7} >
                                     <Grid container spacing={0} direction="column">
                                         <Typography variant="h6" style={styleHeadline}>
                                             Pankaj Jaju
@@ -321,10 +321,10 @@ export default function Team() {
                             </Hidden>
 
                             <Hidden smDown>
-                                <Grid item xs={5}>
+                                <Grid item xs={4}>
                                     <img id="image-modal"src="/assets/saurabh.jfif" alt="Saurabh Singhi" style={styleImageModal}></img>
                                 </Grid>
-                                <Grid item md={6} >
+                                <Grid item md={7} >
                                     <Grid container direction="column">
                                         <Grid container spacing={0} direction="row">
                                             <Grid item width="90%">
@@ -402,10 +402,10 @@ export default function Team() {
                             </Hidden>
 
                             <Hidden smDown>
-                                <Grid item xs={5}>
+                                <Grid item xs={4}>
                                     <img id="image-modal"src="/assets/dhiraj.jfif" alt="Saurabh Singhi" style={styleImageModal}></img>
                                 </Grid>
-                                <Grid item md={6} >
+                                <Grid item md={7} >
                                     <Grid container direction="column">
                                         <Grid container spacing={0} direction="row">
                                             <Grid item width="90%">
