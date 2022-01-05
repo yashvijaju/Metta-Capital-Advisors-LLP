@@ -246,7 +246,7 @@ export default function Team() {
 
                             <Hidden smDown>
                                 <Grid item xs={5}>
-                                    <img id="image-modal"src="/assets/pankajjaju.jpg" alt="Pankaj Jaju" style={styleImage}></img>
+                                    <img id="image-modal" src="/assets/pankajjaju.jpg" alt="Pankaj Jaju" style={styleImage, {width: '90%'}}></img>
                                 </Grid>
                                 <Grid item md={6} >
                                     <Grid container spacing={0} direction="column">
@@ -321,7 +321,7 @@ export default function Team() {
 
                             <Hidden smDown>
                                 <Grid item xs={5}>
-                                    <img id="image-modal"src="/assets/saurabh.jfif" alt="Saurabh Singhi" style={styleImage}></img>
+                                    <img id="image-modal"src="/assets/saurabh.jfif" alt="Saurabh Singhi" style={styleImage, {width: '90%'}}></img>
                                 </Grid>
                                 <Grid item md={6} >
                                     <Grid container direction="column">
@@ -402,7 +402,7 @@ export default function Team() {
 
                             <Hidden smDown>
                                 <Grid item xs={5}>
-                                    <img id="image-modal"src="/assets/dhiraj.jfif" alt="Saurabh Singhi" style={styleImage}></img>
+                                    <img id="image-modal"src="/assets/dhiraj.jfif" alt="Saurabh Singhi" style={styleImage, {width: '90%'}}></img>
                                 </Grid>
                                 <Grid item md={6} >
                                     <Grid container direction="column">
