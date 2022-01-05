@@ -5,15 +5,8 @@ import {Typography, Hidden, Grid} from '@material-ui/core'
 import Footer from '../Components/Footer';
 
 const font = 'Lato';
-const grey = '#808080';
-
-const styleItem = {display: 'flex', 'paddingTop': '2vh'}
-const textStyle = {fontFamily: font, color: grey}
-
 
 export default function Transactions() {
-
-    const intMax = 5;
 
     const [arrayIndex, setArrayIndex] = useState(0);
 
