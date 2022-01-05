@@ -17,6 +17,7 @@ const styleItem = {'paddingLeft': '5vw', 'paddingTop': '3vh', display: 'flex', f
 const styleItemwCursor = {'paddingLeft': '5vw', 'paddingTop': '3vh', 'cursor': 'pointer', display: 'flex', flexDirection: 'column'}
 const styleHeadline = {color: orange, fontFamily: font}
 const styleImage = {width: '100%', height: 'auto', borderRadius: '50%', border: `0.5px solid ${orange}`}
+const styleImageModal = {width: '90%', height: 'auto', borderRadius: '50%', border: `0.5px solid ${orange}`}
 
 export default function Team() {
     const [openPJ, setOpenPJ] = useState(false);
@@ -76,7 +77,7 @@ export default function Team() {
                     <Hidden only="xs">
                         <Grid item xs={9} sm={5} md={3} onClick={handleOpenPJ} style={styleItemwCursor}>
                             <img src="/assets/pankajjaju.jpg" alt="Pankaj Jaju" style={styleImage}/>
-                            <Grid container spacing={0} direction="row" justifyContent="center">
+                            <Grid container spacing={0} direction="row" justify="center">
                                 <Grid item width="90%">
                                     <Grid container direction="column">
                                         <Typography variant="subtitle1" style={styleHeadline}>
@@ -246,7 +247,7 @@ export default function Team() {
 
                             <Hidden smDown>
                                 <Grid item xs={5}>
-                                    <img id="image-modal" src="/assets/pankajjaju.jpg" alt="Pankaj Jaju" style={styleImage, {width: '90%'}}></img>
+                                    <img id="image-modal" src="/assets/pankajjaju.jpg" alt="Pankaj Jaju" style={styleImageModal}></img>
                                 </Grid>
                                 <Grid item md={6} >
                                     <Grid container spacing={0} direction="column">
@@ -321,7 +322,7 @@ export default function Team() {
 
                             <Hidden smDown>
                                 <Grid item xs={5}>
-                                    <img id="image-modal"src="/assets/saurabh.jfif" alt="Saurabh Singhi" style={styleImage, {width: '90%'}}></img>
+                                    <img id="image-modal"src="/assets/saurabh.jfif" alt="Saurabh Singhi" style={styleImageModal}></img>
                                 </Grid>
                                 <Grid item md={6} >
                                     <Grid container direction="column">
@@ -402,7 +403,7 @@ export default function Team() {
 
                             <Hidden smDown>
                                 <Grid item xs={5}>
-                                    <img id="image-modal"src="/assets/dhiraj.jfif" alt="Saurabh Singhi" style={styleImage && {width: '90%'}}></img>
+                                    <img id="image-modal"src="/assets/dhiraj.jfif" alt="Saurabh Singhi" style={styleImageModal}></img>
                                 </Grid>
                                 <Grid item md={6} >
                                     <Grid container direction="column">
