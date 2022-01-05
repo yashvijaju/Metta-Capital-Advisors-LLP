@@ -396,7 +396,7 @@ export default function Team() {
                                 </Grid>
                                 <Grid item xs={12} style={{'paddingTop': '10px'}}>
                                     <Typography variant="body2" style={{color: grey, fontFamily: font}}>
-                                    Ashish has over 10 years of experience in Investment Banking. He has previously worked with Morgan Stanley in Mumbai, New York and London and with Lincoln International and Aarayaa Advisory in Mumbai. He has been actively covering Chemicals, Packaging, Plastic and Metals and Mining sectors. Ashish holds a Bachelor’s degree in Commerce from the NarseeMonjee College of Commerce and Economics, Mumbai. He is also a Chartered Accountant.
+                                    Dhiraj has over 15 years of experience in Investment Banking and has previously worked with JP Morgan, KPMG and Ambit in Mumbai. He has been actively covering diversified Industrial Markets sector. Over the last several years, he has worked with leading Indian and global corporate houses on a range of transactions including mergers, acquisitions and private equity fund raises. Dhiraj holds a Bachelor’s degree in Commerce from H.R. College of Commerce and Economics, Mumbai. He is also a Chartered Accountant.
                                     </Typography>
                                 </Grid>
                             </Hidden>
@@ -426,7 +426,7 @@ export default function Team() {
                                         </Grid>
                                         <Grid item style={{'paddingTop': '10px'}}>
                                             <Typography variant="body2" style={{color: grey, fontFamily: font, textJustify: 'inter word', textAlign: 'justify'}}>
-                                            Ashish has over 10 years of experience in Investment Banking. He has previously worked with Morgan Stanley in Mumbai, New York and London and with Lincoln International and Aarayaa Advisory in Mumbai. He has been actively covering Chemicals, Packaging, Plastic and Metals and Mining sectors. Ashish holds a Bachelor’s degree in Commerce from the NarseeMonjee College of Commerce and Economics, Mumbai. He is also a Chartered Accountant.
+                                            Dhiraj has over 15 years of experience in Investment Banking and has previously worked with JP Morgan, KPMG and Ambit in Mumbai. He has been actively covering diversified Industrial Markets sector. Over the last several years, he has worked with leading Indian and global corporate houses on a range of transactions including mergers, acquisitions and private equity fund raises. Dhiraj holds a Bachelor’s degree in Commerce from H.R. College of Commerce and Economics, Mumbai. He is also a Chartered Accountant.
                                             </Typography>
                                         </Grid>
                                     </Grid>
