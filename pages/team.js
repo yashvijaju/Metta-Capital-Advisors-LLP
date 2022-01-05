@@ -402,7 +402,7 @@ export default function Team() {
 
                             <Hidden smDown>
                                 <Grid item xs={5}>
-                                    <img id="image-modal"src="/assets/dhiraj.jfif" alt="Saurabh Singhi" style={styleImage, {width: '90%'}}></img>
+                                    <img id="image-modal"src="/assets/dhiraj.jfif" alt="Saurabh Singhi" style={styleImage && {width: '90%'}}></img>
                                 </Grid>
                                 <Grid item md={6} >
                                     <Grid container direction="column">
