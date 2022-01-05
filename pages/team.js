@@ -121,7 +121,7 @@ export default function Team() {
                     <Hidden only="xs">
                         <Grid item xs={9} sm={5} md={3} onClick={handleOpenSS} style={styleItemwCursor}>
                             <img src="/assets/saurabh.jfif" alt="Saurabh Singhi" style={styleImage}/>
-                            <Grid container spacing={0} direction="row" justifyContent="center">
+                            <Grid container spacing={0} direction="row" justify="center">
                                 <Grid item width="90%">
                                     <Grid container direction="column">
                                         <Typography variant="subtitle1" style={styleHeadline}>
@@ -165,7 +165,7 @@ export default function Team() {
                     <Hidden only="xs">
                         <Grid item xs={9} sm={5} md={3} onClick={handleopenDP} style={styleItemwCursor}>
                             <img src="/assets/dhiraj.jfif" alt="Dhiraj Pariani" style={styleImage}/>
-                            <Grid container spacing={0} direction="row" justifyContent="center">
+                            <Grid container spacing={0} direction="row" justify="center">
                                 <Grid item width="90%">
                                     <Grid container direction="column">
                                         <Typography variant="subtitle1" style={styleHeadline}>
