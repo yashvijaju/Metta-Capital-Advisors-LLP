@@ -106,7 +106,7 @@ export default function Home() {
                         </Grid>
                         <Grid item xs={10} sm={9} md={10} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                           <Typography variant="body2" gutterBottom style={{color: grey, fontFamily: font}}>
-                          M&A Advisor in India by total deal value in Q3 2020 - VCC Edge League Tables
+                          M&A Advisor in India by total deal value in Q3 CY 2020 - VCC Edge League Tables
                           </Typography>
                         </Grid>
                       </Grid>
@@ -117,12 +117,12 @@ export default function Home() {
                       <Grid container direction="row" style={{cursor: 'pointer'}}>
                         <Grid item xs={2} sm={3} md={2}>
                           <Typography gutterBottom variant="h4" style={styleHeadline}>
-                          3
+                          4
                           </Typography>
                         </Grid>
                         <Grid item xs={10} sm={9} md={10} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                           <Typography variant="body2" gutterBottom style={{color: grey, fontFamily: font}}>
-                          M&A Advisor in India by total deal value in 9m 2020  -  Venture Intelligence League Tables                        </Typography>
+                          M&A Advisor in India by total deal value in CY 2020  -  Venture Intelligence League Tables                        </Typography>
                         </Grid>
                       </Grid>
                   </Link>
@@ -137,7 +137,7 @@ export default function Home() {
                         </Grid>
                         <Grid item xs={10} sm={9} md={10} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
                           <Typography variant="body2" gutterBottom style={{color: grey, fontFamily: font}}>
-                          Ranked #1 for P/E and M&A transactions in Fashion and Retail in India for most of 2016-2020
+                          Ranked #1 for P/E and M&A transactions in Fashion and Retail in India for most of 2016-2021
                           </Typography>
                         </Grid>
                       </Grid>
